@@ -69,7 +69,7 @@
                     .fa-user{
                         font-size: xx-large;
                         margin: 0 10px;
-                }
+                    }
                     input{
                         @include input_content();
                     }
@@ -163,6 +163,9 @@
                 }
                 .nhap_ten{
                     height: 45px !important;
+                    .fa-user{
+                        font-size: large !important;
+                    }
                     input{
                         height: 45px !important;
                     }
@@ -172,11 +175,19 @@
                 }
                 .nhap_mat_khau{
                     height: 45px !important;
+                    .fa-lock{
+                        font-size: large !important;
+                }
                     input{
+                        width: 75% !important;
                         height: 45px !important;
                     }
                     ::placeholder{
                         font-size: 15px;
+                    }
+                    .fa-eye{
+                        font-size: large !important;
+                        color: #6d30ab;
                     }
                 }
                 .quen_mat_khau{

@@ -113,16 +113,24 @@
       font-size: 20px !important; }
     .minerva .login_form .right_content .nhap_ten {
       height: 45px !important; }
+      .minerva .login_form .right_content .nhap_ten .fa-user {
+        font-size: large !important; }
       .minerva .login_form .right_content .nhap_ten input {
         height: 45px !important; }
       .minerva .login_form .right_content .nhap_ten ::placeholder {
         font-size: 15px; }
     .minerva .login_form .right_content .nhap_mat_khau {
       height: 45px !important; }
+      .minerva .login_form .right_content .nhap_mat_khau .fa-lock {
+        font-size: large !important; }
       .minerva .login_form .right_content .nhap_mat_khau input {
+        width: 75% !important;
         height: 45px !important; }
       .minerva .login_form .right_content .nhap_mat_khau ::placeholder {
         font-size: 15px; }
+      .minerva .login_form .right_content .nhap_mat_khau .fa-eye {
+        font-size: large !important;
+        color: #6d30ab; }
     .minerva .login_form .right_content .quen_mat_khau a {
       font-size: 20px !important; }
     .minerva .login_form .right_content .dang_nhap {

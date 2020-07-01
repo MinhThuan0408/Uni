@@ -16,6 +16,7 @@
     font-size: 20px;
 }
 .minerva{
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     .login_form{
         .left_content{
@@ -64,6 +65,10 @@
             .nhap_email{
                 @include input_box_background();
                 margin-top:15px;
+                .fa-envelope-o{
+                    font-size: xx-large;
+                    margin: 0 10px;
+                }
                 input{
                     @include input_content();
                 }
@@ -119,9 +124,6 @@
                         font-size: 10px;
                     }
                 }
-                .email_block{
-
-                }
                 .tieude_email{
                     label{
                         font-size: 17px;
@@ -129,6 +131,10 @@
                     
                 }
                 .nhap_email{
+                    .fa-envelope-o{
+                        font-size: large ;
+                        margin: 0 10px;
+                    }
                     height: 45px;
                     input{
                         height: 45px;
