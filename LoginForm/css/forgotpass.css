@@ -1,0 +1,63 @@
+.minerva {
+  width: 100%; }
+  .minerva .login_form .logo {
+    margin-top: 43px;
+    margin-left: 48px; }
+  .minerva .login_form .left_content {
+    background-image: url(../images/bg_login.png);
+    height: 100vh; }
+    .minerva .login_form .left_content .chao_mung {
+      margin-top: 15vh;
+      color: white;
+      text-align: center; }
+      .minerva .login_form .left_content .chao_mung h1 {
+        font-size: 60px; }
+      .minerva .login_form .left_content .chao_mung p {
+        font-size: 27px;
+        margin-top: 31px; }
+  .minerva .login_form .right_content .tieu_de {
+    text-align: center; }
+    .minerva .login_form .right_content .tieu_de h3 {
+      font-size: 48px;
+      color: #6d30ab;
+      font-weight: bold; }
+    .minerva .login_form .right_content .tieu_de p {
+      color: #6d6d6d;
+      font-style: italic;
+      font-size: 24px; }
+  .minerva .login_form .right_content .email-block {
+    margin: 0 10%; }
+  .minerva .login_form .right_content .tieude_email {
+    margin-top: 30px; }
+    .minerva .login_form .right_content .tieude_email label {
+      font-weight: bold;
+      font-size: 24px; }
+  .minerva .login_form .right_content .nhap_email {
+    height: 70px;
+    background-color: #f5f5f5;
+    text-align: left;
+    margin-top: 15px; }
+    .minerva .login_form .right_content .nhap_email input {
+      width: 80%;
+      height: 70px;
+      background-color: #f5f5f5;
+      border: none;
+      font-size: 20px; }
+    .minerva .login_form .right_content .nhap_email ::placeholder {
+      font-style: italic; }
+  .minerva .login_form .right_content .gui {
+    text-align: center; }
+    .minerva .login_form .right_content .gui button {
+      margin-top: 60px;
+      width: 306px;
+      font-size: 24px;
+      height: 70px;
+      color: white;
+      border: none;
+      background-color: #6d30ab; }
+
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=forgotpass.css.map */
