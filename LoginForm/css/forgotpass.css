@@ -1,11 +1,11 @@
 .minerva {
   width: 100%; }
-  .minerva .login_form .logo {
-    margin-top: 43px;
-    margin-left: 48px; }
   .minerva .login_form .left_content {
     background-image: url(../images/bg_login.png);
     height: 100vh; }
+    .minerva .login_form .left_content .logo {
+      margin-top: 30px;
+      margin-left: 35px; }
     .minerva .login_form .left_content .chao_mung {
       margin-top: 15vh;
       color: white;
@@ -25,7 +25,7 @@
       color: #6d6d6d;
       font-style: italic;
       font-size: 24px; }
-  .minerva .login_form .right_content .email-block {
+  .minerva .login_form .right_content .email_block {
     margin: 0 10%; }
   .minerva .login_form .right_content .tieude_email {
     margin-top: 30px; }
@@ -57,6 +57,39 @@
       background-color: #6d30ab; }
 
 /* Small devices (tablets, 768px and up) */
+@media (min-width: 374px) and (max-width: 768px) {
+  .minerva .login_form .left_content {
+    height: 40vh; }
+    .minerva .login_form .left_content .logo {
+      text-align: center;
+      margin-top: 30px; }
+    .minerva .login_form .left_content .chao_mung {
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 45px; }
+      .minerva .login_form .left_content .chao_mung h1 {
+        font-size: 30px; }
+      .minerva .login_form .left_content .chao_mung p {
+        font-size: 17px; }
+  .minerva .login_form .right_content {
+    height: 50vh; }
+    .minerva .login_form .right_content .tieu_de h3 {
+      font-size: 24px; }
+    .minerva .login_form .right_content .tieu_de p {
+      font-size: 10px; }
+    .minerva .login_form .right_content .tieude_email label {
+      font-size: 17px; }
+    .minerva .login_form .right_content .nhap_email {
+      height: 45px; }
+      .minerva .login_form .right_content .nhap_email input {
+        height: 45px; }
+      .minerva .login_form .right_content .nhap_email ::placeholder {
+        font-size: 15px; }
+    .minerva .login_form .right_content .gui button {
+      margin-top: 40px;
+      width: 150px;
+      font-size: 20px;
+      height: 40px; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 
