@@ -16,6 +16,7 @@
     font-size: 20px;
 }
 .minerva{
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     .login_form{
         .logo{
@@ -55,7 +56,6 @@
                         @include title_span();
                     }
                 }
-                
                 .tieude_mat_khau{
                     margin-top: 30px;
                     margin-bottom: 15px;
@@ -66,6 +66,10 @@
                 .nhap_ten{
                     @include input_box_background();
                     margin-top:15px;
+                    .fa-user{
+                        font-size: xx-large;
+                        margin: 0 10px;
+                }
                     input{
                         @include input_content();
                     }
@@ -75,11 +79,19 @@
                 }
                 .nhap_mat_khau{
                     @include input_box_background();
+                    .fa-lock{
+                            font-size: xx-large;
+                            margin: 0 10px;
+                    }
                     input{
                         @include input_content();
                     }
                     ::placeholder{
                         font-style: italic;
+                    }
+                    .fa-eye{
+                        font-size: xx-large;
+                        color: #6d30ab;
                     }
                 }
                 .quen_mat_khau{
@@ -109,4 +121,100 @@
         }
     }
 }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 374px) and (max-width: 768px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                height: 40vh;
+                .logo{
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .chao_mung{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-top: 45px;
+                    h1{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .right_content{
+                height: 50vh;
+                .tieu_de{
+                    h3{
+                        font-size: 30px !important;
+                    }
+                }
+                .tieude_ten_dang_nhap{
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .tieude_mat_khau{
+                    span{
+                        font-size: 20px !important;
+                    }
+                    
+                }
+                .nhap_ten{
+                    height: 45px !important;
+                    input{
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+                }
+                .nhap_mat_khau{
+                    height: 45px !important;
+                    input{
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+                }
+                .quen_mat_khau{
+                    a{
+                        font-size: 20px !important;
+                    }
+                    
+                }
+                .dang_nhap{
+                    text-align: center;
+                    button{
+                        margin-top: 30px;
+                        width: 306px;
+                        font-size: 24px;
+                        height: 70px;
+                        color: white;
+                        border: none;
+                        background-color: #6d30ab;
+                    }
+                }
+                .dang_nhap{
+                    button{
+                        margin-top: 40px !important;
+                        width: 150px !important;
+                        font-size: 16px !important;
+                        height: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+ }
 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
