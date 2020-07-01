@@ -40,7 +40,7 @@
       background-color: #f5f5f5;
       text-align: left;
       margin-top: 15px; }
-      .minerva .login_form .right_content .login_block .nhap_ten .fa-user {
+      .minerva .login_form .right_content .login_block .nhap_ten .la-user {
         font-size: xx-large;
         margin: 0 10px; }
       .minerva .login_form .right_content .login_block .nhap_ten input {
@@ -55,7 +55,7 @@
       height: 70px;
       background-color: #f5f5f5;
       text-align: left; }
-      .minerva .login_form .right_content .login_block .nhap_mat_khau .fa-lock {
+      .minerva .login_form .right_content .login_block .nhap_mat_khau .la-lock {
         font-size: xx-large;
         margin: 0 10px; }
       .minerva .login_form .right_content .login_block .nhap_mat_khau input {
@@ -66,7 +66,7 @@
         font-size: 20px; }
       .minerva .login_form .right_content .login_block .nhap_mat_khau ::placeholder {
         font-style: italic; }
-      .minerva .login_form .right_content .login_block .nhap_mat_khau .fa-eye {
+      .minerva .login_form .right_content .login_block .nhap_mat_khau .la-eye-slash {
         font-size: xx-large;
         color: #6d30ab; }
     .minerva .login_form .right_content .login_block .quen_mat_khau {
@@ -93,6 +93,7 @@
   .minerva .login_form .left_content {
     height: 40vh; }
     .minerva .login_form .left_content .logo {
+      margin-left: 0 !important;
       text-align: center;
       margin-top: 30px; }
     .minerva .login_form .left_content .chao_mung {
@@ -113,7 +114,7 @@
       font-size: 20px !important; }
     .minerva .login_form .right_content .nhap_ten {
       height: 45px !important; }
-      .minerva .login_form .right_content .nhap_ten .fa-user {
+      .minerva .login_form .right_content .nhap_ten .la-user {
         font-size: large !important; }
       .minerva .login_form .right_content .nhap_ten input {
         height: 45px !important; }
@@ -121,14 +122,14 @@
         font-size: 15px; }
     .minerva .login_form .right_content .nhap_mat_khau {
       height: 45px !important; }
-      .minerva .login_form .right_content .nhap_mat_khau .fa-lock {
+      .minerva .login_form .right_content .nhap_mat_khau .la-lock {
         font-size: large !important; }
       .minerva .login_form .right_content .nhap_mat_khau input {
         width: 75% !important;
         height: 45px !important; }
       .minerva .login_form .right_content .nhap_mat_khau ::placeholder {
         font-size: 15px; }
-      .minerva .login_form .right_content .nhap_mat_khau .fa-eye {
+      .minerva .login_form .right_content .nhap_mat_khau .la-eye-slash {
         font-size: large !important;
         color: #6d30ab; }
     .minerva .login_form .right_content .quen_mat_khau a {

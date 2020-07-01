@@ -3,55 +3,58 @@
   width: 100%; }
   .minerva .login_form .left_content {
     background-image: url(../images/bg_login.png);
-    height: 100vh; }
-    .minerva .login_form .left_content .logo {
-      margin-top: 30px;
-      margin-left: 35px; }
-    .minerva .login_form .left_content .chao_mung {
-      margin-top: 15vh;
+    height: 100vh;
+    margin: 0 -15px; }
+    .minerva .login_form .left_content .logo #logo {
+      margin-left: 48px;
+      margin-top: 43px; }
+    .minerva .login_form .left_content .wellcome {
+      margin-top: 20vh;
+      margin-left: 90px;
+      margin-right: 90px;
       color: white;
       text-align: center; }
-      .minerva .login_form .left_content .chao_mung h1 {
+      .minerva .login_form .left_content .wellcome h1 {
         font-size: 60px; }
-      .minerva .login_form .left_content .chao_mung p {
+      .minerva .login_form .left_content .wellcome p {
         font-size: 27px;
         margin-top: 31px; }
-  .minerva .login_form .right_content .tieu_de {
+  .minerva .login_form .right_content .title {
     text-align: center; }
-    .minerva .login_form .right_content .tieu_de h3 {
+    .minerva .login_form .right_content .title h3 {
       font-size: 48px;
       color: #6d30ab;
       font-weight: bold; }
-    .minerva .login_form .right_content .tieu_de p {
+    .minerva .login_form .right_content .title p {
       color: #6d6d6d;
       font-style: italic;
       font-size: 24px; }
   .minerva .login_form .right_content .email_block {
     margin: 0 10%; }
-  .minerva .login_form .right_content .tieude_email {
+  .minerva .login_form .right_content .title_email {
     margin-top: 30px; }
-    .minerva .login_form .right_content .tieude_email label {
+    .minerva .login_form .right_content .title_email label {
       font-weight: bold;
       font-size: 24px; }
-  .minerva .login_form .right_content .nhap_email {
+  .minerva .login_form .right_content .input_email {
     height: 70px;
     background-color: #f5f5f5;
     text-align: left;
     margin-top: 15px; }
-    .minerva .login_form .right_content .nhap_email .fa-envelope-o {
+    .minerva .login_form .right_content .input_email .fa-envelope-o {
       font-size: xx-large;
       margin: 0 10px; }
-    .minerva .login_form .right_content .nhap_email input {
+    .minerva .login_form .right_content .input_email input {
       width: 80%;
       height: 70px;
       background-color: #f5f5f5;
       border: none;
       font-size: 20px; }
-    .minerva .login_form .right_content .nhap_email ::placeholder {
+    .minerva .login_form .right_content .input_email ::placeholder {
       font-style: italic; }
-  .minerva .login_form .right_content .gui {
+  .minerva .login_form .right_content .send {
     text-align: center; }
-    .minerva .login_form .right_content .gui button {
+    .minerva .login_form .right_content .send button {
       margin-top: 60px;
       width: 306px;
       font-size: 24px;
@@ -66,33 +69,34 @@
     height: 40vh; }
     .minerva .login_form .left_content .logo {
       text-align: center;
-      margin-top: 30px; }
-    .minerva .login_form .left_content .chao_mung {
+      margin-top: 30px;
+      margin-left: 0 !important; }
+    .minerva .login_form .left_content .wellcome {
       background-size: cover;
       background-repeat: no-repeat;
       margin-top: 45px; }
-      .minerva .login_form .left_content .chao_mung h1 {
+      .minerva .login_form .left_content .wellcome h1 {
         font-size: 30px; }
-      .minerva .login_form .left_content .chao_mung p {
+      .minerva .login_form .left_content .wellcome p {
         font-size: 17px; }
   .minerva .login_form .right_content {
     height: 50vh; }
-    .minerva .login_form .right_content .tieu_de h3 {
+    .minerva .login_form .right_content .title h3 {
       font-size: 24px; }
-    .minerva .login_form .right_content .tieu_de p {
+    .minerva .login_form .right_content .title p {
       font-size: 10px; }
-    .minerva .login_form .right_content .tieude_email label {
+    .minerva .login_form .right_content .title_email label {
       font-size: 17px; }
-    .minerva .login_form .right_content .nhap_email {
+    .minerva .login_form .right_content .input_email {
       height: 45px; }
-      .minerva .login_form .right_content .nhap_email .fa-envelope-o {
+      .minerva .login_form .right_content .input_email .fa-envelope-o {
         font-size: large;
         margin: 0 10px; }
-      .minerva .login_form .right_content .nhap_email input {
+      .minerva .login_form .right_content .input_email input {
         height: 45px; }
-      .minerva .login_form .right_content .nhap_email ::placeholder {
+      .minerva .login_form .right_content .input_email ::placeholder {
         font-size: 15px; }
-    .minerva .login_form .right_content .gui button {
+    .minerva .login_form .right_content .send button {
       margin-top: 40px;
       width: 150px;
       font-size: 20px;

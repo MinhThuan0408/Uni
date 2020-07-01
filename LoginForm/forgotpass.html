@@ -16,43 +16,45 @@
 </head>
 <body>
     <div class="container minerva">
-        <div class="row login_form">
-            <div class="col-lg-4 col-md-4 col-xs-12 left_content">
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </div>
-                
-
-                <div class="chao_mung">
-                    <h1>
-                        Chào mừng bạn
-                    </h1>
-                    <p>
-                        Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-xs-12">
-                <div class="right_content">
-                    <div class="tieu_de">
-                        <h3>Lấy lại mật khẩu của Minerva</h3>
-                        <p>Hãy nhập vào email mà bạn dùng để hệ thống gửi lại cho bạn mật khẩu</p>
-                    </div>
-                    <div class="email_block">
-                        <div class="tieude_email">
-                            <label for="email">
-                                Email
-                            </label>
+        <div class="row">
+            <div class="login_form">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="left_content">
+                        <div class="logo">
+                            <img src="./images/logo.svg" alt="logo" id="logo">
                         </div>
-                        <div class="nhap_email">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <input type="email" placeholder="Nhập địa chỉ email" id="email"  required>
+                        <div class="wellcome">
+                            <h1>
+                                Chào mừng bạn
+                            </h1>
+                            <p>
+                                Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime
+                            </p>
                         </div>
                     </div>
-                    <div class="gui">
-                        <button type="submit" onclick="ValidateEmail()">
-                            Gửi
-                        </button>
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <div class="right_content">
+                        <div class="title">
+                            <h3>Lấy lại mật khẩu của Minerva</h3>
+                            <p>Hãy nhập vào email mà bạn dùng để hệ thống gửi lại cho bạn mật khẩu</p>
+                        </div>
+                        <div class="email_block">
+                            <div class="title_email">
+                                <label for="email">
+                                    Email
+                                </label>
+                            </div>
+                            <div class="input_email">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input type="email" placeholder="Nhập địa chỉ email" id="email"  required>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <button type="submit" onclick="ValidateEmail()">
+                                Gửi
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -66,7 +66,7 @@
                 .nhap_ten{
                     @include input_box_background();
                     margin-top:15px;
-                    .fa-user{
+                    .la-user{
                         font-size: xx-large;
                         margin: 0 10px;
                     }
@@ -79,7 +79,7 @@
                 }
                 .nhap_mat_khau{
                     @include input_box_background();
-                    .fa-lock{
+                    .la-lock{
                             font-size: xx-large;
                             margin: 0 10px;
                     }
@@ -89,7 +89,7 @@
                     ::placeholder{
                         font-style: italic;
                     }
-                    .fa-eye{
+                    .la-eye-slash{
                         font-size: xx-large;
                         color: #6d30ab;
                     }
@@ -128,6 +128,7 @@
             .left_content{
                 height: 40vh;
                 .logo{
+                    margin-left: 0 !important;
                     text-align: center;
                     margin-top: 30px;
                 }
@@ -163,7 +164,7 @@
                 }
                 .nhap_ten{
                     height: 45px !important;
-                    .fa-user{
+                    .la-user{
                         font-size: large !important;
                     }
                     input{
@@ -175,7 +176,7 @@
                 }
                 .nhap_mat_khau{
                     height: 45px !important;
-                    .fa-lock{
+                    .la-lock{
                         font-size: large !important;
                 }
                     input{
@@ -185,7 +186,7 @@
                     ::placeholder{
                         font-size: 15px;
                     }
-                    .fa-eye{
+                    .la-eye-slash{
                         font-size: large !important;
                         color: #6d30ab;
                     }
