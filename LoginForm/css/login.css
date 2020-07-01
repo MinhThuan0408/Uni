@@ -69,6 +69,10 @@
       .minerva .login_form .right_content .login_block .nhap_mat_khau .la-eye-slash {
         font-size: xx-large;
         color: #6d30ab; }
+      .minerva .login_form .right_content .login_block .nhap_mat_khau .la-eye {
+        font-size: xx-large;
+        color: #6d30ab;
+        display: none; }
     .minerva .login_form .right_content .login_block .quen_mat_khau {
       text-align: center;
       margin-top: 30px;
