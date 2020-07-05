@@ -1,0 +1,222 @@
+.minerva {
+  font-family: 'Roboto', sans-serif;
+  width: 100%; }
+  .minerva .login_form .logo {
+    margin-top: 43px;
+    margin-left: 48px; }
+  .minerva .login_form .left_content {
+    background-image: url(../images/bg_login.png);
+    height: 100vh;
+    margin: 0 !important; }
+    .minerva .login_form .left_content .chao_mung {
+      margin-top: 15vh;
+      color: white;
+      text-align: center; }
+      .minerva .login_form .left_content .chao_mung h1 {
+        font-size: 60px; }
+      .minerva .login_form .left_content .chao_mung p {
+        font-size: 27px;
+        margin-top: 31px; }
+  .minerva .login_form .right_content .tieu_de {
+    margin-top: 100px;
+    text-align: center; }
+    .minerva .login_form .right_content .tieu_de h3 {
+      font-size: 48px;
+      color: #6d30ab;
+      font-weight: bold; }
+  .minerva .login_form .right_content .login_block {
+    margin: 0 15%; }
+    .minerva .login_form .right_content .login_block .tieude_ten_dang_nhap {
+      margin-top: 30px; }
+      .minerva .login_form .right_content .login_block .tieude_ten_dang_nhap span {
+        font-weight: bold;
+        font-size: 24px; }
+    .minerva .login_form .right_content .login_block .tieude_mat_khau {
+      margin-top: 30px;
+      margin-bottom: 15px; }
+      .minerva .login_form .right_content .login_block .tieude_mat_khau span {
+        font-weight: bold;
+        font-size: 24px; }
+    .minerva .login_form .right_content .login_block .nhap_ten {
+      height: 70px;
+      background-color: #f5f5f5;
+      text-align: left;
+      margin-top: 15px; }
+      .minerva .login_form .right_content .login_block .nhap_ten .la-user {
+        font-size: xx-large;
+        margin: 0 10px; }
+      .minerva .login_form .right_content .login_block .nhap_ten input {
+        width: 80%;
+        height: 70px;
+        background-color: #f5f5f5;
+        border: none;
+        font-size: 20px; }
+      .minerva .login_form .right_content .login_block .nhap_ten ::placeholder {
+        font-style: italic; }
+    .minerva .login_form .right_content .login_block .nhap_mat_khau {
+      height: 70px;
+      background-color: #f5f5f5;
+      text-align: left; }
+      .minerva .login_form .right_content .login_block .nhap_mat_khau .la-lock {
+        font-size: xx-large;
+        margin: 0 10px; }
+      .minerva .login_form .right_content .login_block .nhap_mat_khau input {
+        width: 80%;
+        height: 70px;
+        background-color: #f5f5f5;
+        border: none;
+        font-size: 20px; }
+      .minerva .login_form .right_content .login_block .nhap_mat_khau ::placeholder {
+        font-style: italic; }
+      .minerva .login_form .right_content .login_block .nhap_mat_khau .field_icon {
+        font-size: xx-large;
+        color: #6d30ab; }
+    .minerva .login_form .right_content .login_block .quen_mat_khau {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 15px; }
+      .minerva .login_form .right_content .login_block .quen_mat_khau a {
+        font-size: 24px;
+        color: grey;
+        text-decoration: underline; }
+    .minerva .login_form .right_content .login_block .dang_nhap {
+      text-align: center; }
+      .minerva .login_form .right_content .login_block .dang_nhap button {
+        margin-top: 30px;
+        width: 306px;
+        font-size: 24px;
+        height: 70px;
+        color: white;
+        border: none;
+        background-color: #6d30ab; }
+      .minerva .login_form .right_content .login_block .dang_nhap button:hover {
+        box-shadow: 5px 10px 18px #888888; }
+
+@media (min-width: 320px) and (max-width: 373px) {
+  .minerva .login_form .left_content {
+    height: 50vh !important; }
+    .minerva .login_form .left_content .logo {
+      margin-left: 0 !important;
+      text-align: center;
+      margin-top: 30px; }
+    .minerva .login_form .left_content .chao_mung {
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 45px; }
+      .minerva .login_form .left_content .chao_mung h1 {
+        font-size: 27px; }
+      .minerva .login_form .left_content .chao_mung p {
+        font-size: 15px; }
+  .minerva .login_form .right_content {
+    height: 50vh; }
+    .minerva .login_form .right_content .tieu_de {
+      margin-top: 50px !important; }
+      .minerva .login_form .right_content .tieu_de h3 {
+        font-size: 24px !important; }
+    .minerva .login_form .right_content .tieude_ten_dang_nhap span {
+      font-size: 15px !important; }
+    .minerva .login_form .right_content .tieude_mat_khau span {
+      font-size: 15px !important; }
+    .minerva .login_form .right_content .nhap_ten {
+      height: 45px !important; }
+      .minerva .login_form .right_content .nhap_ten .la-user {
+        font-size: large !important; }
+      .minerva .login_form .right_content .nhap_ten input {
+        width: 79% !important;
+        height: 45px !important; }
+      .minerva .login_form .right_content .nhap_ten ::placeholder {
+        font-size: 13px; }
+    .minerva .login_form .right_content .nhap_mat_khau {
+      height: 45px !important; }
+      .minerva .login_form .right_content .nhap_mat_khau .la-lock {
+        font-size: large !important; }
+      .minerva .login_form .right_content .nhap_mat_khau input {
+        width: 64% !important;
+        height: 45px !important; }
+      .minerva .login_form .right_content .nhap_mat_khau ::placeholder {
+        font-size: 13px; }
+      .minerva .login_form .right_content .nhap_mat_khau .la-eye-slash {
+        font-size: large !important;
+        color: #6d30ab; }
+    .minerva .login_form .right_content .quen_mat_khau a {
+      font-size: 12px !important; }
+    .minerva .login_form .right_content .dang_nhap {
+      text-align: center; }
+      .minerva .login_form .right_content .dang_nhap button {
+        margin-top: 30px;
+        width: 306px;
+        font-size: 22px;
+        height: 70px;
+        color: white;
+        border: none;
+        background-color: #6d30ab; }
+    .minerva .login_form .right_content .dang_nhap button {
+      margin-top: 10px !important;
+      width: 150px !important;
+      font-size: 14px !important;
+      height: 40px !important; } }
+@media (min-width: 373px) and (max-width: 768px) {
+  .minerva .login_form .left_content {
+    height: 50vh !important; }
+    .minerva .login_form .left_content .logo {
+      margin-left: 0 !important;
+      text-align: center;
+      margin-top: 30px; }
+    .minerva .login_form .left_content .chao_mung {
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 45px; }
+      .minerva .login_form .left_content .chao_mung h1 {
+        font-size: 30px; }
+      .minerva .login_form .left_content .chao_mung p {
+        font-size: 17px; }
+  .minerva .login_form .right_content {
+    height: 50vh; }
+    .minerva .login_form .right_content .tieu_de {
+      margin-top: 0; }
+      .minerva .login_form .right_content .tieu_de h3 {
+        font-size: 30px !important; }
+    .minerva .login_form .right_content .tieude_ten_dang_nhap span {
+      font-size: 20px !important; }
+    .minerva .login_form .right_content .tieude_mat_khau span {
+      font-size: 20px !important; }
+    .minerva .login_form .right_content .nhap_ten {
+      height: 45px !important; }
+      .minerva .login_form .right_content .nhap_ten .la-user {
+        font-size: large !important; }
+      .minerva .login_form .right_content .nhap_ten input {
+        height: 45px !important; }
+      .minerva .login_form .right_content .nhap_ten ::placeholder {
+        font-size: 15px; }
+    .minerva .login_form .right_content .nhap_mat_khau {
+      height: 45px !important; }
+      .minerva .login_form .right_content .nhap_mat_khau .la-lock {
+        font-size: large !important; }
+      .minerva .login_form .right_content .nhap_mat_khau input {
+        width: 68% !important;
+        height: 45px !important; }
+      .minerva .login_form .right_content .nhap_mat_khau ::placeholder {
+        font-size: 15px; }
+      .minerva .login_form .right_content .nhap_mat_khau .field_icon {
+        font-size: large !important;
+        color: #6d30ab; }
+    .minerva .login_form .right_content .quen_mat_khau a {
+      font-size: 14px !important; }
+    .minerva .login_form .right_content .dang_nhap {
+      text-align: center;
+      margin-top: -30px; }
+      .minerva .login_form .right_content .dang_nhap button {
+        margin-top: 30px;
+        width: 306px;
+        font-size: 24px;
+        height: 70px;
+        color: white;
+        border: none;
+        background-color: #6d30ab; }
+    .minerva .login_form .right_content .dang_nhap button {
+      margin-top: 40px !important;
+      width: 150px !important;
+      font-size: 16px !important;
+      height: 40px !important; } }
+
+/*# sourceMappingURL=login.css.map */

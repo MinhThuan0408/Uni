@@ -1,0 +1,344 @@
+@mixin title_span {
+    font-weight: bold;
+    font-size: 24px;
+}
+@mixin input_box_background {
+    
+    height: 70px;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+@mixin input_content {
+    width: 80%;
+    height: 70px;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: 20px;
+}
+.minerva{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    .login_form{
+        .logo{
+            margin-top: 43px;
+            margin-left: 48px;
+        }
+        .left_content{
+            background-image: url(../images/bg_login.png);
+            height:100vh;
+            margin: 0 !important;
+            .chao_mung{
+                margin-top: 15vh;
+                color: white;
+                text-align: center;
+                h1{
+                    font-size: 60px;
+                }
+                p{
+                    font-size: 27px;
+                    margin-top: 31px;
+                }
+            }
+        }
+        .right_content{
+            .tieu_de{
+                margin-top: 100px;
+                text-align: center;
+                h3{
+                    font-size: 48px;
+                    color: #6d30ab;
+                    font-weight: bold;
+                }
+            }
+            .login_block{
+                margin: 0 15%;
+                .tieude_ten_dang_nhap{
+                    margin-top: 30px;
+                    span{
+                        @include title_span();
+                    }
+                }
+                .tieude_mat_khau{
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    span{
+                        @include title_span();
+                    }
+                }
+                .nhap_ten{
+                    @include input_box_background();
+                    margin-top:15px;
+                    .la-user{
+                        font-size: xx-large;
+                        margin: 0 10px;
+                    }
+                    input{
+                        @include input_content();
+                    }
+                    ::placeholder{
+                        font-style: italic;
+                    }
+                }
+                .nhap_mat_khau{
+                    @include input_box_background();
+                    .la-lock{
+                            font-size: xx-large;
+                            margin: 0 10px;
+                    }
+                    input{
+                        @include input_content();
+                    }
+                    ::placeholder{
+                        font-style: italic;
+                    }
+                    .field_icon{
+                        font-size: xx-large;
+                        color: #6d30ab;
+                    }
+                    // .la-fish{
+                    //     font-size: xx-large;
+                    //     color: #6d30ab;
+                    //     display: none;
+                    // }
+                }
+                .quen_mat_khau{
+                    text-align: center;
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    a{
+                        font-size: 24px;
+                        color: grey;
+                        text-decoration: underline;
+                    }
+                    
+                }
+                .dang_nhap{
+                    text-align: center;
+                    button{
+                        margin-top: 30px;
+                        width: 306px;
+                        font-size: 24px;
+                        height: 70px;
+                        color: white;
+                        border: none;
+                        background-color: #6d30ab;
+                    }
+                    button:hover {
+                        box-shadow: 5px 10px 18px #888888;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 373px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                height: 50vh !important;
+                .logo{
+                    margin-left: 0 !important;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .chao_mung{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-top: 45px;
+                    h1{
+                        font-size: 27px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .right_content{
+                height: 50vh;
+                .tieu_de{
+                    margin-top: 50px !important;
+                    h3{
+                        font-size: 24px !important;
+                    }
+                }
+                .tieude_ten_dang_nhap{
+                    span{
+                        font-size: 15px !important;
+                    }
+                }
+                .tieude_mat_khau{
+                    span{
+                        font-size: 15px !important;
+                    }
+                    
+                }
+                .nhap_ten{
+                    height: 45px !important;
+                    .la-user{
+                        font-size: large !important;
+                    }
+                    input{
+                        width: 79% !important;
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 13px;
+                    }
+                }
+                .nhap_mat_khau{
+                    height: 45px !important;
+                    .la-lock{
+                        font-size: large !important;
+                }
+                    input{
+                        width: 64% !important;
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 13px;
+                    }
+                    .la-eye-slash{
+                        font-size: large !important;
+                        color: #6d30ab;
+                    }
+                }
+                .quen_mat_khau{
+                    a{
+                        font-size: 12px !important;
+                    }
+                    
+                }
+                .dang_nhap{
+                    text-align: center;
+                    button{
+                        margin-top: 30px;
+                        width: 306px;
+                        font-size: 22px;
+                        height: 70px;
+                        color: white;
+                        border: none;
+                        background-color: #6d30ab;
+                    }
+                }
+                .dang_nhap{
+                    button{
+                        margin-top: 10px !important;
+                        width: 150px !important;
+                        font-size: 14px !important;
+                        height: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+ }
+@media (min-width: 373px) and (max-width: 768px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                height: 50vh !important;
+                .logo{
+                    margin-left: 0 !important;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .chao_mung{
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-top: 45px;
+                    h1{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+            .right_content{
+                height: 50vh;
+                .tieu_de{
+                    margin-top: 0;
+                    h3{
+                        font-size: 30px !important;
+                    }
+                }
+                .tieude_ten_dang_nhap{
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .tieude_mat_khau{
+                    span{
+                        font-size: 20px !important;
+                    }
+                    
+                }
+                .nhap_ten{
+                    height: 45px !important;
+                    .la-user{
+                        font-size: large !important;
+                    }
+                    input{
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+                }
+                .nhap_mat_khau{
+                    height: 45px !important;
+                    .la-lock{
+                        font-size: large !important;
+                }
+                    input{
+                        width: 68% !important;
+                        height: 45px !important;
+                    }
+                    ::placeholder{
+                        font-size: 15px;
+                    }
+                    .field_icon{
+                        font-size: large !important;
+                        color: #6d30ab;
+                    }
+                }
+                .quen_mat_khau{
+                    a{
+                        font-size: 14px !important;
+                    }
+                    
+                }
+                .dang_nhap{
+                    text-align: center;
+                    margin-top: -30px;
+                    button{
+                        margin-top: 30px;
+                        width: 306px;
+                        font-size: 24px;
+                        height: 70px;
+                        color: white;
+                        border: none;
+                        background-color: #6d30ab;
+                    }
+                }
+                .dang_nhap{
+                    button{
+                        margin-top: 40px !important;
+                        width: 150px !important;
+                        font-size: 16px !important;
+                        height: 40px !important;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+}
