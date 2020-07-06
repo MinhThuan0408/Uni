@@ -24,10 +24,9 @@
             height:100vh;
             margin: 0 -15px;
             .logo{
-                #logo{
-                    margin-left: 48px;
-                    margin-top: 43px;
-                }
+                padding-top: 43px;
+                padding-left: 48px;
+                
             }
             .wellcome{
                 margin-top: 20vh;
@@ -35,10 +34,10 @@
                 margin-right: 90px;
                 color: white;
                 text-align: center;
-                h1{
+                .wellcome_title{
                     font-size: 60px;
                 }
-                p{
+                .wellcome_content{
                     font-size: 27px;
                     margin-top: 31px;
                 }
@@ -47,19 +46,20 @@
         .right_content{
             .title{
                 text-align: center;
-                h3{
+                margin-top: 100px;
+                .recover{
                     font-size: 48px;
                     color: #6d30ab;
                     font-weight: bold;
                 }
-                p{
+                .let_input_title{
                     color: #6d6d6d;
                     font-style: italic;
                     font-size: 24px;
                 }
             }
             .email_block{
-                margin: 0 10%;
+                margin: 0 20%;
             }
             .title_email{
                 margin-top: 30px;
@@ -100,36 +100,98 @@
     }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 374px) and (max-width: 768px) { 
+@media (min-width: 320px) and (max-width: 379px){
+    .minerva{
+        .login_form{
+            .left_content{
+                height: 43vh !important;
+                .logo{
+                    padding-left: 0 !important;
+                    text-align: center;
+                }
+                .wellcome{
+                    margin-top: 7vh !important;
+                    .wellcome_title{
+                        font-size: 15px;
+                    }
+                    .wellcome_content{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .right_content{
+                height: 50vh;
+                margin-top: 30px !important;
+                .title{
+                    margin-top: 50px;
+                    .recover{
+                        font-size: 22px;
+                    }
+                    .let_input_title{
+                        font-size: 10px;
+                    }
+                }
+                .title_email{
+                    label{
+                        font-size: 15px;
+                    }
+                    
+                }
+                .input_email{
+                    .fa-envelope-o{
+                        font-size: large ;
+                        margin: 0 10px;
+                    }
+                    height: 45px;
+                    input{
+                        width: 70%;
+                        height: 45px;
+                    }
+                    ::placeholder{
+                        font-size: 11px;
+                    }
+                }
+                .send{
+                    button{
+                        margin-top: 40px;
+                        width: 150px;
+                        font-size: 20px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 379px) and (max-width: 768px) { 
     .minerva{
         .login_form{
             .left_content{
                 height: 40vh;
                 .logo{
                     text-align: center;
-                    margin-top: 30px;
-                    margin-left: 0 !important;
+                    padding-left: 0 !important;
                 }
                 .wellcome{
                     background-size: cover;
                     background-repeat: no-repeat;
                     margin-top: 45px;
-                    h1{
+                    .wellcome_title{
                         font-size: 30px;
                     }
-                    p{
+                    .wellcome_content{
                         font-size: 17px;
                     }
                 }
             }
             .right_content{
                 height: 50vh;
+                margin-top: 30px !important;
                 .title{
-                    h3{
+                    .recover{
                         font-size: 24px;
                     }
-                    p{
+                    .let_input_title{
                         font-size: 10px;
                     }
                 }
@@ -163,14 +225,16 @@
             }
         }
     }
- }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+}
+@media (min-width: 769px) and (max-width: 1233px){
+    // .minerva{
+    //     .login_form{
+    //         .right_content{
+    //             margin-top: 100px !important;
+    //         }
+    //     }
+    // }
+}
+@media (min-width: 1234px){
 
 }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-

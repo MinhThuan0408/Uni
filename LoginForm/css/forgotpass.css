@@ -5,32 +5,33 @@
     background-image: url(../images/bg_login.png);
     height: 100vh;
     margin: 0 -15px; }
-    .minerva .login_form .left_content .logo #logo {
-      margin-left: 48px;
-      margin-top: 43px; }
+    .minerva .login_form .left_content .logo {
+      padding-top: 43px;
+      padding-left: 48px; }
     .minerva .login_form .left_content .wellcome {
       margin-top: 20vh;
       margin-left: 90px;
       margin-right: 90px;
       color: white;
       text-align: center; }
-      .minerva .login_form .left_content .wellcome h1 {
+      .minerva .login_form .left_content .wellcome .wellcome_title {
         font-size: 60px; }
-      .minerva .login_form .left_content .wellcome p {
+      .minerva .login_form .left_content .wellcome .wellcome_content {
         font-size: 27px;
         margin-top: 31px; }
   .minerva .login_form .right_content .title {
-    text-align: center; }
-    .minerva .login_form .right_content .title h3 {
+    text-align: center;
+    margin-top: 100px; }
+    .minerva .login_form .right_content .title .recover {
       font-size: 48px;
       color: #6d30ab;
       font-weight: bold; }
-    .minerva .login_form .right_content .title p {
+    .minerva .login_form .right_content .title .let_input_title {
       color: #6d6d6d;
       font-style: italic;
       font-size: 24px; }
   .minerva .login_form .right_content .email_block {
-    margin: 0 10%; }
+    margin: 0 20%; }
   .minerva .login_form .right_content .title_email {
     margin-top: 30px; }
     .minerva .login_form .right_content .title_email label {
@@ -65,27 +66,64 @@
     .minerva .login_form .right_content .send button:hover {
       box-shadow: 5px 10px 18px #888888; }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 374px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 379px) {
+  .minerva .login_form .left_content {
+    height: 43vh !important; }
+    .minerva .login_form .left_content .logo {
+      padding-left: 0 !important;
+      text-align: center; }
+    .minerva .login_form .left_content .wellcome {
+      margin-top: 7vh !important; }
+      .minerva .login_form .left_content .wellcome .wellcome_title {
+        font-size: 15px; }
+      .minerva .login_form .left_content .wellcome .wellcome_content {
+        font-size: 10px; }
+  .minerva .login_form .right_content {
+    height: 50vh;
+    margin-top: 30px !important; }
+    .minerva .login_form .right_content .title {
+      margin-top: 50px; }
+      .minerva .login_form .right_content .title .recover {
+        font-size: 22px; }
+      .minerva .login_form .right_content .title .let_input_title {
+        font-size: 10px; }
+    .minerva .login_form .right_content .title_email label {
+      font-size: 15px; }
+    .minerva .login_form .right_content .input_email {
+      height: 45px; }
+      .minerva .login_form .right_content .input_email .fa-envelope-o {
+        font-size: large;
+        margin: 0 10px; }
+      .minerva .login_form .right_content .input_email input {
+        width: 70%;
+        height: 45px; }
+      .minerva .login_form .right_content .input_email ::placeholder {
+        font-size: 11px; }
+    .minerva .login_form .right_content .send button {
+      margin-top: 40px;
+      width: 150px;
+      font-size: 20px;
+      height: 40px; } }
+@media (min-width: 379px) and (max-width: 768px) {
   .minerva .login_form .left_content {
     height: 40vh; }
     .minerva .login_form .left_content .logo {
       text-align: center;
-      margin-top: 30px;
-      margin-left: 0 !important; }
+      padding-left: 0 !important; }
     .minerva .login_form .left_content .wellcome {
       background-size: cover;
       background-repeat: no-repeat;
       margin-top: 45px; }
-      .minerva .login_form .left_content .wellcome h1 {
+      .minerva .login_form .left_content .wellcome .wellcome_title {
         font-size: 30px; }
-      .minerva .login_form .left_content .wellcome p {
+      .minerva .login_form .left_content .wellcome .wellcome_content {
         font-size: 17px; }
   .minerva .login_form .right_content {
-    height: 50vh; }
-    .minerva .login_form .right_content .title h3 {
+    height: 50vh;
+    margin-top: 30px !important; }
+    .minerva .login_form .right_content .title .recover {
       font-size: 24px; }
-    .minerva .login_form .right_content .title p {
+    .minerva .login_form .right_content .title .let_input_title {
       font-size: 10px; }
     .minerva .login_form .right_content .title_email label {
       font-size: 17px; }
@@ -103,7 +141,5 @@
       width: 150px;
       font-size: 20px;
       height: 40px; } }
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=forgotpass.css.map */
