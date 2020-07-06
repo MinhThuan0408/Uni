@@ -211,18 +211,7 @@
                     }
                     
                 }
-                .login_button{
-                    text-align: center;
-                    button{
-                        margin-top: 30px;
-                        width: 306px;
-                        font-size: 22px;
-                        height: 70px;
-                        color: white;
-                        border: none;
-                        background-color: #6d30ab;
-                    }
-                }
+                
                 .login_button{
                     button{
                         margin-top: 10px !important;
@@ -434,8 +423,6 @@
         }
     }
  }
-
-
 @media (min-width: 769px) and (max-width: 1233px) {
     .minerva{
         .login_form{
@@ -453,8 +440,6 @@
         }
     }
 }
-
-
 @media (min-width: 1234px) {
     .minerva{
         .login_form{
