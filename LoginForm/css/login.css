@@ -112,14 +112,14 @@
       margin-left: 0 !important;
       text-align: center; }
     .minerva .login_form .left_content .wellcome .wellcome_title {
-      margin-top: -150 !important;
+      margin-top: 0 !important;
       font-size: 30px; }
     .minerva .login_form .left_content .wellcome .wellcome_content {
       font-size: 17px; }
   .minerva .login_form .right_content {
     height: 50vh; }
     .minerva .login_form .right_content .title {
-      margin-top: 0; }
+      margin-top: 0 !important; }
       .minerva .login_form .right_content .title .login_minerva {
         font-size: 30px !important; }
     .minerva .login_form .right_content .title_username span {
@@ -129,7 +129,7 @@
     .minerva .login_form .right_content .input_username input {
       width: 70%; }
     .minerva .login_form .right_content .input_pass input {
-      width: 70% !important; }
+      width: 65% !important; }
     .minerva .login_form .right_content .input_pass .field_icon {
       margin: 4px !important; } }
 @media (max-width: 767px) {

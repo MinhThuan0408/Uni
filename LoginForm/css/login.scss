@@ -152,7 +152,7 @@
                 }
                 .wellcome{
                     .wellcome_title{
-                        margin-top: -150 !important;
+                        margin-top: 0 !important;
                         font-size: 30px;
                     }
                     .wellcome_content{
@@ -163,7 +163,7 @@
             .right_content{
                 height: 50vh;
                 .title{
-                    margin-top: 0;
+                    margin-top: 0 !important;
                     .login_minerva{
                         font-size: 30px !important;
                     }
@@ -185,7 +185,7 @@
                 }
                 .input_pass{
                     input{
-                        width: 70% !important;
+                        width: 65% !important;
                     }
                     .field_icon{
                         margin: 4px !important;
