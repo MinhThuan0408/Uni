@@ -17,7 +17,8 @@
     .minerva .login_form .left_content .wellcome {
       margin-top: 25vh;
       margin: 0 100px;
-      text-align: left; }
+      text-align: left;
+      color: white; }
       .minerva .login_form .left_content .wellcome .wellcome_title {
         font-size: 60px; }
       .minerva .login_form .left_content .wellcome .wellcome_content {
