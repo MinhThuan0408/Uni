@@ -99,7 +99,7 @@
         }
     }
 }
-@media (max-width: 320px){
+@media (max-width: 575px){
     .minerva{
         .login_form{
             .left_content{
@@ -162,70 +162,70 @@
         }
     }
 }
-@media (min-width: 320px) and (max-width: 379px){
-    .minerva{
-        .login_form{
-            .left_content{
-                height: 43vh !important;
-                .logo{
-                    padding-left: 0 !important;
-                    text-align: center;
-                }
-                .wellcome{
-                    margin-top: 7vh !important;
-                    .wellcome_title{
-                        font-size: 15px;
-                    }
-                    .wellcome_content{
-                        font-size: 10px;
-                    }
-                }
-            }
-            .right_content{
-                height: 50vh;
-                margin-top: 30px !important;
-                .title{
-                    margin-top: 50px;
-                    .recover{
-                        font-size: 22px;
-                    }
-                    .let_input_title{
-                        font-size: 10px;
-                    }
-                }
-                .title_email{
-                    label{
-                        font-size: 15px;
-                    }
+// @media (min-width: 320px) and (max-width: 379px){
+//     .minerva{
+//         .login_form{
+//             .left_content{
+//                 height: 43vh !important;
+//                 .logo{
+//                     padding-left: 0 !important;
+//                     text-align: center;
+//                 }
+//                 .wellcome{
+//                     margin-top: 7vh !important;
+//                     .wellcome_title{
+//                         font-size: 15px;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 10px;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 height: 50vh;
+//                 margin-top: 30px !important;
+//                 .title{
+//                     margin-top: 50px;
+//                     .recover{
+//                         font-size: 22px;
+//                     }
+//                     .let_input_title{
+//                         font-size: 10px;
+//                     }
+//                 }
+//                 .title_email{
+//                     label{
+//                         font-size: 15px;
+//                     }
                     
-                }
-                .input_email{
-                    .fa-envelope-o{
-                        font-size: large ;
-                        margin: 0 10px;
-                    }
-                    height: 45px;
-                    input{
-                        width: 70%;
-                        height: 45px;
-                    }
-                    ::placeholder{
-                        font-size: 11px;
-                    }
-                }
-                .send{
-                    button{
-                        margin-top: 40px;
-                        width: 150px;
-                        font-size: 20px;
-                        height: 40px;
-                    }
-                }
-            }
-        }
-    }
-}
-@media (min-width: 379px) and (max-width: 768px) { 
+//                 }
+//                 .input_email{
+//                     .fa-envelope-o{
+//                         font-size: large ;
+//                         margin: 0 10px;
+//                     }
+//                     height: 45px;
+//                     input{
+//                         width: 70%;
+//                         height: 45px;
+//                     }
+//                     ::placeholder{
+//                         font-size: 11px;
+//                     }
+//                 }
+//                 .send{
+//                     button{
+//                         margin-top: 40px;
+//                         width: 150px;
+//                         font-size: 20px;
+//                         height: 40px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@media (max-width: 767px) { 
     .minerva{
         .login_form{
             .left_content{
@@ -288,7 +288,7 @@
         }
     }
 }
-@media (min-width: 769px) and (max-width: 1233px){
+@media (max-width: 991px){
     // .minerva{
     //     .login_form{
     //         .right_content{
@@ -296,6 +296,7 @@
     //         }
     //     }
     // }
+    
 }
 @media (min-width: 1234px){
 

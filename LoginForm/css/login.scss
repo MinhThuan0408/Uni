@@ -9,11 +9,11 @@
     text-align: left;
 }
 @mixin input_content {
-    width: 80%;
     height: 70px;
     background-color: #f5f5f5;
     border: none;
     font-size: 20px;
+    outline: none;
 }
 .minerva{
     font-family: 'Roboto', sans-serif;
@@ -21,19 +21,24 @@
     .login_form{
         .left_content{
             background-image: url(../images/bg_login.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             height:100vh;
             margin: 0 -15px;
+
             .logo{
                 padding-top: 43px;
                 padding-left: 48px;
-                
+                img{
+                    max-width: 183px;
+                    width: 100%;
+                    height: auto;
+                }
             }
             .wellcome{
-                margin-top: 20vh;
-                margin-left: 90px;
-                margin-right: 90px;
-                color: white;
-                text-align: center;
+                margin-top: 25vh;
+                margin: 0 100px;
+                text-align: left;
                 .wellcome_title{
                     font-size: 60px;
                 }
@@ -44,8 +49,8 @@
             }
         }
         .right_content{
+            margin: 200px 0;
             .title{
-                margin-top: 100px;
                 text-align: center;
                 .login_minerva{
                     font-size: 48px;
@@ -72,7 +77,7 @@
                     @include input_box_background();
                     margin-top:15px;
                     .la-user{
-                        font-size: xx-large;
+                        font-size: 29px;
                         margin: 0 10px;
                     }
                     input{
@@ -84,28 +89,26 @@
                 }
                 .input_pass{
                     @include input_box_background();
+                    display: inline-block;
                     width: 100%;
                     .la-lock{
-                        font-size: xx-large;
+                        font-size: 29px;
                         margin: 0 10px;
-                        width: 5%;
+                        
                     }
                     input{
                         @include input_content();
+                        
                     }
                     ::placeholder{
                         font-style: italic;
                     }
                     .field_icon{
-                        font-size: xx-large;
+                        font-size: 29px;
                         color: #6d30ab;
-                        width: 10%;
+                        float: right;
+                        margin: 15px;
                     }
-                    // .la-fish{
-                    //     font-size: xx-large;
-                    //     color: #6d30ab;
-                    //     display: none;
-                    // }
                 }
                 .forgotpass{
                     text-align: center;
@@ -116,17 +119,18 @@
                         color: grey;
                         text-decoration: underline;
                     }
-                    
                 }
                 .login_button{
                     text-align: center;
                     button{
                         margin-top: 30px;
-                        width: 306px;
+                        max-width: 306px;
+                        width: 100%;
                         font-size: 24px;
                         height: 70px;
                         color: white;
                         border: none;
+                        outline: none;
                         background-color: #6d30ab;
                     }
                     button:hover {
@@ -137,192 +141,7 @@
         }
     }
 }
-@media (max-width: 320px){ 
-    .minerva{
-        .login_form{
-            .left_content{
-                height: 43vh !important;
-                .logo{
-                    padding-left: 0 !important;
-                    text-align: center;
-                }
-                .wellcome{
-                    margin-top: 7vh !important;
-                    .wellcome_title{
-                        font-size: 15px;
-                    }
-                    .wellcome_content{
-                        font-size: 10px;
-                    }
-                }
-            }
-            .right_content{
-                height: 50vh;
-                .title{
-                    margin-top: 50px !important;
-                    .login_minerva{
-                        font-size: 24px !important;
-                    }
-                }
-                .title_username{
-                    span{
-                        font-size: 15px !important;
-                    }
-                }
-                .title_pass{
-                    span{
-                        font-size: 15px !important;
-                    }
-                    
-                }
-                .input_username{
-                    height: 45px !important;
-                    .la-user{
-                        font-size: large !important;
-                    }
-                    input{
-                        width: 50% !important;
-                        height: 45px !important;
-                    }
-                    ::placeholder{
-                        font-size: 13px;
-                    }
-                }
-                .input_pass{
-                    height: 45px !important;
-                    .la-lock{
-                        font-size: large !important;
-                }
-                    input{
-                        width: 50% !important;
-                        height: 45px !important;
-                    }
-                    ::placeholder{
-                        font-size: 13px;
-                    }
-                    .la-eye-slash{
-                        font-size: large !important;
-                        color: #6d30ab;
-                    }
-                }
-                .forgotpass{
-                    a{
-                        font-size: 12px !important;
-                    }
-                    
-                }
-                
-                .login_button{
-                    button{
-                        margin-top: 10px !important;
-                        width: 115px !important;
-                        font-size: 14px !important;
-                        height: 40px !important;
-                    }
-                }
-            }
-        }
-    }
- }
-@media (min-width: 320px) and (max-width: 379px) { 
-    .minerva{
-        .login_form{
-            .left_content{
-                height: 40vh !important;
-                .logo{
-                    padding-left: 0 !important;
-                    text-align: center;
-                }
-                .wellcome{
-                    margin-top: 7vh !important;
-                    .wellcome_title{
-                        font-size: 17px;
-                    }
-                    .wellcome_content{
-                        font-size: 12px;
-                    }
-                }
-            }
-            .right_content{
-                height: 50vh;
-                .title{
-                    margin-top: 50px !important;
-                    .login_minerva{
-                        font-size: 24px !important;
-                    }
-                }
-                .title_username{
-                    span{
-                        font-size: 15px !important;
-                    }
-                }
-                .title_pass{
-                    span{
-                        font-size: 15px !important;
-                    }
-                    
-                }
-                .input_username{
-                    height: 45px !important;
-                    .la-user{
-                        font-size: large !important;
-                    }
-                    input{
-                        width: 70% !important;
-                        height: 45px !important;
-                    }
-                    ::placeholder{
-                        font-size: 13px;
-                    }
-                }
-                .input_pass{
-                    height: 45px !important;
-                    .la-lock{
-                        font-size: large !important;
-                }
-                    input{
-                        width: 64% !important;
-                        height: 45px !important;
-                    }
-                    ::placeholder{
-                        font-size: 13px;
-                    }
-                    .la-eye-slash{
-                        font-size: large !important;
-                        color: #6d30ab;
-                    }
-                }
-                .forgotpass{
-                    a{
-                        font-size: 12px !important;
-                    }
-                    
-                }
-                .login_button{
-                    text-align: center;
-                    button{
-                        margin-top: 30px;
-                        width: 306px;
-                        font-size: 22px;
-                        height: 70px;
-                        color: white;
-                        border: none;
-                        background-color: #6d30ab;
-                    }
-                }
-                .login_button{
-                    button{
-                        margin-top: 10px !important;
-                        width: 150px !important;
-                        font-size: 14px !important;
-                        height: 40px !important;
-                    }
-                }
-            }
-        }
-    }
- }
-@media (min-width: 379px) and (max-width: 768px) { 
+@media (max-width: 575.98px) {
     .minerva{
         .login_form{
             .left_content{
@@ -332,9 +151,8 @@
                     text-align: center;
                 }
                 .wellcome{
-                    background-size: cover;
-                    background-repeat: no-repeat;
                     .wellcome_title{
+                        margin-top: -150 !important;
                         font-size: 30px;
                     }
                     .wellcome_content{
@@ -359,12 +177,141 @@
                     span{
                         font-size: 20px !important;
                     }
+                }
+                .input_username{
+                    input{
+                        width: 70%;
+                    }
+                }
+                .input_pass{
+                    input{
+                        width: 70% !important;
+                    }
+                    .field_icon{
+                        margin: 4px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .minerva{
+        .login_form{
+            .left_content{
+                .wellcome{
+                    // .wellcome_title{
+                    //    margin-top: -155px !important;
+                    // }
+                }
+            }
+            .right_content{
+                .title{
+                    margin: 0 !important;
+                }
+                .login_block{
+                    .input_pass{
+                        .field_icon{
+                            margin: 4px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                height: 40vh !important;
+                .logo{
+                    padding-left: 0 !important;
+                    text-align: center;
+                }
+                .wellcome{
+                    margin: 100px 15px !important;
+                    .wellcome_title{
+                        font-size: 35px !important;
+                        margin-top: -150px;
+                    }
+                    .wellcome_content{
+                        font-size: 17px !important;
+                        margin: 0 !important;
+                    }
+                }
+            }
+            .right_content{
+                margin-top: -55px;
+                .title{
+                    margin-top: 0;
+                    .login_minerva{
+                        font-size: 30px !important;
+                    }
+                }
+                .title_username{
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .title_pass{
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .login_block{
+                    .input_pass{
+                        .field_icon{
+                            margin: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                .logo{
+                    padding-left: 0 !important;
+                    text-align: center;
+                }
+                .wellcome{
+                    margin: 200px 15px !important;
+                    .wellcome_title{
+                        font-size: 45px !important;
+                    }
+                    .wellcome_content{
+                        margin-top: 15px !important;
+                        font-size: 18px !important;
+                    }
+                }
+            }
+            .right_content{
+                
+                .title{
+                    margin-top: 0;
+                    .login_minerva{
+                        font-size: 30px !important;
+                    }
+                }
+                .title_username{
+                    span{
+                        font-size: 20px !important;
+                    }
+                }
+                .title_pass{
+                    span{
+                        font-size: 20px !important;
+                    }
                     
                 }
                 .input_username{
                     height: 45px !important;
                     .la-user{
-                        font-size: large !important;
+                        font-size: 29px !important;
                     }
                     input{
                         height: 45px !important;
@@ -377,19 +324,18 @@
                     height: 45px !important;
                     width: 100% !important;
                     .la-lock{
-                        font-size: large !important;
+                        font-size: 29px !important;
                 }
                     input{
-                        width: 70% !important;
                         height: 45px !important;
+                        
                     }
                     ::placeholder{
                         font-size: 15px;
                     }
                     .field_icon{
-                        font-size: large !important;
+                        font-size: 29px !important;
                         color: #6d30ab;
-                        width: 5% !important;
                     }
                 }
                 .forgotpass{
@@ -404,11 +350,6 @@
                     button{
                         margin-top: 30px;
                         width: 306px;
-                        font-size: 24px;
-                        height: 70px;
-                        color: white;
-                        border: none;
-                        background-color: #6d30ab;
                     }
                 }
                 .login_button{
@@ -422,35 +363,307 @@
             }
         }
     }
- }
-@media (min-width: 769px) and (max-width: 1233px) {
-    .minerva{
-        .login_form{
-            .right_content{
-                .input_pass{
-                    width: 100% !important;
-                    input{
-                        width: 80% !important;
-                    }
-                    .field_icon{
-                        width: 5% !important;
-                    }
-                }
-            }
-        }
-    }
 }
-@media (min-width: 1234px) {
-    .minerva{
-        .login_form{
-            .right_content{
-                .input_pass{
-                    width: 100% !important;
-                    input{
-                        width: 78% !important;
-                    }
-                }
-            }
-        }
-    }
-}
+// @media (max-width: 320px){ 
+//     .minerva{
+//         .login_form{
+//             .left_content{
+//                 height: 43vh !important;
+//                 .logo{
+//                     padding-left: 0 !important;
+//                     text-align: center;
+//                 }
+//                 .wellcome{
+//                     margin-top: 7vh !important;
+//                     .wellcome_title{
+//                         font-size: 15px;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 10px;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 height: 50vh;
+//                 .title{
+//                     margin-top: 50px !important;
+//                     .login_minerva{
+//                         font-size: 24px !important;
+//                     }
+//                 }
+//                 .title_username{
+//                     span{
+//                         font-size: 15px !important;
+//                     }
+//                 }
+//                 .title_pass{
+//                     span{
+//                         font-size: 15px !important;
+//                     }
+                    
+//                 }
+//                 .input_username{
+//                     height: 45px !important;
+//                     .la-user{
+//                         font-size: 29px !important;
+//                     }
+//                     input{
+//                         width: 50% !important;
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 13px;
+//                     }
+//                 }
+//                 .input_pass{
+//                     height: 45px !important;
+//                     .la-lock{
+//                         font-size: 29px !important;
+//                 }
+//                     input{
+//                         width: 50% !important;
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 13px;
+//                     }
+//                     .la-eye-slash{
+//                         font-size: 29px !important;
+//                         color: #6d30ab;
+//                     }
+//                 }
+//                 .forgotpass{
+//                     a{
+//                         font-size: 12px !important;
+//                     }
+                    
+//                 }
+                
+//                 .login_button{
+//                     button{
+//                         margin-top: 10px !important;
+//                         width: 115px !important;
+//                         font-size: 14px !important;
+//                         height: 40px !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//  }
+// @media (min-width: 320px) and (max-width: 379px) { 
+//     .minerva{
+//         .login_form{
+//             .left_content{
+//                 height: 40vh !important;
+//                 .logo{
+//                     padding-left: 0 !important;
+//                     text-align: center;
+//                 }
+//                 .wellcome{
+//                     margin-top: 7vh !important;
+//                     .wellcome_title{
+//                         font-size: 17px;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 12px;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 height: 50vh;
+//                 .title{
+//                     margin-top: 50px !important;
+//                     .login_minerva{
+//                         font-size: 24px !important;
+//                     }
+//                 }
+//                 .title_username{
+//                     span{
+//                         font-size: 15px !important;
+//                     }
+//                 }
+//                 .title_pass{
+//                     span{
+//                         font-size: 15px !important;
+//                     }
+                    
+//                 }
+//                 .input_username{
+//                     height: 45px !important;
+//                     .la-user{
+//                         font-size: 29px !important;
+//                     }
+//                     input{
+//                         width: 70% !important;
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 13px;
+//                     }
+//                 }
+//                 .input_pass{
+//                     height: 45px !important;
+//                     .la-lock{
+//                         font-size: 29px !important;
+//                 }
+//                     input{
+//                         width: 64% !important;
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 13px;
+//                     }
+//                     .la-eye-slash{
+//                         font-size: 29px !important;
+//                         color: #6d30ab;
+//                     }
+//                 }
+//                 .forgotpass{
+//                     a{
+//                         font-size: 12px !important;
+//                     }
+                    
+//                 }
+//                 .login_button{
+//                     text-align: center;
+//                     button{
+//                         margin-top: 30px;
+//                         width: 306px;
+//                         font-size: 22px;
+//                         height: 70px;
+//                         color: white;
+//                         border: none;
+//                         background-color: #6d30ab;
+//                     }
+//                 }
+//                 .login_button{
+//                     button{
+//                         margin-top: 10px !important;
+//                         width: 150px !important;
+//                         font-size: 14px !important;
+//                         height: 40px !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//  }
+// @media (min-width: 379px) and (max-width: 768px) { 
+//     .minerva{
+//         .login_form{
+//             .left_content{
+//                 height: 50vh !important;
+//                 .logo{
+//                     margin-left: 0 !important;
+//                     text-align: center;
+//                 }
+//                 .wellcome{
+//                     background-size: cover;
+//                     background-repeat: no-repeat;
+//                     .wellcome_title{
+//                         font-size: 30px;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 17px;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 height: 50vh;
+//                 .title{
+//                     margin-top: 0;
+//                     .login_minerva{
+//                         font-size: 30px !important;
+//                     }
+//                 }
+//                 .title_username{
+//                     span{
+//                         font-size: 20px !important;
+//                     }
+//                 }
+//                 .title_pass{
+//                     span{
+//                         font-size: 20px !important;
+//                     }
+                    
+//                 }
+//                 .input_username{
+//                     height: 45px !important;
+//                     .la-user{
+//                         font-size: 29px !important;
+//                     }
+//                     input{
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 15px;
+//                     }
+//                 }
+//                 .input_pass{
+//                     height: 45px !important;
+//                     width: 100% !important;
+//                     .la-lock{
+//                         font-size: 29px !important;
+//                 }
+//                     input{
+//                         width: 70% !important;
+//                         height: 45px !important;
+//                     }
+//                     ::placeholder{
+//                         font-size: 15px;
+//                     }
+//                     .field_icon{
+//                         font-size: 29px !important;
+//                         color: #6d30ab;
+//                         width: 5% !important;
+//                     }
+//                 }
+//                 .forgotpass{
+//                     a{
+//                         font-size: 14px !important;
+//                     }
+                    
+//                 }
+//                 .login_button{
+//                     text-align: center;
+//                     margin-top: -30px;
+//                     button{
+//                         margin-top: 30px;
+//                         width: 306px;
+//                         font-size: 24px;
+//                         height: 70px;
+//                         color: white;
+//                         border: none;
+//                         background-color: #6d30ab;
+//                     }
+//                 }
+//                 .login_button{
+//                     button{
+//                         margin-top: 40px !important;
+//                         width: 150px !important;
+//                         font-size: 16px !important;
+//                         height: 40px !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//  }
+// @media (min-width: 769px) and (max-width: 1233px) {
+//     .minerva{
+//         .login_form{
+//             .right_content{
+//                 .input_pass{
+//                     width: 100% !important;
+//                     input{
+//                         width: 80% !important;
+//                     }
+//                     .field_icon{
+//                         width: 5% !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
