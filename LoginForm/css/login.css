@@ -200,12 +200,10 @@
     .minerva .login_form .right_content .input_pass ::placeholder {
       font-size: 15px; }
     .minerva .login_form .right_content .input_pass .field_icon {
-      font-size: 29px !important;
-      color: #6d30ab; }
+      font-size: 29px !important; }
   .minerva .login_form .right_content .forgotpass a {
     font-size: 14px !important; }
   .minerva .login_form .right_content .login_button {
-    text-align: center;
     margin-top: -30px; }
     .minerva .login_form .right_content .login_button button {
       margin-top: 30px;
