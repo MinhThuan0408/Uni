@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  font-family: 'Roboto', sans-serif; }
+  body .wellcome {
+    width: 36%;
+    height: 100vh;
+    background-image: url(../images/bg_login.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body .wellcome__logo {
+      margin-top: 43px;
+      margin-left: 48px; }
+    body .wellcome__title {
+      margin-top: 26rem;
+      margin-left: 92px;
+      margin-right: 92px;
+      color: white;
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold; }
+    body .wellcome__content {
+      margin-left: 92px;
+      margin-right: 92px;
+      margin-top: 31px;
+      color: white;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
+  body .login {
+    width: 64%;
+    height: 100vh;
+    padding: 300px; }
+    body .login__title {
+      font-size: 4em;
+      color: #6d30ab;
+      font-weight: bold; }
+    body .login__labelLogin {
+      font-size: 2em;
+      font-weight: bold; }
+    body .login__inputBox {
+      outline: none;
+      border: none; }
+    body .login__inputUserName {
+      display: inline;
+      background-color: yellowgreen; }
+
+/*# sourceMappingURL=loginnew.css.map */

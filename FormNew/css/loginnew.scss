@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    .wellcome{
+        width: 36%;
+        height: 100vh;
+        background-image: url(../images/bg_login.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__logo{
+            margin-top: 43px;
+            margin-left: 48px;
+        }
+        &__title{
+            margin-top: 26rem;
+            margin-left: 92px;
+            margin-right: 92px;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        &__content{
+            margin-left: 92px;
+            margin-right: 92px;
+            margin-top: 31px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .login{
+        width: 64%;
+        height: 100vh;
+        padding: 300px;
+        &__title{
+            font-size: 4em;
+            color: #6d30ab;
+            font-weight: bold;   
+        }
+        &__labelLogin{
+            font-size: 2em;
+            font-weight: bold;
+            
+        }
+        &__inputBox{
+            outline: none;
+            border: none;
+        }
+        &__inputUserName{
+            display: inline;
+            background-color: yellowgreen;
+        }
+    }
+}
