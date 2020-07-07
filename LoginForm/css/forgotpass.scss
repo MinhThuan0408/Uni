@@ -1,19 +1,19 @@
-@mixin title_span {
+@mixin title_span($fontsize) {
     font-weight: bold;
-    font-size: 24px;
+    font-size: $fontsize;
 }
-@mixin input_box_background {
+@mixin input_box_background($height) {
     
-    height: 70px;
+    height: $height;
     background-color: #f5f5f5;
     text-align: left;
 }
-@mixin input_content {
-    width: 80%;
-    height: 70px;
+@mixin input_content($height,$fontsize) {
+    height: $height;
     background-color: #f5f5f5;
     border: none;
-    font-size: 20px;
+    font-size: $fontsize;
+    outline: none;
 }
 .minerva{
     font-family: 'Roboto', sans-serif;
@@ -21,32 +21,40 @@
     .login_form{
         .left_content{
             background-image: url(../images/bg_login.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             height:100vh;
             margin: 0 -15px;
+
             .logo{
                 padding-top: 43px;
                 padding-left: 48px;
-                
+                img{
+                    max-width: 183px;
+                    width: 100%;
+                    height: auto;
+                }
             }
             .wellcome{
-                margin-top: 20vh;
-                margin-left: 90px;
-                margin-right: 90px;
-                color: white;
+                margin: 0 2em;
                 text-align: center;
+                color: white;
+                margin-top: 17em;
                 .wellcome_title{
-                    font-size: 60px;
+                    font-size: 4em;
+                    font-weight: bold;
                 }
                 .wellcome_content{
-                    font-size: 27px;
+                    font-size: 1.5em;
                     margin-top: 31px;
                 }
             }
         }
         .right_content{
+            margin: 13em 0;
             .title{
                 text-align: center;
-                margin-top: 100px;
+                margin: 0 4em;
                 .recover{
                     font-size: 48px;
                     color: #6d30ab;
@@ -64,18 +72,21 @@
             .title_email{
                 margin-top: 30px;
                 label{
-                    @include title_span();
+                    @include title_span(2em);
                 }
             }
             .input_email{
-                @include input_box_background();
+                @include input_box_background(70px);
                 margin-top:15px;
+                display: flex;
+                align-items: center;
                 .fa-envelope-o{
                     font-size: xx-large;
                     margin: 0 10px;
                 }
                 input{
-                    @include input_content();
+                    @include input_content(70px,1.6em);
+                    flex-grow: 1;
                 }
                 ::placeholder{
                     font-style: italic;
@@ -84,220 +95,168 @@
             .send{
                 text-align: center;
                 button{
-                    margin-top: 60px;
-                    width: 306px;
+                    margin-top: 30px;
+                    max-width: 306px;
+                    width: 100%;
                     font-size: 24px;
                     height: 70px;
                     color: white;
                     border: none;
+                    outline: none;
                     background-color: #6d30ab;
+                    transition: 0.3s ease-in-out;
                 }
                 button:hover {
                     box-shadow: 5px 10px 18px #888888;
+                    
                 }
             }
         }
     }
 }
-@media (max-width: 575px){
+//Screen 992px and down: 991px->768px
+@media (max-width: 991px) { 
     .minerva{
         .login_form{
             .left_content{
-                height: 43vh !important;
+                height:100vh;
                 .logo{
-                    padding-left: 0 !important;
                     text-align: center;
+                    padding-left: 0;
                 }
                 .wellcome{
-                    margin-top: 7vh !important;
+                    margin: 0 2em;
+                    margin-top: 10em;
                     .wellcome_title{
-                        font-size: 15px;
+                        font-size: 2.5em;
                     }
                     .wellcome_content{
-                        font-size: 10px;
+                        font-size: 1.5em;
+                        margin-top: 1em;
                     }
                 }
             }
             .right_content{
-                height: 50vh;
-                margin-top: 30px !important;
                 .title{
                     .recover{
-                        font-size: 24px;
+                        font-size: 2.8em;
                     }
                     .let_input_title{
-                        font-size: 10px;
+                        font-size: 1.1em;
                     }
                 }
                 .title_email{
                     label{
-                        font-size: 17px;
+                        font-size: 1.5em;
                     }
-                    
                 }
                 .input_email{
-                    height: 45px;
-                    .fa-envelope-o{
-                        font-size: large ;
-                        margin: 0 10px;
-                    }
                     
+                    height: 50px;
+                    margin-top:15px;
+                    .fa-envelope-o{
+                        font-size: 23px;
+                    }
                     input{
-                        width: 65%;
-                        height: 45px;
+                        height: 50px;
+                        font-size: 1.6em;
                     }
                     ::placeholder{
-                        font-size: 11px;
+                        font-size: 0.6em;
                     }
                 }
                 .send{
                     button{
-                        margin-top: 10px !important;
-                        width: 115px !important;
-                        font-size: 14px !important;
-                        height: 40px !important;
+                        max-width: 100px;
+                        font-size: 1.2em;
+                        height: 50px;
                     }
                 }
             }
         }
     }
 }
-// @media (min-width: 320px) and (max-width: 379px){
-//     .minerva{
-//         .login_form{
-//             .left_content{
-//                 height: 43vh !important;
-//                 .logo{
-//                     padding-left: 0 !important;
-//                     text-align: center;
-//                 }
-//                 .wellcome{
-//                     margin-top: 7vh !important;
-//                     .wellcome_title{
-//                         font-size: 15px;
-//                     }
-//                     .wellcome_content{
-//                         font-size: 10px;
-//                     }
-//                 }
-//             }
-//             .right_content{
-//                 height: 50vh;
-//                 margin-top: 30px !important;
-//                 .title{
-//                     margin-top: 50px;
-//                     .recover{
-//                         font-size: 22px;
-//                     }
-//                     .let_input_title{
-//                         font-size: 10px;
-//                     }
-//                 }
-//                 .title_email{
-//                     label{
-//                         font-size: 15px;
-//                     }
-                    
-//                 }
-//                 .input_email{
-//                     .fa-envelope-o{
-//                         font-size: large ;
-//                         margin: 0 10px;
-//                     }
-//                     height: 45px;
-//                     input{
-//                         width: 70%;
-//                         height: 45px;
-//                     }
-//                     ::placeholder{
-//                         font-size: 11px;
-//                     }
-//                 }
-//                 .send{
-//                     button{
-//                         margin-top: 40px;
-//                         width: 150px;
-//                         font-size: 20px;
-//                         height: 40px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-@media (max-width: 767px) { 
+//Screen 768px and down: 768px->576px
+@media (max-width: 767px) {
     .minerva{
         .login_form{
             .left_content{
-                height: 40vh;
+                height:40vh;
                 .logo{
                     text-align: center;
-                    padding-left: 0 !important;
+                    padding-left: 0;
                 }
                 .wellcome{
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    margin-top: 45px;
-                    .wellcome_title{
-                        font-size: 30px;
-                    }
+                    margin: 0 2em;
+                    margin-top: 1em;
                     .wellcome_content{
-                        font-size: 17px;
+                        font-size: 1.5em;
+                        margin-top: 0;
                     }
                 }
             }
             .right_content{
-                height: 50vh;
-                margin-top: 30px !important;
+                margin: 1em 0;
                 .title{
                     .recover{
-                        font-size: 24px;
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+//Screen 576px and down: 576px->320px
+@media (max-width: 575px) { 
+    .minerva{
+        .login_form{
+            .left_content{
+                height:30vh;
+                .logo{
+                    text-align: center;
+                    padding-left: 0;
+                }
+                .wellcome{
+                    margin: 0 2em;
+                    margin-top: 1em;
+                    .wellcome_title{
+                        font-size: 2em;
+                    }
+                    .wellcome_content{
+                        font-size: 1.2em;
+                        margin-top: 0;
+                    }
+                }
+            }
+            .right_content{
+                .title{
+                    margin-top: 3em;
+                    .recover{
+                        font-size: 2em;
                     }
                     .let_input_title{
-                        font-size: 10px;
+                        font-size: 0.8em;
                     }
-                }
-                .title_email{
-                    label{
-                        font-size: 17px;
-                    }
-                    
                 }
                 .input_email{
+                    height: 35px;
                     .fa-envelope-o{
-                        font-size: large ;
-                        margin: 0 10px;
-                    }
-                    height: 45px;
-                    input{
-                        height: 45px;
-                    }
-                    ::placeholder{
-                        font-size: 15px;
-                    }
-                }
-                .send{
-                    button{
-                        margin-top: 40px;
-                        width: 150px;
                         font-size: 20px;
-                        height: 40px;
+                    }
+                    input{
+                       height: 35px;
+                    }
+                    ::placeholder{
+                        font-size: 0.6em;
+                    }
+                }
+                .send{
+                    button{
+                        font-size: 1em;
+                        height: 35px;
                     }
                 }
             }
         }
     }
-}
-@media (max-width: 991px){
-    // .minerva{
-    //     .login_form{
-    //         .right_content{
-    //             margin-top: 100px !important;
-    //         }
-    //     }
-    // }
-    
-}
-@media (min-width: 1234px){
-
 }

@@ -15,41 +15,44 @@
         width: 100%;
         height: auto; }
     .minerva .login_form .left_content .wellcome {
-      margin-top: 25vh;
-      margin: 0 100px;
-      text-align: left;
-      color: white; }
+      margin: 0 2em;
+      text-align: center;
+      color: white;
+      margin-top: 17em; }
       .minerva .login_form .left_content .wellcome .wellcome_title {
-        font-size: 60px; }
+        font-size: 4em;
+        font-weight: bold; }
       .minerva .login_form .left_content .wellcome .wellcome_content {
-        font-size: 27px;
+        font-size: 1.5em;
         margin-top: 31px; }
   .minerva .login_form .right_content {
-    margin: 200px 0; }
+    margin: 13em 0; }
     .minerva .login_form .right_content .title {
       text-align: center; }
       .minerva .login_form .right_content .title .login_minerva {
-        font-size: 48px;
+        font-size: 4em;
         color: #6d30ab;
         font-weight: bold; }
     .minerva .login_form .right_content .login_block {
       margin: 0 20%; }
       .minerva .login_form .right_content .login_block .title_username {
-        margin-top: 30px; }
+        margin-top: 2em; }
         .minerva .login_form .right_content .login_block .title_username span {
           font-weight: bold;
-          font-size: 24px; }
+          font-size: 2em; }
       .minerva .login_form .right_content .login_block .title_pass {
         margin-top: 30px;
         margin-bottom: 15px; }
         .minerva .login_form .right_content .login_block .title_pass span {
           font-weight: bold;
-          font-size: 24px; }
+          font-size: 2em; }
       .minerva .login_form .right_content .login_block .input_username {
         height: 70px;
         background-color: #f5f5f5;
         text-align: left;
-        margin-top: 15px; }
+        margin-top: 15px;
+        display: flex;
+        align-items: center; }
         .minerva .login_form .right_content .login_block .input_username .la-user {
           font-size: 29px;
           margin: 0 10px; }
@@ -57,16 +60,17 @@
           height: 70px;
           background-color: #f5f5f5;
           border: none;
-          font-size: 20px;
-          outline: none; }
+          font-size: 1.6em;
+          outline: none;
+          flex-grow: 1; }
         .minerva .login_form .right_content .login_block .input_username ::placeholder {
           font-style: italic; }
       .minerva .login_form .right_content .login_block .input_pass {
         height: 70px;
         background-color: #f5f5f5;
         text-align: left;
-        display: inline-block;
-        width: 100%; }
+        display: flex;
+        align-items: center; }
         .minerva .login_form .right_content .login_block .input_pass .la-lock {
           font-size: 29px;
           margin: 0 10px; }
@@ -74,14 +78,14 @@
           height: 70px;
           background-color: #f5f5f5;
           border: none;
-          font-size: 20px;
-          outline: none; }
+          font-size: 1.6em;
+          outline: none;
+          flex-grow: 1; }
         .minerva .login_form .right_content .login_block .input_pass ::placeholder {
           font-style: italic; }
         .minerva .login_form .right_content .login_block .input_pass .field_icon {
           font-size: 29px;
           color: #6d30ab;
-          float: right;
           margin: 15px; }
       .minerva .login_form .right_content .login_block .forgotpass {
         text-align: center;
@@ -102,119 +106,132 @@
           color: white;
           border: none;
           outline: none;
-          background-color: #6d30ab; }
+          background-color: #6d30ab;
+          transition: 0.3s ease-in-out; }
         .minerva .login_form .right_content .login_block .login_button button:hover {
           box-shadow: 5px 10px 18px #888888; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991px) {
   .minerva .login_form .left_content {
-    height: 50vh !important; }
+    height: 100vh; }
     .minerva .login_form .left_content .logo {
-      margin-left: 0 !important;
-      text-align: center; }
-    .minerva .login_form .left_content .wellcome .wellcome_title {
-      margin-top: 0 !important;
-      font-size: 30px; }
-    .minerva .login_form .left_content .wellcome .wellcome_content {
-      font-size: 17px; }
-  .minerva .login_form .right_content {
-    height: 50vh; }
-    .minerva .login_form .right_content .title {
-      margin-top: 0 !important; }
-      .minerva .login_form .right_content .title .login_minerva {
-        font-size: 30px !important; }
-    .minerva .login_form .right_content .title_username span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .title_pass span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .input_username input {
-      width: 70%; }
-    .minerva .login_form .right_content .input_pass input {
-      width: 60% !important; }
-    .minerva .login_form .right_content .input_pass .field_icon {
-      margin: 4px !important; } }
-@media (max-width: 767px) {
-  .minerva .login_form .right_content .title {
-    margin: 0 !important; }
-  .minerva .login_form .right_content .login_block .input_pass .field_icon {
-    margin: 4px !important; } }
-@media (max-width: 991.98px) {
-  .minerva .login_form .left_content {
-    height: 40vh !important; }
-    .minerva .login_form .left_content .logo {
-      padding-left: 0 !important;
-      text-align: center; }
+      text-align: center;
+      padding-left: 0; }
     .minerva .login_form .left_content .wellcome {
-      margin: 100px 15px !important; }
+      margin: 0 2em;
+      margin-top: 10em; }
       .minerva .login_form .left_content .wellcome .wellcome_title {
-        font-size: 35px !important;
-        margin-top: -150px; }
+        font-size: 2.5em; }
       .minerva .login_form .left_content .wellcome .wellcome_content {
-        font-size: 17px !important;
-        margin: 0 !important; }
-  .minerva .login_form .right_content {
-    margin-top: -55px; }
-    .minerva .login_form .right_content .title {
-      margin-top: 0; }
-      .minerva .login_form .right_content .title .login_minerva {
-        font-size: 30px !important; }
-    .minerva .login_form .right_content .title_username span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .title_pass span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .login_block .input_pass .field_icon {
-      margin: 8px; } }
-@media (max-width: 1199.98px) {
-  .minerva .login_form .left_content .logo {
-    padding-left: 0 !important;
+        font-size: 1.5em;
+        margin-top: 1em; }
+  .minerva .login_form .right_content .title {
     text-align: center; }
-  .minerva .login_form .left_content .wellcome {
-    margin: 200px 15px !important; }
-    .minerva .login_form .left_content .wellcome .wellcome_title {
-      font-size: 45px !important; }
-    .minerva .login_form .left_content .wellcome .wellcome_content {
-      margin-top: 15px !important;
-      font-size: 18px !important; }
+    .minerva .login_form .right_content .title .login_minerva {
+      font-size: 2.8em; }
+  .minerva .login_form .right_content .login_block {
+    margin: 0 20%; }
+    .minerva .login_form .right_content .login_block .title_username {
+      margin-top: 2em; }
+      .minerva .login_form .right_content .login_block .title_username span {
+        font-weight: bold;
+        font-size: 1.5em; }
+    .minerva .login_form .right_content .login_block .title_pass {
+      margin-top: 30px;
+      margin-bottom: 15px; }
+      .minerva .login_form .right_content .login_block .title_pass span {
+        font-weight: bold;
+        font-size: 1.5em; }
+    .minerva .login_form .right_content .login_block .input_username {
+      height: 50px;
+      margin-top: 15px; }
+      .minerva .login_form .right_content .login_block .input_username .la-user {
+        font-size: 23px; }
+      .minerva .login_form .right_content .login_block .input_username input {
+        height: 50px;
+        font-size: 1.6em; }
+      .minerva .login_form .right_content .login_block .input_username ::placeholder {
+        font-size: 0.6em; }
+    .minerva .login_form .right_content .login_block .input_pass {
+      height: 50px; }
+      .minerva .login_form .right_content .login_block .input_pass .la-lock {
+        font-size: 23px; }
+      .minerva .login_form .right_content .login_block .input_pass input {
+        height: 50px;
+        font-size: 1.6em; }
+      .minerva .login_form .right_content .login_block .input_pass .field_icon {
+        font-size: 23px; }
+      .minerva .login_form .right_content .login_block .input_pass ::placeholder {
+        font-size: 0.6em; }
+    .minerva .login_form .right_content .login_block .forgotpass a {
+      font-size: 1.3em; }
+    .minerva .login_form .right_content .login_block .login_button button {
+      max-width: 200px;
+      font-size: 1.2em;
+      height: 50px; } }
+@media (max-width: 767px) {
+  .minerva .login_form .left_content {
+    height: 40vh; }
+    .minerva .login_form .left_content .logo {
+      text-align: center;
+      padding-left: 0; }
+    .minerva .login_form .left_content .wellcome {
+      margin: 0 2em;
+      margin-top: 1em; }
+      .minerva .login_form .left_content .wellcome .wellcome_content {
+        font-size: 1.5em;
+        margin-top: 0; }
   .minerva .login_form .right_content {
-    margin-top: 250px !important; }
-    .minerva .login_form .right_content .title {
-      margin-top: 0; }
-      .minerva .login_form .right_content .title .login_minerva {
-        font-size: 30px !important; }
-    .minerva .login_form .right_content .title_username span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .title_pass span {
-      font-size: 20px !important; }
-    .minerva .login_form .right_content .input_username {
-      height: 45px !important; }
-      .minerva .login_form .right_content .input_username .la-user {
-        font-size: 29px !important; }
-      .minerva .login_form .right_content .input_username input {
-        height: 45px !important; }
-      .minerva .login_form .right_content .input_username ::placeholder {
-        font-size: 15px; }
-    .minerva .login_form .right_content .input_pass {
-      height: 45px !important;
-      width: 100% !important; }
-      .minerva .login_form .right_content .input_pass .la-lock {
-        font-size: 29px !important; }
-      .minerva .login_form .right_content .input_pass input {
-        height: 45px !important; }
-      .minerva .login_form .right_content .input_pass ::placeholder {
-        font-size: 15px; }
-      .minerva .login_form .right_content .input_pass .field_icon {
-        font-size: 29px !important; }
-    .minerva .login_form .right_content .forgotpass a {
-      font-size: 14px !important; }
-    .minerva .login_form .right_content .login_button {
-      margin-top: -30px; }
-      .minerva .login_form .right_content .login_button button {
-        margin-top: 30px;
-        width: 306px; }
-    .minerva .login_form .right_content .login_button button {
-      margin-top: 40px !important;
-      width: 150px !important;
-      font-size: 16px !important;
-      height: 40px !important; } }
+    margin: 1em 0; } }
+@media (max-width: 575px) {
+  .minerva .login_form .left_content {
+    height: 30vh; }
+    .minerva .login_form .left_content .logo {
+      text-align: center;
+      padding-left: 0; }
+    .minerva .login_form .left_content .wellcome {
+      margin: 0 2em;
+      margin-top: 1em; }
+      .minerva .login_form .left_content .wellcome .wellcome_title {
+        font-size: 2em; }
+      .minerva .login_form .left_content .wellcome .wellcome_content {
+        font-size: 1.2em;
+        margin-top: 0; }
+  .minerva .login_form .right_content .title .login_minerva {
+    font-size: 2em; }
+  .minerva .login_form .right_content .login_block .title_username {
+    margin-top: 1em; }
+    .minerva .login_form .right_content .login_block .title_username span {
+      font-size: 1.2em; }
+  .minerva .login_form .right_content .login_block .title_pass span {
+    font-size: 1.2em; }
+  .minerva .login_form .right_content .login_block .input_username {
+    height: 35px;
+    margin-top: 15px; }
+    .minerva .login_form .right_content .login_block .input_username .la-user {
+      font-size: 20px; }
+    .minerva .login_form .right_content .login_block .input_username input {
+      height: 35px;
+      font-size: 1.6em; }
+    .minerva .login_form .right_content .login_block .input_username ::placeholder {
+      font-size: 0.5em; }
+  .minerva .login_form .right_content .login_block .input_pass {
+    height: 35px; }
+    .minerva .login_form .right_content .login_block .input_pass .la-lock {
+      font-size: 20px; }
+    .minerva .login_form .right_content .login_block .input_pass input {
+      height: 35px;
+      font-size: 1.6em; }
+    .minerva .login_form .right_content .login_block .input_pass .field_icon {
+      font-size: 20px; }
+    .minerva .login_form .right_content .login_block .input_pass ::placeholder {
+      font-size: 0.5em; }
+  .minerva .login_form .right_content .login_block .forgotpass a {
+    font-size: 1em; }
+  .minerva .login_form .right_content .login_block .login_button button {
+    margin-top: 0;
+    max-width: 12em;
+    font-size: 1em;
+    height: 40px; } }
 
 /*# sourceMappingURL=login.css.map */
