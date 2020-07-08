@@ -84,6 +84,10 @@ body{
                     background-color: #f5f5f5;
                     font-size: 24px;
                     padding-right: 10px;
+
+                    ::placeholder{
+                        font-size: 24px;
+                    }
                 }
                 &__inputPWBox{
                     outline: none;
@@ -94,6 +98,9 @@ body{
                     background-color: #f5f5f5;
                     font-size: 24px;
                     padding-right: 10px;
+                    ::placeholder{
+                        font-size: 24px;
+                    }
                 }
                 &__iconUser{
                     font-size: 29px;
@@ -174,9 +181,15 @@ body{
                     }
                     &__inputUserName{
                         height: 55px;
+                        ::placeholder{
+                            font-size: 20px;
+                        }
                     }
                     &__inputPass{
                         height: 55px;
+                        ::placeholder{
+                            font-size: 20px;
+                        }
                     }
                     &__inputUserNameBox{
                         
@@ -257,10 +270,15 @@ body{
                     &__inputUserNameBox{
                         
                         height: 45px;
+                        ::placeholder{
+                            font-size: 16px;
+                        }
                     }
                     &__inputPWBox{
-                       
                         height: 45px;
+                        ::placeholder{
+                            font-size: 16px;
+                        }
                     }
                     &__iconUser{
                         font-size: 24px;
@@ -336,16 +354,20 @@ body{
                     }
                     &__inputUserName{
                         height: 35px;
+                        ::placeholder{
+                            font-size: 14px;
+                        }
                     }
                     &__inputPass{
                         height: 35px;
+                        ::placeholder{
+                            font-size: 14px;
+                        }
                     }
                     &__inputUserNameBox{
-                        
                         height: 35px;
                     }
                     &__inputPWBox{
-                       
                         height: 35px;
                     }
                     &__iconUser{
@@ -409,9 +431,15 @@ body{
                     }
                     &__inputUserName{
                         height: 30px;
+                        ::placeholder{
+                            font-size: 10px;
+                        }
                     }
                     &__inputPass{
                         height: 30px;
+                        ::placeholder{
+                            font-size: 10px;
+                        }
                     }
                     &__inputUserNameBox{
                         

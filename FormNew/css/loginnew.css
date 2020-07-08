@@ -72,6 +72,8 @@ body {
           background-color: #f5f5f5;
           font-size: 24px;
           padding-right: 10px; }
+          body .login .loginBlock__content__inputUserNameBox ::placeholder {
+            font-size: 24px; }
         body .login .loginBlock__content__inputPWBox {
           outline: none;
           border: none;
@@ -81,6 +83,8 @@ body {
           background-color: #f5f5f5;
           font-size: 24px;
           padding-right: 10px; }
+          body .login .loginBlock__content__inputPWBox ::placeholder {
+            font-size: 24px; }
         body .login .loginBlock__content__iconUser {
           font-size: 29px;
           margin: 0 10px; }
@@ -140,8 +144,12 @@ body {
           margin-top: 50px; }
         body .login .loginBlock__content__inputUserName {
           height: 55px; }
+          body .login .loginBlock__content__inputUserName ::placeholder {
+            font-size: 20px; }
         body .login .loginBlock__content__inputPass {
           height: 55px; }
+          body .login .loginBlock__content__inputPass ::placeholder {
+            font-size: 20px; }
         body .login .loginBlock__content__inputUserNameBox {
           height: 55px; }
         body .login .loginBlock__content__inputPWBox {
@@ -193,8 +201,12 @@ body {
           height: 45px; }
         body .login .loginBlock__content__inputUserNameBox {
           height: 45px; }
+          body .login .loginBlock__content__inputUserNameBox ::placeholder {
+            font-size: 16px; }
         body .login .loginBlock__content__inputPWBox {
           height: 45px; }
+          body .login .loginBlock__content__inputPWBox ::placeholder {
+            font-size: 16px; }
         body .login .loginBlock__content__iconUser {
           font-size: 24px; }
         body .login .loginBlock__content__iconLock {
@@ -248,8 +260,12 @@ body {
             margin-top: 30px; }
           body .login .loginBlock__content__inputUserName {
             height: 35px; }
+            body .login .loginBlock__content__inputUserName ::placeholder {
+              font-size: 14px; }
           body .login .loginBlock__content__inputPass {
             height: 35px; }
+            body .login .loginBlock__content__inputPass ::placeholder {
+              font-size: 14px; }
           body .login .loginBlock__content__inputUserNameBox {
             height: 35px; }
           body .login .loginBlock__content__inputPWBox {
@@ -295,8 +311,12 @@ body {
           margin-top: 30px; }
         body .login .loginBlock__content__inputUserName {
           height: 30px; }
+          body .login .loginBlock__content__inputUserName ::placeholder {
+            font-size: 10px; }
         body .login .loginBlock__content__inputPass {
           height: 30px; }
+          body .login .loginBlock__content__inputPass ::placeholder {
+            font-size: 10px; }
         body .login .loginBlock__content__inputUserNameBox {
           height: 30px; }
         body .login .loginBlock__content__inputPWBox {
