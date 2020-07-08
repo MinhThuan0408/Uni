@@ -80,6 +80,7 @@
                     margin-top:15px;
                     display: flex;
                     align-items: center;
+                    width: 100%;
                     .la-user{
                         font-size: 29px;
                         margin: 0 10px;
@@ -96,6 +97,7 @@
                     @include input_box_background(70px);
                     display: flex;
                     align-items: center;
+                    width: 100%;
                     .la-lock{
                         font-size: 29px;
                         margin: 0 10px;
@@ -104,6 +106,7 @@
                     input{
                         @include input_content(70px,1.6em);
                         flex-grow: 1;
+                        width: 100%;
                     }
                     ::placeholder{
                         font-style: italic;
