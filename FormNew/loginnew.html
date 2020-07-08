@@ -13,7 +13,7 @@
 <body>
     <div class="wellcome">
         <div class="wellcome__logo">
-            <img src="./images/logo.svg" alt="logo">
+            <img class="wellcome__imgLogo" src="./images/logo.svg" alt="logo">
         </div>
         <div class="wellcome__title">
             Chào mừng bạn
@@ -23,15 +23,33 @@
         </div>
     </div>
     <div class="login">
-        <div class="login__title">
-            Đăng nhập vào Minerva
-        </div>
-        <div class="login__labelLogin">
-            Tên đăng nhập
-        </div>
-        <div class="login__inputUserName">
-            <i class="las la-user"></i>
-            <input class="login__inputBox" type="text">
+        <div class="loginBlock">
+            <div class="loginBlock__title">
+                Đăng nhập vào Minerva
+            </div>
+            <div class="loginBlock__content">
+                <div class="loginBlock__content__labelLogin">
+                    Tên đăng nhập
+                </div>
+                <div class="loginBlock__content__inputUserName">
+                    <i class="las la-user loginBlock__content__iconUser"></i>
+                    <input class="loginBlock__content__inputUserNameBox" type="email">
+                </div>
+                <div class="loginBlock__content__labelPass">
+                    Mật khẩu
+                </div>
+                <div class="loginBlock__content__inputPass">
+                    <i class="las la-lock loginBlock__content__iconLock"></i>
+                    <input class="loginBlock__content__inputPWBox" type="password">
+                    <span toggle="#password-field" class="las la-fw la-eye-slash loginBlock__content__iconEye toggle-password"></span>
+                </div>
+            </div>
+            <div class="loginBlock__forgotPass">
+                <a  href="#">Quên mật khẩu</a>
+            </div>
+            <button type="submit" class="loginBlock__btnLogin">
+                ĐĂNG NHẬP
+            </button>
         </div>
     </div>
 </body>
