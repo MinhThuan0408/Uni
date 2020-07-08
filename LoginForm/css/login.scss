@@ -1,121 +1,20 @@
-@mixin title_span($fontsize) {
-    font-weight: bold;
-    font-size: $fontsize;
-}
-@mixin input_box_background($height) {
-    
-    height: $height;
-    background-color: #f5f5f5;
-    text-align: left;
-}
-@mixin input_content($height,$fontsize) {
-    height: $height;
-    background-color: #f5f5f5;
-    border: none;
-    font-size: $fontsize;
-    outline: none;
-}
-.minerva{
+@import '../base/mixin';
+body{
     font-family: 'Roboto', sans-serif;
-    width: 100%;
     .login_form{
+        display: flex;
+        height: 100vh;
         .left_content{
-            background-image: url(../images/bg_login.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height:100vh;
-            margin: 0 -15px;
-
-            .logo{
-                padding-top: 43px;
-                padding-left: 48px;
-                img{
-                    max-width: 183px;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            .wellcome{
-                margin: 0 2em;
-                text-align: center;
-                color: white;
-                margin-top: 17em;
-                .wellcome_title{
-                    font-size: 4em;
-                    font-weight: bold;
-                }
-                .wellcome_content{
-                    font-size: 1.5em;
-                    margin-top: 31px;
-                }
-            }
+            @include left;
         }
         .right_content{
-            margin: 13em 0;
-            .title{
-                text-align: center;
-                .login_minerva{
-                    font-size: 4em;
-                    color: #6d30ab;
-                    font-weight: bold;
-                }
+            margin: 15em 0;
+            .login_minerva{
+                @include bigTitleRight;
             }
             .login_block{
                 margin: 0 20%;
-                .title_username{
-                    margin-top: 2em;
-                    span{
-                        @include title_span(2em);
-                    }
-                }
-                .title_pass{
-                    margin-top: 30px;
-                    margin-bottom: 15px;
-                    span{
-                        @include title_span(2em);
-                    }
-                }
-                .input_username{
-                    @include input_box_background(70px);
-                    margin-top:15px;
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    .la-user{
-                        font-size: 29px;
-                        margin: 0 10px;
-                    }
-                    input{
-                        @include input_content(70px,1.6em);
-                        flex-grow: 1;
-                    }
-                    ::placeholder{
-                        font-style: italic;
-                    }
-                }
-                .input_pass{
-                    @include input_box_background(70px);
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    .la-lock{
-                        font-size: 29px;
-                        margin: 0 10px;
-                        
-                    }
-                    input{
-                        @include input_content(70px,1.6em);
-                        flex-grow: 1;
-                        width: 100%;
-                    }
-                    ::placeholder{
-                        font-style: italic;
-                    }
-                    .field_icon{
-                        font-size: 29px;
-                        color: #6d30ab;
-                        margin: 15px;
-                    }
+                @include blockLabelAndBox;
                 }
                 .forgotpass{
                     text-align: center;
@@ -123,17 +22,28 @@
                     margin-bottom: 15px;
                     a{
                         font-size: 24px;
-                        color: grey;
+                        color: #6d6d6d;
                         text-decoration: underline;
+                        font-size: 24px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.21;
+                        letter-spacing: normal;
                     }
                 }
                 .login_button{
                     text-align: center;
                     button{
-                        margin-top: 30px;
-                        max-width: 306px;
-                        width: 100%;
                         font-size: 24px;
+                        font-weight: 500;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.21;
+                        letter-spacing: normal;
+                        margin-top: 30px;
+                        width: 306px;
+                        max-width: 100%;
                         height: 70px;
                         color: white;
                         border: none;
@@ -146,12 +56,12 @@
                     }
                 }
             }
-        }
+        
     }
 }
 //Screen 992px and down: 991px->768px
 @media (max-width: 991px) { 
-    .minerva{
+    body{
         .login_form{
             .left_content{
                 height:100vh;
@@ -172,26 +82,17 @@
                 }
             }
             .right_content{
-                .title{
-                    text-align: center;
-                    .login_minerva{
-                        font-size: 2.8em;
-                    }
+                .login_minerva{
+                    font-size: 40px;
                 }
                 .login_block{
                     margin: 0 20%;
                     .title_username{
                         margin-top: 2em;
-                        span{
-                            @include title_span(1.5em);
-                        }
                     }
                     .title_pass{
                         margin-top: 30px;
                         margin-bottom: 15px;
-                        span{
-                            @include title_span(1.5em);
-                        }
                     }
                     .input_username{
                         height: 50px;
@@ -201,10 +102,10 @@
                         }
                         input{
                             height: 50px;
-                            font-size: 1.6em;
+                            font-size: 18px;
                         }
                         ::placeholder{
-                            font-size: 0.6em;
+                            font-size: 20px;
                         }
                     }
                     .input_pass{
@@ -215,13 +116,13 @@
                         }
                         input{
                             height: 50px;
-                            font-size: 1.6em;
+                            font-size: 18px;
                         }
                         .field_icon{
                             font-size: 23px;
                         }
                         ::placeholder{
-                            font-size: 0.6em;
+                            font-size: 20px;
                         }
                     }
                     .forgotpass{
@@ -231,7 +132,6 @@
                     }
                     .login_button{
                         button{
-                            max-width: 200px;
                             font-size: 1.2em;
                             height: 50px;
                         }
@@ -243,35 +143,11 @@
 }
 //Screen 768px and down: 768px->576px
 @media (max-width: 767px) {
-    .minerva{
+    body{
         .login_form{
+            display: inline-block;
             .left_content{
-                height:40vh;
-                .logo{
-                    text-align: center;
-                    padding-left: 0;
-                }
-                .wellcome{
-                    margin: 0 2em;
-                    margin-top: 1em;
-                    .wellcome_content{
-                        font-size: 1.5em;
-                        margin-top: 0;
-                    }
-                }
-            }
-            .right_content{
-                margin: 1em 0;
-            }
-        }
-    }
-}
-//Screen 576px and down: 576px->320px
-@media (max-width: 575px) { 
-    .minerva{
-        .login_form{
-            .left_content{
-                height:30vh;
+                height:28vh;
                 .logo{
                     text-align: center;
                     padding-left: 0;
@@ -280,72 +156,70 @@
                     margin: 0 2em;
                     margin-top: 1em;
                     .wellcome_title{
-                        font-size: 2em;
+                        font-size: 2.5em;
+                        font-weight: 550;
                     }
                     .wellcome_content{
-                        font-size: 1.2em;
+                        font-size: 1.5rem;
                         margin-top: 0;
                     }
                 }
             }
             .right_content{
-                .title{
-                    .login_minerva{
-                        font-size: 2em;
-                    }
+                margin: 9em 0;
+                .login_minerva{
+                    font-size: 30px;
                 }
                 .login_block{
+                    margin: 0 20%;
                     .title_username{
-                        margin-top: 1em;
-                        span{
-                            font-size: 1.2em;
-                        }
+                        margin-top: 0.7em;
+                        font-size: 1.4em;
                     }
                     .title_pass{
-                        span{
-                            font-size: 1.2em;
-                        }
+                        margin-top: 0.7em;
+                        font-size: 1.4em;
+                        margin-bottom: 15px;
                     }
                     .input_username{
-                        height: 35px;
+                        height: 50px;
                         margin-top:15px;
                         .la-user{
-                            font-size: 20px;
+                            font-size: 23px;
                         }
                         input{
-                            height: 35px;
-                            font-size: 1.6em;
+                            height: 50px;
+                            font-size: 16px;
                         }
                         ::placeholder{
-                            font-size: 0.5em;
+                            font-size: 16px;
                         }
                     }
                     .input_pass{
-                        height: 35px;
+                        height: 50px;
                         .la-lock{
-                            font-size: 20px;
+                            font-size: 23px;
                             
                         }
                         input{
-                            height: 35px;
-                            font-size: 1.6em;
+                            height: 50px;
+                            font-size: 16px;
                         }
                         .field_icon{
-                            font-size: 20px;
+                            font-size: 23px;
                         }
                         ::placeholder{
-                            font-size: 0.5em;
+                            font-size: 16px;
                         }
                     }
                     .forgotpass{
                         a{
-                            font-size: 1em;
+                            font-size: 1.3em;
                         }
                     }
                     .login_button{
                         button{
-                            margin-top: 0;
-                            max-width: 12em;
+                            width: 200px;
                             font-size: 1em;
                             height: 40px;
                         }
@@ -354,5 +228,4 @@
             }
         }
     }
-    
 }

@@ -7,14 +7,13 @@ body {
     background-image: url(../images/bg_login.png);
     background-repeat: no-repeat;
     background-size: cover; }
-    body .wellcome__imgLogo {
+    body .wellcome .wellcome-logo .imglogo {
       max-width: 183px;
       width: 100%;
-      height: auto; }
-    body .wellcome__logo {
+      height: auto;
       margin-top: 43px;
       margin-left: 48px; }
-    body .wellcome__title {
+    body .wellcome .wellcome-title {
       margin-top: 26rem;
       margin-left: 92px;
       margin-right: 92px;
@@ -22,7 +21,7 @@ body {
       text-align: center;
       font-size: 60px;
       font-weight: bold; }
-    body .wellcome__content {
+    body .wellcome .wellcome-content {
       margin-left: 92px;
       margin-right: 92px;
       margin-top: 31px;
@@ -30,6 +29,20 @@ body {
       text-align: center;
       font-size: 24px;
       font-weight: bold; }
+  body .recover {
+    width: 64%;
+    height: 100vh;
+    text-align: center; }
+    body .recover .recoverBlock {
+      margin: 190px 0; }
+      body .recover .recoverBlock__title {
+        font-size: 4em;
+        color: #6d30ab;
+        font-weight: bold; }
+      body .recover .recoverBlock__message {
+        color: #6d6d6d;
+        font-style: italic;
+        font-size: 24px; }
 
 @media (max-width: 1439px) {
   body .wellcome__title {

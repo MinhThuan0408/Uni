@@ -1,0 +1,122 @@
+@mixin title_span($fontsize) {
+    font-size: $fontsize;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    margin-top: 30px;
+}
+@mixin input_box_background($height) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $height;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+@mixin input_content($height,$fontsize) {
+    height: $height;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: $fontsize;
+    outline: none;
+    flex-grow: 1;
+    width: 100%;
+}
+@mixin left {
+        background-image: url(../images/bg_login.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 -15px;
+        height: 100vh;
+        .logo{
+            padding-top: 43px;
+            padding-left: 48px;
+            img{
+                max-width: 183px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .wellcome{
+            text-align: center;
+            color: white;
+            margin: 45% 8%;
+            .wellcome_title{
+                font-size: 60px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.2;
+            }
+            .wellcome_content{
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.21;
+                letter-spacing: normal;
+            }
+        
+    }
+}
+@mixin plaholderBox($fontsize) {
+    font-size: $fontsize;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+@mixin  blockLabelAndBox {
+    .title_username{
+        @include title_span(24px);
+    }
+    .input_username{
+        @include input_box_background(70px);
+        margin-top:15px;
+        .la-user{
+            font-size: 29px;
+            margin: 0 10px;
+        }
+        input{
+            @include input_content(70px,1.6em);
+        }
+        ::placeholder{
+            @include plaholderBox(20px);
+        }
+    }
+    .title_pass{
+        @include title_span(24px);
+        margin-bottom: 15px;
+    }
+    .input_pass{
+        @include input_box_background(70px);
+        .la-lock{
+            font-size: 29px;
+            margin: 0 10px;
+        }
+        input{
+            @include input_content(70px,1.6em);
+        }
+        ::placeholder{
+            @include plaholderBox(20px);
+        }
+        .field_icon{
+            font-size: 29px;
+            color: #6d30ab;
+            margin: 15px;
+        }
+    }
+}
+@mixin bigTitleRight {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #6d30ab;
+}
