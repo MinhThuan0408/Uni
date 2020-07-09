@@ -26,16 +26,7 @@ body{
             .send{
                 text-align: center;
                 button{
-                    margin-top: 30px;
-                    max-width: 306px;
-                    width: 100%;
-                    font-size: 24px;
-                    height: 70px;
-                    color: white;
-                    border: none;
-                    outline: none;
-                    background-color: #6d30ab;
-                    transition: 0.3s ease-in-out;
+                    @include button;
                 }
                 button:hover {
                     box-shadow: 5px 10px 18px #888888;
