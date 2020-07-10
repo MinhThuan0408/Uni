@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot password</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/forgotpassnew.css">
@@ -14,33 +14,27 @@
         <div class="wellcome__logo">
             <img class="wellcome__imgLogo" src="./images/logo.svg" alt="logo">
         </div>
-        <div class="wellcome__title">
-            Chào mừng bạn
-        </div>
-        <div class="wellcome__content">
-            Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime
-        </div>
+        <div class="wellcome__title">Chào mừng bạn</div>
+        <div class="wellcome__content">Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime</div>
     </div>
     <div class="recover">
         <div class="recoverBlock">
-            <div class="recover-title">
+            <div class="recoverBlock__title">
                 Lấy lại mật khẩu của Minerva
             </div>
-            <div class="recoverBlock-message">
+            <div class="recoverBlock__message">
                 Hãy nhập vào email mà bạn dùng để hệ thống gửi lại cho bạn mật khẩu
             </div>
-            <div class="recover-content">
-                <div class="recover-labelEmail">
-                    Email
-                </div>
-                <div class="recover-inputEmail">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <input type="email" placeholder="Nhập địa chỉ email" id="email"  required>
+
+            <div class="recoverBlock__content">
+
+                <div class="recoverBlock__labelEmail">Email</div>
+                <div class="recoverBlock__inputEmail">
+                    <i class="fa fa-envelope-o recoverBlock__iconMail" aria-hidden="true"></i>
+                    <input class="recoverBlock__inputEmailBox" type="email" placeholder="Nhập địa chỉ email"   required>
                 </div>
             </div>
-            <button type="submit" class="recover-btnSend">
-                GỬI
-            </button>
+            <button type="submit" class="recoverBlock__btnSend">GỬI</button>
         </div>
     </div>
 

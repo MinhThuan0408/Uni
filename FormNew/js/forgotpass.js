@@ -1,5 +1,5 @@
 function ValidateEmail(){
-    var email = document.getElementById("email");
+    var email = $(".recoverBlock__inputEmailBox");
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email.value.match(mailformat))
     {

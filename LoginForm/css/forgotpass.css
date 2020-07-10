@@ -176,7 +176,7 @@ body {
           font-size: 1.5rem;
           margin-top: 0; }
     body .recover_form .right_content {
-      margin: 9em 1em; }
+      padding: 5em 1em; }
       body .recover_form .right_content .recover {
         font-size: 30px; }
       body .recover_form .right_content .let_input_title {

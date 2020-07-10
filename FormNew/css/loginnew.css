@@ -118,7 +118,7 @@ body {
         margin-right: 10px;
         color: #6d30ab;
         margin-right: 28px; }
-      body .login .loginBlock__forgotPass {
+      body .login .loginBlock__forgotPass a {
         font-size: 24px;
         color: grey;
         text-decoration: underline; }
@@ -162,7 +162,6 @@ body {
         margin: 30px 130px; }
       body .login .loginBlock__labelLogin {
         font-size: 1.9em;
-        font-weight: bold;
         margin-top: 60px; }
       body .login .loginBlock__labelPass {
         font-size: 1.9em;
@@ -190,67 +189,56 @@ body {
       body .login .loginBlock__forgotPass {
         font-size: 20px; }
       body .login .loginBlock__btnLogin {
-        max-width: 34%; } }
+        max-width: 30%;
+        font-size: 13px;
+        height: 50px; } }
 @media (max-width: 1023px) {
   body .wellcome__title {
     font-size: 40px;
-    margin-top: 5em;
     margin-left: 25px;
     margin-right: 25px; }
   body .wellcome__content {
-    margin: 0 92px;
-    margin-top: 15px;
-    font-size: 18px;
-    margin-left: 60px;
-    margin-right: 60px; }
-  body .login {
-    height: 100vh;
-    text-align: center; }
-    body .login .loginBlock {
-      margin: 160px 0; }
-      body .login .loginBlock__title {
-        font-size: 2.5em;
-        margin: 0px 10px; }
-      body .login .loginBlock__content {
-        margin: 30px 130px; }
-      body .login .loginBlock__labelLogin {
-        font-size: 1.6em;
-        font-weight: bold;
-        margin-top: 30px; }
-      body .login .loginBlock__labelPass {
-        font-size: 1.6em;
-        margin-top: 30px; }
-      body .login .loginBlock__inputUserName {
-        height: 45px; }
-      body .login .loginBlock__inputPass {
-        height: 45px; }
-      body .login .loginBlock__inputUserNameBox {
-        font-size: 16px;
-        height: 45px; }
-      body .login .loginBlock ::placeholder {
-        font-size: 16px; }
-      body .login .loginBlock__inputPWBox {
-        font-size: 16px;
-        height: 45px; }
-      body .login .loginBlock ::placeholder {
-        font-size: 16px; }
-      body .login .loginBlock__iconUser {
-        font-size: 22px;
-        margin-left: 20px;
-        margin-right: 8px; }
-      body .login .loginBlock__iconLock {
-        font-size: 22px;
-        margin-left: 20px;
-        margin-right: 8px; }
-      body .login .loginBlock__iconEye {
-        font-size: 22px;
-        margin-left: 20px; }
-      body .login .loginBlock__forgotPass {
-        font-size: 18px; }
-      body .login .loginBlock__btnLogin {
-        max-width: 34%;
-        font-size: 15px;
-        height: 2em; } }
+    font-size: 18px; }
+  body .login .loginBlock {
+    margin: 160px 0; }
+    body .login .loginBlock__title {
+      font-size: 2.5em;
+      margin: 0px 10px; }
+    body .login .loginBlock__content {
+      margin: 30px 130px; }
+    body .login .loginBlock__labelLogin {
+      font-size: 1.6em;
+      margin-top: 30px; }
+    body .login .loginBlock__labelPass {
+      font-size: 1.6em;
+      margin-top: 30px; }
+    body .login .loginBlock__inputUserName {
+      height: 45px; }
+    body .login .loginBlock__inputPass {
+      height: 45px; }
+    body .login .loginBlock__inputUserNameBox {
+      font-size: 16px;
+      height: 45px; }
+    body .login .loginBlock ::placeholder {
+      font-size: 16px; }
+    body .login .loginBlock__inputPWBox {
+      font-size: 16px;
+      height: 45px; }
+    body .login .loginBlock ::placeholder {
+      font-size: 16px; }
+    body .login .loginBlock__iconUser {
+      font-size: 22px;
+      margin-left: 20px;
+      margin-right: 8px; }
+    body .login .loginBlock__iconLock {
+      font-size: 22px;
+      margin-left: 20px;
+      margin-right: 8px; }
+    body .login .loginBlock__iconEye {
+      font-size: 22px;
+      margin-left: 20px; }
+    body .login .loginBlock__forgotPass {
+      font-size: 18px; } }
 @media (max-width: 767px) {
   body {
     display: inline-block; }
@@ -317,11 +305,7 @@ body {
           margin-left: 15px;
           margin-right: 5px; }
         body .login .loginBlock__forgotPass {
-          font-size: 15px; }
-        body .login .loginBlock__btnLogin {
-          max-width: 34%;
-          font-size: 15px;
-          height: 2em; } }
+          font-size: 15px; } }
 @media (max-width: 374px) {
   body .wellcome {
     height: 30vh; }
@@ -373,10 +357,6 @@ body {
         font-size: 16px;
         margin-left: 10px; }
       body .login .loginBlock__forgotPass {
-        font-size: 13px; }
-      body .login .loginBlock__btnLogin {
-        max-width: 100px;
-        font-size: 10px;
-        height: 2em; } }
+        font-size: 13px; } }
 
 /*# sourceMappingURL=loginnew.css.map */

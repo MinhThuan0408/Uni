@@ -1,5 +1,6 @@
-function ValidateEmail(){
-    var email = document.getElementById("email");
+
+$( document ).ready(function() {
+    var email = $("validateEmail");
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(email.value.match(mailformat))
     {
@@ -11,4 +12,4 @@ function ValidateEmail(){
         email.focus();
         return false;
     }
-}
+});
