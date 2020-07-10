@@ -1,4 +1,5 @@
 @import '../base/mixin';
+
 body{
     font-family: 'Roboto', sans-serif;
     .login_form{
@@ -6,9 +7,11 @@ body{
         height: 100%;
         .left_content{
             @include left;
+            height: 100%;
         }
         .right_content{
-            margin: 14em 2em;
+            height: 100vh;
+            padding: 12em 2em;
             .login_minerva{
                 @include bigTitleRight;
             }
@@ -20,34 +23,33 @@ body{
                         margin-right: 28px;
                     }
                 }
-                }
-                .forgotpass{
-                    text-align: center;
-                    margin-top: 30px;
-                    margin-bottom: 15px;
-                    a{
-                        font-size: 24px;
-                        color: #6d6d6d;
-                        text-decoration: underline;
-                        font-size: 24px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: 1.21;
-                        letter-spacing: normal;
-                    }
-                }
-                .login_button{
-                    text-align: center;
-                    button{
-                        @include button;
-                    }
-                    button:hover {
-                        box-shadow: 5px 10px 18px #888888;
-                    }
+            }
+            .forgotpass{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                a{
+                    font-size: 24px;
+                    color: #6d6d6d;
+                    text-decoration: underline;
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.21;
+                    letter-spacing: normal;
                 }
             }
-
+            .login_button{
+                text-align: center;
+                button{
+                    @include button;
+                }
+                button:hover{
+                    @include buttonhover;
+                }
+            }
+        }
     }
 }
 
@@ -76,12 +78,13 @@ body{
                 }
             }
             .right_content{
-                margin: 9em 1em;
+                height: 0;
+                padding: 8em 2em;
                 .login_minerva{
                     font-size: 30px;
                 }
                 .login_block{
-                    margin: 0 20%;
+                    margin: 0 15%;
                     .title_username{
                         margin-top: 0.7em;
                         font-size: 1.4em;
@@ -137,6 +140,7 @@ body{
                             font-size: 13px;
                             height: 40px;
                         }
+                        
                     }
                 }
             }

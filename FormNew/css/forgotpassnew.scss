@@ -1,41 +1,9 @@
+@import '../css/mixin.scss';
 body{
     display: flex;
     font-family: 'Roboto', sans-serif;
     .wellcome{
-        width: 36%;
-        height: 100vh;
-        background-image: url(../images/bg_login.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        .wellcome-logo{
-            .imglogo{
-                max-width: 183px;
-                width: 100%;
-                height: auto;
-                margin-top: 43px;
-                margin-left: 48px;
-            }
-        }
-        
-        
-        .wellcome-title{
-            margin-top: 26rem;
-            margin-left: 92px;
-            margin-right: 92px;
-            color: white;
-            text-align: center;
-            font-size: 60px;
-            font-weight: bold;
-        }
-        .wellcome-content{
-            margin-left: 92px;
-            margin-right: 92px;
-            margin-top: 31px;
-            color: white;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
+       @include wellcome;
     }
     .recover{
         width: 64%;

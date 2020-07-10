@@ -8,7 +8,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       margin: 0 -15px;
-      height: 100vh; }
+      height: 100%; }
       body .login_form .left_content .logo {
         padding-top: 43px;
         padding-left: 48px; }
@@ -35,7 +35,8 @@ body {
           line-height: 1.21;
           letter-spacing: normal; }
     body .login_form .right_content {
-      margin: 14em 2em; }
+      height: 100vh;
+      padding: 12em 2em; }
       body .login_form .right_content .login_minerva {
         text-align: center;
         font-size: 48px;
@@ -157,7 +158,9 @@ body {
           background-color: #6d30ab;
           transition: 0.3s ease-in-out; }
         body .login_form .right_content .login_button button:hover {
-          box-shadow: 5px 10px 18px #888888; }
+          border: 1px solid #6d30ab;
+          background-color: white;
+          color: #6d30ab; }
 
 @media (max-width: 767px) {
   body .login_form {
@@ -177,11 +180,12 @@ body {
           font-size: 1.5rem;
           margin-top: 0; }
     body .login_form .right_content {
-      margin: 9em 1em; }
+      height: 0;
+      padding: 8em 2em; }
       body .login_form .right_content .login_minerva {
         font-size: 30px; }
       body .login_form .right_content .login_block {
-        margin: 0 20%; }
+        margin: 0 15%; }
         body .login_form .right_content .login_block .title_username {
           margin-top: 0.7em;
           font-size: 1.4em; }

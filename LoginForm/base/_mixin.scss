@@ -46,12 +46,16 @@
     background-color: #6d30ab;
     transition: 0.3s ease-in-out;
 }
+@mixin buttonhover {
+    border: 1px solid #6d30ab;
+    background-color: white;
+    color: #6d30ab;
+}
 @mixin left {
         background-image: url(../images/bg_login.png);
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 -15px;
-        height: 100vh;
         .logo{
             padding-top: 43px;
             padding-left: 48px;
@@ -94,7 +98,13 @@
 }
 @mixin  blockLabelAndBox {
     .title1{
-        @include title_span(24px);
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        margin-top: 30px;
     }
     .input1{
         @include input_box_background(70px);
