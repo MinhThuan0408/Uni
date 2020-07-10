@@ -3,18 +3,23 @@ body{
     font-family: 'Roboto', sans-serif;
     .login_form{
         display: flex;
-        height: 100vh;
+        height: 100%;
         .left_content{
             @include left;
         }
         .right_content{
-            margin: 15em 0;
+            margin: 14em 2em;
             .login_minerva{
                 @include bigTitleRight;
             }
             .login_block{
                 margin: 0 20%;
                 @include blockLabelAndBox;
+                .input_pass{
+                    .field_icon{
+                        margin-right: 28px;
+                    }
+                }
                 }
                 .forgotpass{
                     text-align: center;
@@ -45,88 +50,7 @@ body{
 
     }
 }
-//Screen 992px and down: 991px->768px
-@media (max-width: 991px) { 
-    body{
-        .login_form{
-            .left_content{
-                height:100vh;
-                .logo{
-                    text-align: center;
-                    padding-left: 0;
-                }
-                .wellcome{
-                    margin: 0 2em;
-                    margin-top: 10em;
-                    .wellcome_title{
-                        font-size: 2.5em;
-                    }
-                    .wellcome_content{
-                        font-size: 1.5em;
-                        margin-top: 1em;
-                    }
-                }
-            }
-            .right_content{
-                .login_minerva{
-                    font-size: 40px;
-                }
-                .login_block{
-                    margin: 0 20%;
-                    .title_username{
-                        margin-top: 2em;
-                    }
-                    .title_pass{
-                        margin-top: 30px;
-                        margin-bottom: 15px;
-                    }
-                    .input_username{
-                        height: 50px;
-                        margin-top:15px;
-                        .la-user{
-                            font-size: 23px;
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 18px;
-                        }
-                        ::placeholder{
-                            font-size: 20px;
-                        }
-                    }
-                    .input_pass{
-                        height: 50px;
-                        .la-lock{
-                            font-size: 23px;
-                            
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 18px;
-                        }
-                        .field_icon{
-                            font-size: 23px;
-                        }
-                        ::placeholder{
-                            font-size: 20px;
-                        }
-                    }
-                    .forgotpass{
-                        a{
-                            font-size: 1.3em;
-                        }
-                    }
-                    .login_button{
-                        button{
-                            font-size: 1.2em;
-                            height: 50px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+
 //Screen 768px and down: 768px->576px
 @media (max-width: 767px) {
     body{
@@ -152,7 +76,7 @@ body{
                 }
             }
             .right_content{
-                margin: 9em 0;
+                margin: 9em 1em;
                 .login_minerva{
                     font-size: 30px;
                 }
@@ -170,8 +94,10 @@ body{
                     .input_username{
                         height: 50px;
                         margin-top:15px;
-                        .la-user{
+                        .iconLeft{
                             font-size: 23px;
+                            margin-left: 10px;
+                            margin-right: 5px;
                         }
                         input{
                             height: 50px;
@@ -183,9 +109,10 @@ body{
                     }
                     .input_pass{
                         height: 50px;
-                        .la-lock{
+                        .iconLeft{
                             font-size: 23px;
-                            
+                            margin-left: 10px;
+                            margin-right: 5px;
                         }
                         input{
                             height: 50px;
@@ -193,6 +120,8 @@ body{
                         }
                         .field_icon{
                             font-size: 23px;
+                            margin-left: 10px;
+                            margin-right: 5px;
                         }
                         ::placeholder{
                             font-size: 16px;
@@ -205,8 +134,7 @@ body{
                     }
                     .login_button{
                         button{
-                            width: 200px;
-                            font-size: 1em;
+                            font-size: 13px;
                             height: 40px;
                         }
                     }
@@ -215,3 +143,85 @@ body{
         }
     }
 }
+// //Screen 992px and down: 991px->768px
+// @media (max-width: 991px) { 
+//     body{
+//         .login_form{
+//             .left_content{
+//                 height:100vh;
+//                 .logo{
+//                     text-align: center;
+//                     padding-left: 0;
+//                 }
+//                 .wellcome{
+//                     margin: 0 2em;
+//                     margin-top: 10em;
+//                     .wellcome_title{
+//                         font-size: 2.5em;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 1.5em;
+//                         margin-top: 1em;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 .login_minerva{
+//                     font-size: 40px;
+//                 }
+//                 .login_block{
+//                     margin: 0 20%;
+//                     .title_username{
+//                         margin-top: 2em;
+//                     }
+//                     .title_pass{
+//                         margin-top: 30px;
+//                         margin-bottom: 15px;
+//                     }
+//                     .input_username{
+//                         height: 50px;
+//                         margin-top:15px;
+//                         .la-user{
+//                             font-size: 23px;
+//                         }
+//                         input{
+//                             height: 50px;
+//                             font-size: 18px;
+//                         }
+//                         ::placeholder{
+//                             font-size: 20px;
+//                         }
+//                     }
+//                     .input_pass{
+//                         height: 50px;
+//                         .la-lock{
+//                             font-size: 23px;
+                            
+//                         }
+//                         input{
+//                             height: 50px;
+//                             font-size: 18px;
+//                         }
+//                         .field_icon{
+//                             font-size: 23px;
+//                         }
+//                         ::placeholder{
+//                             font-size: 20px;
+//                         }
+//                     }
+//                     .forgotpass{
+//                         a{
+//                             font-size: 1.3em;
+//                         }
+//                     }
+//                     .login_button{
+//                         button{
+//                             font-size: 1.2em;
+//                             height: 50px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

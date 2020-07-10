@@ -3,21 +3,25 @@ body{
     font-family: 'Roboto', sans-serif;
     .recover_form{
         display: flex;
-        height: 100vh;
+        height: 100%;
         .left_content{
             @include left;
         }
         .right_content{
-            margin: 13em 0;
+            margin: 20em 2em;
             .recover{
                 @include bigTitleRight;
                 
             }
             .let_input_title{
-                color: #6d6d6d;
-                font-style: italic;
                 font-size: 24px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: italic;
+                line-height: 1.21;
+                letter-spacing: normal;
                 text-align: center;
+                color: #6d6d6d;
             }
             .email_block{
                 margin: 0 20%;
@@ -27,6 +31,7 @@ body{
                 text-align: center;
                 button{
                     @include button;
+                    max-width: 30%;
                 }
                 button:hover {
                     box-shadow: 5px 10px 18px #888888;
@@ -36,69 +41,7 @@ body{
         }
     }
 }
-//Screen 992px and down: 991px->768px
-@media (max-width: 991px) { 
-    body{
-        .recover_form{
-            .left_content{
-                height:100vh;
-                .logo{
-                    text-align: center;
-                    padding-left: 0;
-                }
-                .wellcome{
-                    margin: 0 2em;
-                    margin-top: 10em;
-                    .wellcome_title{
-                        font-size: 2.5em;
-                    }
-                    .wellcome_content{
-                        font-size: 1.5em;
-                        margin-top: 1em;
-                    }
-                }
-            }
-            .right_content{
-                margin: 13em 0;
-                .recover{
-                    font-size: 30px;
-                }
-                .let_input_title{
-                    font-size: 18px;
-                }
-                .email_block{
-                    .title_email{
-                        font-size: 1.3em;
-                    }
-                    .input_email{
-                        
-                        height: 50px;
-                        margin-top:15px;
-                        .fa-envelope-o{
-                            font-size: 23px;
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 1.6em;
-                        }
-                        ::placeholder{
-                            font-size: 0.6em;
-                        }
-                    }
-                }
-                
-                .send{
-                    button{
-                        max-width: 100px;
-                        font-size: 1.2em;
-                        height: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-//Screen 768px and down: 768px->576px
+
 @media (max-width: 767px) {
     body{
         .recover_form{
@@ -106,8 +49,11 @@ body{
             .left_content{
                 height:28vh;
                 .logo{
-                    text-align: center;
                     padding-left: 0;
+                    text-align: center;
+                    img{
+                        max-width: 34%;
+                        }
                 }
                 .wellcome{
                     margin: 0 2em;
@@ -123,13 +69,103 @@ body{
                 }
             }
             .right_content{
-                margin: 1em 0;
-                .title{
-                    .recover{
-                        font-size: 2.5em;
+                margin: 9em 1em;
+                .recover{
+                    font-size: 30px;
+                }
+                .let_input_title{
+                    font-size: 18px;
+                    }
+                .email_block{
+                    .title_email{
+                        font-size: 1.4em;
+                    }
+                    .input_email{
+                        height: 50px;
+                        margin-top:15px;
+                        .iconLeft{
+                            margin-left: 10px;
+                            margin-right: 5px;
+                            font-size: 23px;
+                        }
+                        input{
+                            height: 50px;
+                            font-size: 16px;
+                        }
+                        ::placeholder{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .send{
+                    button{
+                        max-width: 30%;
+                        font-size: 13px;
+                        height: 40px;
                     }
                 }
             }
         }
     }
 }
+//Screen 992px and down: 991px->768px
+// @media (max-width: 991px) { 
+//     body{
+//         .recover_form{
+//             .left_content{
+//                 height:100vh;
+//                 .logo{
+//                     text-align: center;
+//                     padding-left: 0;
+//                 }
+//                 .wellcome{
+//                     margin: 0 2em;
+//                     margin-top: 10em;
+//                     .wellcome_title{
+//                         font-size: 2.5em;
+//                     }
+//                     .wellcome_content{
+//                         font-size: 1.5em;
+//                         margin-top: 1em;
+//                     }
+//                 }
+//             }
+//             .right_content{
+//                 .recover{
+//                     font-size: 30px;
+//                 }
+//                 .let_input_title{
+//                     font-size: 18px;
+//                 }
+//                 .email_block{
+//                     .title_email{
+//                         font-size: 1.3em;
+//                     }
+//                     .input_email{
+                        
+//                         height: 50px;
+//                         margin-top:15px;
+//                         .fa-envelope-o{
+//                             font-size: 20px;
+//                         }
+//                         input{
+//                             height: 50px;
+//                             font-size: 1.2em;
+//                         }
+//                         ::placeholder{
+//                             font-size: 0.8em;
+//                         }
+//                     }
+//                 }
+//                 .send{
+//                     button{
+//                         max-width: 50%;
+//                         font-size: 1.2em;
+//                         height: 50px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+//Screen 768px and down: 768px->576px

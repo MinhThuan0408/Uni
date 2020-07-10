@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif; }
   body .recover_form {
     display: flex;
-    height: 100vh; }
+    height: 100%; }
     body .recover_form .left_content {
       background-image: url(../images/bg_login.png);
       background-repeat: no-repeat;
@@ -27,6 +27,7 @@ body {
           font-style: normal;
           line-height: 1.2; }
         body .recover_form .left_content .wellcome .wellcome_content {
+          margin-top: 31px;
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -34,7 +35,7 @@ body {
           line-height: 1.21;
           letter-spacing: normal; }
     body .recover_form .right_content {
-      margin: 13em 0; }
+      margin: 20em 2em; }
       body .recover_form .right_content .recover {
         text-align: center;
         font-size: 48px;
@@ -45,10 +46,14 @@ body {
         letter-spacing: normal;
         color: #6d30ab; }
       body .recover_form .right_content .let_input_title {
-        color: #6d6d6d;
-        font-style: italic;
         font-size: 24px;
-        text-align: center; }
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.21;
+        letter-spacing: normal;
+        text-align: center;
+        color: #6d6d6d; }
       body .recover_form .right_content .email_block {
         margin: 0 20%; }
         body .recover_form .right_content .email_block .title1 {
@@ -67,9 +72,10 @@ body {
           background-color: #f5f5f5;
           text-align: left;
           margin-top: 15px; }
-          body .recover_form .right_content .email_block .input1 .la-user {
+          body .recover_form .right_content .email_block .input1 .iconLeft {
             font-size: 29px;
-            margin: 0 10px; }
+            margin-left: 28px;
+            margin-right: 10px; }
           body .recover_form .right_content .email_block .input1 input {
             height: 70px;
             background-color: #f5f5f5;
@@ -101,9 +107,10 @@ body {
           height: 70px;
           background-color: #f5f5f5;
           text-align: left; }
-          body .recover_form .right_content .email_block .input2 .la-lock {
+          body .recover_form .right_content .email_block .input2 .iconLeft {
             font-size: 29px;
-            margin: 0 10px; }
+            margin-left: 28px;
+            margin-right: 10px; }
           body .recover_form .right_content .email_block .input2 input {
             height: 70px;
             background-color: #f5f5f5;
@@ -121,7 +128,8 @@ body {
             letter-spacing: normal; }
           body .recover_form .right_content .email_block .input2 .field_icon {
             font-size: 29px;
-            margin: 0 10px;
+            margin-left: 28px;
+            margin-right: 10px;
             color: #6d30ab; }
       body .recover_form .right_content .send {
         text-align: center; }
@@ -134,60 +142,27 @@ body {
           letter-spacing: normal;
           margin-top: 30px;
           width: 306px;
-          max-width: 100%;
+          max-width: 50%;
           height: 70px;
           color: white;
           border: none;
           outline: none;
           background-color: #6d30ab;
-          transition: 0.3s ease-in-out; }
+          transition: 0.3s ease-in-out;
+          max-width: 30%; }
         body .recover_form .right_content .send button:hover {
           box-shadow: 5px 10px 18px #888888; }
 
-@media (max-width: 991px) {
-  body .recover_form .left_content {
-    height: 100vh; }
-    body .recover_form .left_content .logo {
-      text-align: center;
-      padding-left: 0; }
-    body .recover_form .left_content .wellcome {
-      margin: 0 2em;
-      margin-top: 10em; }
-      body .recover_form .left_content .wellcome .wellcome_title {
-        font-size: 2.5em; }
-      body .recover_form .left_content .wellcome .wellcome_content {
-        font-size: 1.5em;
-        margin-top: 1em; }
-  body .recover_form .right_content {
-    margin: 13em 0; }
-    body .recover_form .right_content .recover {
-      font-size: 30px; }
-    body .recover_form .right_content .let_input_title {
-      font-size: 18px; }
-    body .recover_form .right_content .email_block .title_email {
-      font-size: 1.3em; }
-    body .recover_form .right_content .email_block .input_email {
-      height: 50px;
-      margin-top: 15px; }
-      body .recover_form .right_content .email_block .input_email .fa-envelope-o {
-        font-size: 23px; }
-      body .recover_form .right_content .email_block .input_email input {
-        height: 50px;
-        font-size: 1.6em; }
-      body .recover_form .right_content .email_block .input_email ::placeholder {
-        font-size: 0.6em; }
-    body .recover_form .right_content .send button {
-      max-width: 100px;
-      font-size: 1.2em;
-      height: 50px; } }
 @media (max-width: 767px) {
   body .recover_form {
     display: inline-block; }
     body .recover_form .left_content {
       height: 28vh; }
       body .recover_form .left_content .logo {
-        text-align: center;
-        padding-left: 0; }
+        padding-left: 0;
+        text-align: center; }
+        body .recover_form .left_content .logo img {
+          max-width: 34%; }
       body .recover_form .left_content .wellcome {
         margin: 0 2em;
         margin-top: 1em; }
@@ -198,8 +173,28 @@ body {
           font-size: 1.5rem;
           margin-top: 0; }
     body .recover_form .right_content {
-      margin: 1em 0; }
-      body .recover_form .right_content .title .recover {
-        font-size: 2.5em; } }
+      margin: 9em 1em; }
+      body .recover_form .right_content .recover {
+        font-size: 30px; }
+      body .recover_form .right_content .let_input_title {
+        font-size: 18px; }
+      body .recover_form .right_content .email_block .title_email {
+        font-size: 1.4em; }
+      body .recover_form .right_content .email_block .input_email {
+        height: 50px;
+        margin-top: 15px; }
+        body .recover_form .right_content .email_block .input_email .iconLeft {
+          margin-left: 10px;
+          margin-right: 5px;
+          font-size: 23px; }
+        body .recover_form .right_content .email_block .input_email input {
+          height: 50px;
+          font-size: 16px; }
+        body .recover_form .right_content .email_block .input_email ::placeholder {
+          font-size: 16px; }
+      body .recover_form .right_content .send button {
+        max-width: 30%;
+        font-size: 13px;
+        height: 40px; } }
 
 /*# sourceMappingURL=forgotpass.css.map */
