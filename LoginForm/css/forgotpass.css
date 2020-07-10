@@ -7,7 +7,8 @@ body {
       background-image: url(../images/bg_login.png);
       background-repeat: no-repeat;
       background-size: cover;
-      margin: 0 -15px; }
+      margin: 0 -15px;
+      height: 100%; }
       body .recover_form .left_content .logo {
         padding-top: 43px;
         padding-left: 48px; }
@@ -34,7 +35,8 @@ body {
           line-height: 1.21;
           letter-spacing: normal; }
     body .recover_form .right_content {
-      margin: 20em 2em; }
+      padding: 20em 2em;
+      height: 100vh; }
       body .recover_form .right_content .recover {
         text-align: center;
         font-size: 48px;

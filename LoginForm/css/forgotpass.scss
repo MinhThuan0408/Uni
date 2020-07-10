@@ -6,9 +6,11 @@ body{
         height: 100%;
         .left_content{
             @include left;
+            height: 100%;
         }
         .right_content{
-            margin: 20em 2em;
+            padding: 20em 2em;
+            height: 100vh;
             .recover{
                 @include bigTitleRight;
                 
