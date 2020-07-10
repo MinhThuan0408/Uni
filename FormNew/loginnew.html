@@ -16,41 +16,32 @@
         <div class="wellcome__logo">
             <img class="wellcome__imgLogo" src="./images/logo.svg" alt="logo">
         </div>
-        <div class="wellcome__title">
-            Chào mừng bạn
-        </div>
-        <div class="wellcome__content">
-            Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime
-        </div>
+        <div class="wellcome__title">Chào mừng bạn</div>
+        <div class="wellcome__content">Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime</div>
     </div>
     <div class="login">
         <div class="loginBlock">
-            <div class="loginBlock__title">
-                Đăng nhập vào Minerva
-            </div>
+            <div class="loginBlock__title ">Đăng nhập vào Minerva</div>
             <div class="loginBlock__content">
-                <div class="loginBlock__content__labelLogin">
-                    Tên đăng nhập
+
+                <!-- block username -->
+                <div class="loginBlock__labelLogin">Tên đăng nhập</div>
+                <div class="loginBlock__inputUserName">
+                    <i class="las la-user loginBlock__iconUser"></i>
+                    <input class="loginBlock__inputUserNameBox" placeholder="Nhập tên đang nhập" required>
                 </div>
-                <div class="loginBlock__content__inputUserName">
-                    <i class="las la-user loginBlock__content__iconUser"></i>
-                    <input class="loginBlock__content__inputUserNameBox" placeholder="Nhập tên đang nhập" required>
-                </div>
-                <div class="loginBlock__content__labelPass">
-                    Mật khẩu
-                </div>
-                <div class="loginBlock__content__inputPass">
-                    <i class="las la-lock loginBlock__content__iconLock"></i>
-                    <input class="loginBlock__content__inputPWBox" placeholder="Nhập mật khẩu" type="password" required>
-                    <span toggle="#password-field" class="las la-fw la-eye-slash loginBlock__content__iconEye toggle-password"></span>
+
+                <!-- block pass -->
+                <div class="loginBlock__labelPass">Mật khẩu</div>
+                <div class="loginBlock__inputPass">
+                    <i class="las la-lock loginBlock__iconLock"></i>
+                    <input class="loginBlock__inputPWBox" placeholder="Nhập mật khẩu" type="password" required>
+                    <span toggle="#password-field" class="las la-fw la-eye-slash loginBlock__iconEye toggle-password"></span>
                 </div>
             </div>
-            <div class="loginBlock__forgotPass">
-                <a  href="#">Quên mật khẩu</a>
-            </div>
-            <button type="submit" class="loginBlock__btnLogin">
-                ĐĂNG NHẬP
-            </button>
+
+            <div class="loginBlock__forgotPass"> <a  href="#">Quên mật khẩu</a></div>
+            <button type="submit" class="loginBlock__btnLogin">ĐĂNG NHẬP</button>
         </div>
     </div>
 </body>
