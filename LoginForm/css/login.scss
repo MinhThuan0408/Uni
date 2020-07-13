@@ -2,230 +2,178 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    .login_form{
-        display: flex;
-        height: 100%;
-        .left_content{
-            @include left;
-            height: 100%;
+    
+    .left_content{
+        @include left;
+    }
+    .right_content{
+        padding-top: 15%;
+        .login_minerva{
+            @include bigTitleRight;
         }
-        .right_content{
-            height: 100vh;
-            padding: 12em 2em;
-            .login_minerva{
-                @include bigTitleRight;
-            }
-            .login_block{
-                margin: 0 20%;
-                @include blockLabelAndBox;
-                .input_pass{
-                    .field_icon{
-                        margin-right: 28px;
-                    }
+        .login_block{
+            margin: 0 20%;
+            @include blockLabelAndBox;
+            .input_pass{
+                .field_icon{
+                    margin-right: 28px;
                 }
             }
-            .forgotpass{
-                text-align: center;
-                margin-top: 30px;
-                margin-bottom: 15px;
-                a{
-                    font-size: 24px;
-                    color: #6d6d6d;
-                    text-decoration: underline;
-                    font-size: 24px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.21;
-                    letter-spacing: normal;
-                }
+        }
+        .forgotpass{
+            text-align: center;
+            margin-top: 30px;
+            a{
+                font-size: 24px;
+                color: #6d6d6d;
+                text-decoration: underline;
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.21;
+                letter-spacing: normal;
             }
-            .login_button{
-                text-align: center;
-                button{
-                    @include button;
-                }
-                button:hover{
-                    @include buttonhover;
-                }
+        }
+        .login_button{
+            text-align: center;
+            button{
+                @include button;
+            }
+            button:hover{
+                @include buttonhover;
             }
         }
     }
+    
 }
 
 //Screen 768px and down: 768px->576px
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     body{
-        .login_form{
-            display: inline-block;
-            .left_content{
-                height:28vh;
-                .logo{
-                    text-align: center;
-                    padding-left: 0;
+        .left_content{
+            .wellcome{
+                padding-left: 6%;
+                padding-right: 6%;
+                padding-top: 50%;
+                .wellcome_title{
+                    font-size: 47px;
                 }
-                .wellcome{
-                    margin: 0 2em;
-                    margin-top: 1em;
-                    .wellcome_title{
-                        font-size: 2.5em;
-                        font-weight: 550;
-                    }
-                    .wellcome_content{
-                        font-size: 1.5rem;
-                        margin-top: 0;
-                    }
-                }
-            }
-            .right_content{
-                height: 0;
-                padding: 8em 2em;
-                .login_minerva{
-                    font-size: 30px;
-                }
-                .login_block{
-                    margin: 0 15%;
-                    .title_username{
-                        margin-top: 0.7em;
-                        font-size: 1.4em;
-                    }
-                    .title_pass{
-                        margin-top: 0.7em;
-                        font-size: 1.4em;
-                        margin-bottom: 15px;
-                    }
-                    .input_username{
-                        height: 50px;
-                        margin-top:15px;
-                        .iconLeft{
-                            font-size: 23px;
-                            margin-left: 10px;
-                            margin-right: 5px;
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 16px;
-                        }
-                        ::placeholder{
-                            font-size: 16px;
-                        }
-                    }
-                    .input_pass{
-                        height: 50px;
-                        .iconLeft{
-                            font-size: 23px;
-                            margin-left: 10px;
-                            margin-right: 5px;
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 16px;
-                        }
-                        .field_icon{
-                            font-size: 23px;
-                            margin-left: 10px;
-                            margin-right: 5px;
-                        }
-                        ::placeholder{
-                            font-size: 16px;
-                        }
-                    }
-                    .forgotpass{
-                        a{
-                            font-size: 1.3em;
-                        }
-                    }
-                    .login_button{
-                        button{
-                            font-size: 13px;
-                            height: 40px;
-                        }
-                        
-                    }
+                .wellcome_content{
+                    font-size: 21px;
                 }
             }
         }
+        .right_content{
+            padding-top: 30%;
+            .login_minerva{
+                font-size: 45px;
+            }
+            .login_block{
+                margin: 0 15%;
+            }
+            .login_button{
+                button{
+                    font-size: 22px;
+                    height: 65px;
+                }
+            }
+        }
+    
     }
 }
-// //Screen 992px and down: 991px->768px
-// @media (max-width: 991px) { 
-//     body{
-//         .login_form{
-//             .left_content{
-//                 height:100vh;
-//                 .logo{
-//                     text-align: center;
-//                     padding-left: 0;
-//                 }
-//                 .wellcome{
-//                     margin: 0 2em;
-//                     margin-top: 10em;
-//                     .wellcome_title{
-//                         font-size: 2.5em;
-//                     }
-//                     .wellcome_content{
-//                         font-size: 1.5em;
-//                         margin-top: 1em;
-//                     }
-//                 }
-//             }
-//             .right_content{
-//                 .login_minerva{
-//                     font-size: 40px;
-//                 }
-//                 .login_block{
-//                     margin: 0 20%;
-//                     .title_username{
-//                         margin-top: 2em;
-//                     }
-//                     .title_pass{
-//                         margin-top: 30px;
-//                         margin-bottom: 15px;
-//                     }
-//                     .input_username{
-//                         height: 50px;
-//                         margin-top:15px;
-//                         .la-user{
-//                             font-size: 23px;
-//                         }
-//                         input{
-//                             height: 50px;
-//                             font-size: 18px;
-//                         }
-//                         ::placeholder{
-//                             font-size: 20px;
-//                         }
-//                     }
-//                     .input_pass{
-//                         height: 50px;
-//                         .la-lock{
-//                             font-size: 23px;
-                            
-//                         }
-//                         input{
-//                             height: 50px;
-//                             font-size: 18px;
-//                         }
-//                         .field_icon{
-//                             font-size: 23px;
-//                         }
-//                         ::placeholder{
-//                             font-size: 20px;
-//                         }
-//                     }
-//                     .forgotpass{
-//                         a{
-//                             font-size: 1.3em;
-//                         }
-//                     }
-//                     .login_button{
-//                         button{
-//                             font-size: 1.2em;
-//                             height: 50px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@media (max-width: 767px) {
+    body{
+        .left_content{
+            height:auto;
+            .logo{
+                text-align: center;
+                padding-left: 0;
+                padding-top: 2em;
+            }
+            .wellcome{
+                padding: 2em;
+                .wellcome_title{
+                    font-size: 2.3em;
+                    font-weight: 550;
+                }
+                .wellcome_content{
+                    margin-top: 0;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .right_content{
+            height: 70vh;
+            overflow: scroll;
+            padding: 2em;
+            .login_minerva{
+                font-size: 30px;
+            }
+            .login_block{
+                margin: 0 10%;
+                .title_username{
+                    margin-top: 0.7em;
+                    font-size: 1.4em;
+                }
+                .title_pass{
+                    margin-top: 0.7em;
+                    font-size: 1.4em;
+                    margin-bottom: 15px;
+                }
+                .input_username{
+                    height: 50px;
+                    margin-top:15px;
+                    .iconLeft{
+                        font-size: 23px;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                    input{
+                        height: 50px;
+                        font-size: 16px;
+                    }
+                    ::placeholder{
+                        font-size: 16px;
+                    }
+                }
+                .input_pass{
+                    height: 50px;
+                    .iconLeft{
+                        font-size: 23px;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                    input{
+                        height: 50px;
+                        font-size: 16px;
+                    }
+                    .field_icon{
+                        font-size: 23px;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                    ::placeholder{
+                        font-size: 16px;
+                    }
+                }
+                .forgotpass{
+                    a{
+                        font-size: 1.3em;
+                    }
+                }
+                .login_button{
+                    margin: 0 20%;
+                    button{
+                        font-size: 13px;
+                        height: 40px;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
+//991
+

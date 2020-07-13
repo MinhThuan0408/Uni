@@ -37,8 +37,8 @@
     line-height: 1.21;
     letter-spacing: normal;
     margin-top: 30px;
-    width: 306px;
-    max-width: 50%;
+    width: 100%;
+    max-width: 306px;
     height: 70px;
     color: white;
     border: none;
@@ -52,40 +52,43 @@
     color: #6d30ab;
 }
 @mixin left {
-        background-image: url(../images/bg_login.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 -15px;
-        .logo{
-            padding-top: 43px;
-            padding-left: 48px;
-            img{
-                max-width: 183px;
-                width: 100%;
-                height: auto;
-            }
+    background-image: url(../images/bg_login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 -15px;
+    height: 100vh;
+    .logo{
+        padding-top: 43px;
+        padding-left: 48px;
+        display: block;
+        img{
+            max-width: 183px;
+            width: 100%;
+            height: auto;
         }
-        .wellcome{
-            text-align: center;
-            color: white;
-            margin: 45% 8%;
-            .wellcome_title{
-                font-size: 60px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.2;
-            }
-            .wellcome_content{
-                margin-top: 31px;
-                font-size: 24px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.21;
-                letter-spacing: normal;
-            }
-        
+    }
+    .wellcome{
+        text-align: center;
+        color: white;
+        padding-top: 36%;
+        padding-left: 13%;
+        padding-right: 13%;
+        .wellcome_title{
+            font-size: 60px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+        }
+        .wellcome_content{
+            margin-top: 31px;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+        }
     }
 }
 @mixin plaholderBox($fontsize) {

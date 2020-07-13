@@ -1,16 +1,12 @@
 @import '../base/mixin';
 body{
     font-family: 'Roboto', sans-serif;
-    .recover_form{
-        display: flex;
-        height: 100%;
+    
         .left_content{
             @include left;
-            height: 100%;
         }
         .right_content{
-            padding: 20em 2em;
-            height: 100vh;
+            padding-top: 15%;
             .recover{
                 @include bigTitleRight;
                 
@@ -33,7 +29,6 @@ body{
                 text-align: center;
                 button{
                     @include button;
-                    max-width: 30%;
                 }
                 button:hover {
                     @include buttonhover;
@@ -41,45 +36,75 @@ body{
             }
         }
     }
-}
 
-@media (max-width: 767px) {
-    body{
-        .recover_form{
-            display: inline-block;
+    @media (max-width: 991px) {
+        body{
             .left_content{
-                height:28vh;
-                .logo{
-                    padding-left: 0;
-                    text-align: center;
-                    img{
-                        max-width: 34%;
-                        }
-                }
                 .wellcome{
-                    margin: 0 2em;
-                    margin-top: 1em;
+                    padding-left: 6%;
+                    padding-right: 6%;
+                    padding-top: 50%;
                     .wellcome_title{
-                        font-size: 2.5em;
-                        font-weight: 550;
+                        font-size: 47px;
                     }
                     .wellcome_content{
-                        font-size: 1.5rem;
-                        margin-top: 0;
+                        font-size: 21px;
                     }
                 }
             }
             .right_content{
-                padding: 11em 1em;
-                height: 0;
+                padding-top: 40%;
+                .login_minerva{
+                    font-size: 45px;
+                }
+                .email_block{
+                    margin: 0 15%;
+                }
+                .send{
+                    button{
+                        font-size: 22px;
+                        height: 65px;
+                    }
+                }
+            }
+        
+        }
+    }
+@media (max-width: 767px) {
+    body{
+        .left_content{
+            height:auto;
+            .logo{
+                text-align: center;
+                padding-left: 0;
+                padding-top: 2em;
+            }
+            .wellcome{
+                padding: 2em;
+                .wellcome_title{
+                    font-size: 2.3em;
+                    font-weight: 550;
+                }
+                .wellcome_content{
+                    margin-top: 0;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+            .right_content{
+                height: 70vh;
+                overflow: scroll;
+                padding: 2em;
                 .recover{
-                    font-size: 30px;
+                    font-size: 28px;
                 }
                 .let_input_title{
-                    font-size: 18px;
+                    font-size: 16px;
                     }
                 .email_block{
+                    margin: 0 10%;
                     .title_email{
+                        margin-top: 0.7em;
                         font-size: 1.4em;
                     }
                     .input_email{
@@ -100,8 +125,8 @@ body{
                     }
                 }
                 .send{
+                    margin: 0 20%;
                     button{
-                        max-width: 30%;
                         font-size: 13px;
                         height: 40px;
                     }
@@ -109,65 +134,4 @@ body{
             }
         }
     }
-}
-//Screen 992px and down: 991px->768px
-// @media (max-width: 991px) { 
-//     body{
-//         .recover_form{
-//             .left_content{
-//                 height:100vh;
-//                 .logo{
-//                     text-align: center;
-//                     padding-left: 0;
-//                 }
-//                 .wellcome{
-//                     margin: 0 2em;
-//                     margin-top: 10em;
-//                     .wellcome_title{
-//                         font-size: 2.5em;
-//                     }
-//                     .wellcome_content{
-//                         font-size: 1.5em;
-//                         margin-top: 1em;
-//                     }
-//                 }
-//             }
-//             .right_content{
-//                 .recover{
-//                     font-size: 30px;
-//                 }
-//                 .let_input_title{
-//                     font-size: 18px;
-//                 }
-//                 .email_block{
-//                     .title_email{
-//                         font-size: 1.3em;
-//                     }
-//                     .input_email{
-                        
-//                         height: 50px;
-//                         margin-top:15px;
-//                         .fa-envelope-o{
-//                             font-size: 20px;
-//                         }
-//                         input{
-//                             height: 50px;
-//                             font-size: 1.2em;
-//                         }
-//                         ::placeholder{
-//                             font-size: 0.8em;
-//                         }
-//                     }
-//                 }
-//                 .send{
-//                     button{
-//                         max-width: 50%;
-//                         font-size: 1.2em;
-//                         height: 50px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-//Screen 768px and down: 768px->576px
+
