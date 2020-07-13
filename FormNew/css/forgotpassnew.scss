@@ -3,14 +3,15 @@ body{
     display: flex;
     font-family: 'Roboto', sans-serif;
     .wellcome{
-       @include wellcome;
+        @include wellcome;
+        height: 100vh;
     }
     .recover{
+        height: auto;
         width: 64%;
-        height: 100vh;
         text-align: center;
         .recoverBlock{
-            padding: 20em 2em;
+            padding: 13em 2em;
             &__content{
                 margin: 30px 240px;
                 text-align: left;
@@ -36,6 +37,9 @@ body{
             }
             &__inputEmailBox{
                 @include inputBox;
+            }
+            ::placeholder{
+                @include placeholder;
             }
             &__iconMail{
                 @include icon;
@@ -67,8 +71,6 @@ body{
             }
         }
         .recover{
-            height: 100vh;
-            text-align: center;
             .recoverBlock{
                 &__title{
                     font-size: 3em;
@@ -101,7 +103,7 @@ body{
                     font-size: 24px;
                 }
                 &__btnSend{
-                    max-width: 30%;
+                   width: 30%;
                     font-size: 13px;
                     height: 50px;
                 }
@@ -165,8 +167,8 @@ body{
     body{
         display: inline-block;
         .wellcome{
+            height: auto;
             width: 100%;
-            height: 27vh;
             &__imgLogo{
                 max-width: 183px;
                 width: 100%;
@@ -188,14 +190,14 @@ body{
             &__content{
                 margin-top: 5px;
                 font-size: 16px;
+                padding-bottom: 2em;
             }
         }
         .recover{
+            height: 70vh;
             width: 100%;
-            text-align: center;
-            height: 10vh;
             .recoverBlock{
-                padding: 4em 2em;
+                padding: 2em;
                 &__title{
                     font-size: 2.1em;
                     margin: 0px 10px;
@@ -221,6 +223,9 @@ body{
                     margin-left: 15px;
                     margin-right: 5px;
                 }
+                &__btnSend{
+                    height: 40px;
+                }
             }
     
         }
@@ -242,9 +247,6 @@ body{
             }
         }
         .recover{
-            width: 100%;
-            text-align: center;
-            height: 10vh;
             .recoverBlock{
                 &__title{
                     font-size: 1.7em;
@@ -254,7 +256,7 @@ body{
                     font-size: 12px;
                 }
                 &__content{
-                    margin: 30px 50px;
+                    margin: 20px 30px;
                 }
                 &__labelEmail{
                     font-size: 1em;

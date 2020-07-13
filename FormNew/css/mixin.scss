@@ -7,16 +7,15 @@
     &__imgLogo{
         max-width: 183px;
         width: 100%;
-        height: auto;
     }
     &__logo{
         margin-top: 43px;
         margin-left: 48px;
     }
     &__title{
-        margin-top: 26rem;
         margin-left: 92px;
         margin-right: 92px;
+        margin-top: 36%;
         font-size: 60px;
         font-weight: bold;
         font-stretch: normal;
@@ -32,7 +31,7 @@
         color: white;
         text-align: center;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
     }
 }
 
@@ -61,6 +60,7 @@
     background-color: #f5f5f5;
     height: 70px;
     max-width: 100%;
+    margin-top: 15px;
 }
 @mixin inputBox {
     outline: none;
@@ -79,7 +79,7 @@
     margin-right: 10px;
 }
 @mixin button {
-    margin-top: 30px;
+    margin-top: 60px;
     max-width: 100%;
     width: 306px;
     font-size: 24px;

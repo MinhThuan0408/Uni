@@ -7,13 +7,14 @@ body{
     }
     .login{
         width: 64%;
-        height: auto;
+        height: 100vh;
         text-align: center;
         .loginBlock{
-            margin: 190px 0;
+            padding-top: 15%;
             &__content{
                 margin: 30px 240px;
                 text-align: left;
+                
             }
             &__title{
                 @include bigTitleRight;
@@ -84,25 +85,21 @@ body{
                 margin-right: 60px;
             }
             &__content{
-                margin: 0 92px;
+                margin: 0 20%;
                 margin-top: 15px;
                 font-size: 21px;
                 margin-left: 60px;
                 margin-right: 60px;
-
             }
         }
         .login{
-            height: 100vh;
-            text-align: center;
             .loginBlock{
-                margin: 150px 0;
+                padding-top: 20%;
                 &__title{
                     font-size: 3em;
-                    margin: 0px 150px;
                 }
                 &__content{
-                    margin: 30px 130px;
+                    margin: 0 20%;
                 }
                 &__labelLogin{
                     font-size: 1.9em;
@@ -145,14 +142,13 @@ body{
                     font-size: 24px;
                 }
                 &__forgotPass{
+                    padding-top: 15px;
                     a{
-                    font-size: 20px;
+                        margin-top: 30px;
                 }
                 }
                 &__btnLogin{
-                    max-width: 30%;
-                    font-size: 13px;
-                    height: 50px;
+                    max-width: 40%;
                 }
             }
     
@@ -174,13 +170,13 @@ body{
         }
         .login{
             .loginBlock{
-                margin: 160px 0;
+                padding-top: 30%;
                 &__title{
                     font-size: 2.5em;
                     margin: 0px 10px;
                 }
                 &__content{
-                    margin: 30px 130px;
+                    // margin: 0 20%;
                 }
                 &__labelLogin{
                     font-size: 1.6em;
@@ -232,7 +228,11 @@ body{
                         font-size: 18px;
                     }
                 }
-                
+                &__btnLogin{
+                    font-size: 16px;
+                    max-width: 35%;
+                    height: 45px;
+                }
             }
     
         }
@@ -243,7 +243,7 @@ body{
         display: inline-block;
         .wellcome{
             width: 100%;
-            height: 33vh;
+            height:auto;
             &__imgLogo{
                 max-width: 183px;
                 width: 100%;
@@ -265,14 +265,15 @@ body{
             &__content{
                 margin-top: 5px;
                 font-size: 16px;
+                padding-bottom: 2em;
             }
         }
         .login{
             width: 100%;
             text-align: center;
-            height: 10vh;
+            height: auto;
             .loginBlock{
-                margin: 50px 0;
+                padding: 2em;
                 &__title{
                     font-size: 2.1em;
                     margin: 0px 10px;
@@ -326,9 +327,16 @@ body{
                     margin-right: 5px;
                 }
                 &__forgotPass{
+                    padding-top: 0;
                     a{
                         font-size: 15px;
                     }
+                }
+                &__btnLogin{
+                    margin-top: 30px;
+                    font-size: 14px;
+                    max-width: 30%;
+                    height: 40px;
                 }
             }
     
@@ -338,8 +346,7 @@ body{
 @media (max-width: 374px) {
     body{
         .wellcome{
-            height: 30vh;
-            
+            height: auto;
             &__imgLogo{
                 max-width: 130px;
             }
@@ -350,21 +357,20 @@ body{
             &__content{
                 margin-top: 0;
                 font-size: 13px;
+                padding-bottom: 2em;
             }
         }
         .login{
             width: 100%;
             text-align: center;
-            height: 10vh;
+            height: auto;
             .loginBlock{
-                margin: 50px 0;
                 &__title{
                     font-size: 1.7em;
                     margin: 0px 10px;
                 }
                 &__content{
-                    margin: 30px 70px;
-                    
+                    margin: 15px 50px;
                 }
                 &__labelLogin{
                     font-size: 1em;
@@ -405,12 +411,16 @@ body{
                 }
                 &__iconEye{
                     font-size: 16px;
-                    margin-left: 10px;
+                    margin-left: 0;
                 }
                 &__forgotPass{
+                    
                     a{
                         font-size: 13px;
                     }
+                }
+                &__btnLogin{
+                    font-size: 12px;
                 }
             }
     

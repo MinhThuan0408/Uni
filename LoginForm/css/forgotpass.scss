@@ -6,7 +6,7 @@ body{
             @include left;
         }
         .right_content{
-            padding-top: 15%;
+            padding-top: 20%;
             .recover{
                 @include bigTitleRight;
                 
@@ -53,7 +53,7 @@ body{
                 }
             }
             .right_content{
-                padding-top: 40%;
+                padding-top: 45%;
                 .login_minerva{
                     font-size: 45px;
                 }
@@ -64,6 +64,7 @@ body{
                     button{
                         font-size: 22px;
                         height: 65px;
+                        margin-top: 30px;
                     }
                 }
             }
@@ -93,7 +94,6 @@ body{
         }
             .right_content{
                 height: 70vh;
-                overflow: scroll;
                 padding: 2em;
                 .recover{
                     font-size: 28px;
@@ -125,7 +125,7 @@ body{
                     }
                 }
                 .send{
-                    margin: 0 20%;
+                    margin: 0 30%;
                     button{
                         font-size: 13px;
                         height: 40px;

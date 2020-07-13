@@ -146,7 +146,7 @@ body {
         font-style: normal;
         line-height: 1.21;
         letter-spacing: normal;
-        margin-top: 30px;
+        margin-top: 61px;
         width: 100%;
         max-width: 306px;
         height: 70px;
@@ -164,7 +164,7 @@ body {
   body .left_content .wellcome {
     padding-left: 6%;
     padding-right: 6%;
-    padding-top: 50%; }
+    padding-top: 65%; }
     body .left_content .wellcome .wellcome_title {
       font-size: 47px; }
     body .left_content .wellcome .wellcome_content {
@@ -177,7 +177,8 @@ body {
       margin: 0 15%; }
     body .right_content .login_button button {
       font-size: 22px;
-      height: 65px; } }
+      height: 65px;
+      margin-top: 30px; } }
 @media (max-width: 767px) {
   body .left_content {
     height: auto; }
@@ -194,8 +195,7 @@ body {
         margin-top: 0;
         font-size: 1.3rem; }
   body .right_content {
-    height: 70vh;
-    overflow: scroll;
+    height: auto;
     padding: 2em; }
     body .right_content .login_minerva {
       font-size: 30px; }
@@ -238,7 +238,7 @@ body {
       body .right_content .login_block .forgotpass a {
         font-size: 1.3em; }
       body .right_content .login_block .login_button {
-        margin: 0 20%; }
+        margin: 0 25%; }
         body .right_content .login_block .login_button button {
           font-size: 13px;
           height: 40px; } }

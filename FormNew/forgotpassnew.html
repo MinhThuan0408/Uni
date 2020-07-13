@@ -31,10 +31,10 @@
                 <div class="recoverBlock__labelEmail">Email</div>
                 <div class="recoverBlock__inputEmail">
                     <i class="fa fa-envelope-o recoverBlock__iconMail" aria-hidden="true"></i>
-                    <input class="recoverBlock__inputEmailBox" type="email" placeholder="Nhập địa chỉ email"   required>
+                    <input class="recoverBlock__inputEmailBox" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" type="email" placeholder="Nhập địa chỉ email"   required>
                 </div>
             </div>
-            <button type="submit" class="recoverBlock__btnSend">GỬI</button>
+            <button type="submit" class="recoverBlock__btnSend" onclick="ValidateEmail()">GỬI</button>
         </div>
     </div>
 
