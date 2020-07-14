@@ -243,12 +243,12 @@ body {
   body .recover .recoverBlock__inputEmail {
     height: 30px; }
   body .recover .recoverBlock ::placeholder {
-    font-size: 10px; }
+    font-size: 12px; }
   body .recover .recoverBlock__inputEmailBox {
-    font-size: 10px;
+    font-size: 12px;
     height: 30px; }
   body .recover .recoverBlock__iconMail {
-    font-size: 10px;
+    font-size: 16px;
     margin-left: 5px; } }
 
 /*# sourceMappingURL=forgotpassnew.css.map */

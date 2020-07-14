@@ -24,6 +24,14 @@
     flex-grow: 1;
     width: 100%;
 }
+@mixin plaholderBox($fontsize) {
+    font-size: $fontsize;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
 @mixin icon {
     font-size: 29px;
     margin-left: 28px;
@@ -46,11 +54,22 @@
     background-color: #6d30ab;
     transition: 0.3s ease-in-out;
 }
+@mixin bigTitleRight {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #6d30ab;
+}
 @mixin buttonhover {
     border: 1px solid #6d30ab;
     background-color: white;
     color: #6d30ab;
 }
+//Logo and lời chào
 @mixin left {
     background-image: url(../images/bg_login.png);
     background-repeat: no-repeat;
@@ -91,14 +110,7 @@
         }
     }
 }
-@mixin plaholderBox($fontsize) {
-    font-size: $fontsize;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: italic;
-    line-height: 1.2;
-    letter-spacing: normal;
-}
+//Label và các ô input, icon
 @mixin  blockLabelAndBox {
     .title1{
         font-size: 24px;
@@ -143,14 +155,5 @@
         }
     }
 }
-@mixin bigTitleRight {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.21;
-    letter-spacing: normal;
-    color: #6d30ab;
-}
+
 
