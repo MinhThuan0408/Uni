@@ -28,16 +28,16 @@
       text-align: center;
       font-size: 24px;
       font-weight: normal; }
-  .formminerva .recover {
+  .formminerva .login {
     width: 64%;
     height: 100vh;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center; }
-    .formminerva .recover__content {
+    .formminerva .login__content {
       text-align: left; }
-    .formminerva .recover__title {
+    .formminerva .login__title {
       text-align: center;
       font-size: 48px;
       font-weight: 500;
@@ -46,7 +46,7 @@
       line-height: 1.21;
       letter-spacing: normal;
       color: #6d30ab; }
-    .formminerva .recover__message {
+    .formminerva .login__message {
       font-size: 24px;
       font-weight: 300;
       font-stretch: normal;
@@ -55,7 +55,7 @@
       letter-spacing: normal;
       text-align: center;
       color: #6d6d6d; }
-    .formminerva .recover__label {
+    .formminerva .login__label {
       font-size: 2em;
       font-weight: 500;
       font-stretch: normal;
@@ -63,14 +63,14 @@
       line-height: 1.21;
       letter-spacing: normal;
       margin-top: 30px; }
-    .formminerva .recover__inputarea {
+    .formminerva .login__inputarea {
       display: flex;
       align-items: center;
       background-color: #f5f5f5;
       height: 70px;
       max-width: 100%;
       margin-top: 15px; }
-    .formminerva .recover__input {
+    .formminerva .login__input {
       outline: none;
       border: none;
       flex-grow: 1;
@@ -79,23 +79,27 @@
       background-color: #f5f5f5;
       font-size: 24px;
       padding-right: 10px; }
-    .formminerva .recover ::placeholder {
+    .formminerva .login ::placeholder {
       font-size: 20px;
       font-weight: 300;
       font-stretch: normal;
       font-style: italic;
       line-height: 1.2;
       letter-spacing: normal; }
-    .formminerva .recover__icon {
+    .formminerva .login__icon {
       font-size: 29px;
       margin-left: 28px;
       margin-right: 10px; }
-    .formminerva .recover__iconEye {
+    .formminerva .login__iconEye {
       font-size: 29px;
       margin-left: 10px;
       margin-right: 28px;
       color: #6d30ab; }
-    .formminerva .recover__btn {
+    .formminerva .login__forgotPass a {
+      font-size: 24px;
+      color: grey;
+      text-decoration: underline; }
+    .formminerva .login__btn {
       margin-top: 60px;
       max-width: 100%;
       width: 306px;
@@ -106,11 +110,11 @@
       outline: none;
       background-color: #6d30ab;
       transition: 0.3s ease-in-out; }
-    .formminerva .recover__btn:hover {
+    .formminerva .login__btn:hover {
       border: 1px solid #6d30ab;
       background-color: white;
       color: #6d30ab; }
-  .formminerva .recoverblock {
+  .formminerva .loginblock {
     max-width: 40vw;
     width: 100%; }
 
@@ -121,25 +125,29 @@
   .formminerva .wellcome__content {
     font-size: 21px;
     margin: 15px 60px 0 60px; }
-  .formminerva .recover__title {
+  .formminerva .login__title {
     font-size: 3em; }
-  .formminerva .recover__label {
+  .formminerva .login__label {
     font-size: 1.9em;
     margin-top: 60px; }
-  .formminerva .recover__message {
+  .formminerva .login__message {
     font-size: 18px; }
-  .formminerva .recover__inputarea {
+  .formminerva .login__inputarea {
     height: 55px; }
-  .formminerva .recover ::placeholder {
+  .formminerva .login ::placeholder {
     font-size: 20px; }
-  .formminerva .recover__input {
+  .formminerva .login__input {
     font-size: 20px;
     height: 55px; }
-  .formminerva .recover__icon {
+  .formminerva .login__icon {
     font-size: 24px; }
-  .formminerva .recover__iconEye {
+  .formminerva .login__iconEye {
     font-size: 24px; }
-  .formminerva .recover__btn {
+  .formminerva .login__forgotPass {
+    padding-top: 15px; }
+    .formminerva .login__forgotPass a {
+      margin-top: 30px; }
+  .formminerva .login__btn {
     max-width: 40%; } }
 @media (max-width: 991px) {
   .formminerva .wellcome__title {
@@ -148,28 +156,30 @@
     margin-right: 25px; }
   .formminerva .wellcome__content {
     font-size: 18px; }
-  .formminerva .recover__title {
+  .formminerva .login__title {
     font-size: 2.5em; }
-  .formminerva .recover__label {
+  .formminerva .login__label {
     font-size: 1.6em;
     margin-top: 30px; }
-  .formminerva .recover__message {
+  .formminerva .login__message {
     font-size: 16px; }
-  .formminerva .recover__inputarea {
+  .formminerva .login__inputarea {
     height: 45px; }
-  .formminerva .recover__input {
+  .formminerva .login__input {
     font-size: 16px;
     height: 45px; }
-  .formminerva .recover ::placeholder {
+  .formminerva .login ::placeholder {
     font-size: 16px; }
-  .formminerva .recover__icon {
+  .formminerva .login__icon {
     font-size: 22px;
     margin-left: 20px;
     margin-right: 8px; }
-  .formminerva .recover__iconEye {
+  .formminerva .login__iconEye {
     font-size: 22px;
     margin-left: 20px; }
-  .formminerva .recover__btn {
+  .formminerva .login__forgotPass a {
+    font-size: 18px; }
+  .formminerva .login__btn {
     margin-top: 30px;
     font-size: 16px;
     max-width: 35%;
@@ -194,39 +204,41 @@
         margin-top: 5px;
         font-size: 16px;
         padding-bottom: 2em; }
-    .formminerva .recover {
+    .formminerva .login {
       width: 100%;
       text-align: center;
       height: auto;
       padding: 2em 0;
       font-size: 14px; }
-      .formminerva .recover__title {
+      .formminerva .login__title {
         font-size: 2.1em; }
-      .formminerva .recover__label {
+      .formminerva .login__label {
         font-size: 1.3em; }
-      .formminerva .recover__message {
+      .formminerva .login__message {
         font-size: 14px; }
-      .formminerva .recover__inputarea {
+      .formminerva .login__inputarea {
         height: 35px; }
-      .formminerva .recover ::placeholder {
+      .formminerva .login ::placeholder {
         font-size: 14px; }
-      .formminerva .recover__input {
+      .formminerva .login__input {
         font-size: 14px;
         height: 35px; }
-      .formminerva .recover__icon {
+      .formminerva .login__icon {
         font-size: 20px;
         margin-left: 15px;
         margin-right: 5px; }
-      .formminerva .recover__iconEye {
+      .formminerva .login__iconEye {
         font-size: 20px;
         margin-left: 15px;
         margin-right: 5px; }
-      .formminerva .recover__btn {
+      .formminerva .login__forgotPass a {
+        font-size: 15px; }
+      .formminerva .login__btn {
         margin-top: 30px;
         font-size: 14px;
         max-width: 30%;
         height: 40px; }
-    .formminerva .recoverblock {
+    .formminerva .loginblock {
       max-width: 80vw;
       width: 100%; } }
 @media (max-width: 575px) {
@@ -241,30 +253,32 @@
       margin-top: 0;
       font-size: 13px;
       padding-bottom: 2em; }
-  .formminerva .recover {
+  .formminerva .login {
     width: 100%;
     text-align: center;
     height: auto; }
-    .formminerva .recover__title {
+    .formminerva .login__title {
       font-size: 1.7em; }
-    .formminerva .recover__label {
+    .formminerva .login__label {
       font-size: 1em; }
-    .formminerva .recover__message {
+    .formminerva .login__message {
       font-size: 12px; }
-    .formminerva .recover__inputarea {
+    .formminerva .login__inputarea {
       height: 30px; }
-    .formminerva .recover ::placeholder {
+    .formminerva .login ::placeholder {
       font-size: 10px; }
-    .formminerva .recover__input {
+    .formminerva .login__input {
       font-size: 10px;
       height: 30px; }
-    .formminerva .recover__icon {
+    .formminerva .login__icon {
       font-size: 16px;
       margin-left: 10px; }
-    .formminerva .recover__iconEye {
+    .formminerva .login__iconEye {
       font-size: 16px;
       margin-left: 0; }
-    .formminerva .recover__btn {
+    .formminerva .login__forgotPass a {
+      font-size: 13px; }
+    .formminerva .login__btn {
       font-size: 12px; } }
 
-/*# sourceMappingURL=forgotpassnew.css.map */
+/*# sourceMappingURL=main.css.map */

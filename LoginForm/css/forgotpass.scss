@@ -1,136 +1,216 @@
 @import '../base/mixin';
-body{
+.left_content{
     font-family: 'Roboto', sans-serif;
-    
-        .left_content{
-            @include left;
+    background-image: url(../images/bg_login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 -15px;
+    height: 100vh;
+    .logo{
+        padding-top: 43px;
+        padding-left: 48px;
+        display: block;
+        img{
+            max-width: 183px;
+            width: 100%;
+            height: auto;
         }
-        .right_content{
-            padding-top: 35vh;
-            .recover{
-                @include bigTitleRight;
-                
+    }
+    .wellcome{
+        text-align: center;
+        color: white;
+        padding-top: 27vh;
+        padding-left: 13%;
+        padding-right: 13%;
+        .wellcome_title{
+            font-size: 60px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+        }
+        .wellcome_content{
+            margin-top: 31px;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+        }
+    }
+}
+.right_content{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 35vh;
+    .recover{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        color: #6d30ab;
+    }
+    .let_input_title{
+        font-size: 24px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.21;
+        letter-spacing: normal;
+        text-align: center;
+        color: #6d6d6d;
+    }
+    .email_block{
+        margin: 0 20%;
+        .title_email{
+            font-size: 24px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+            margin-top: 30px;
+        }
+        .input_email{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            background-color: #f5f5f5;
+            text-align: left;
+            margin-top:15px;
+            .iconLeft{
+                font-size: 29px;
+                margin-left: 28px;
+                margin-right: 10px;
             }
-            .let_input_title{
-                font-size: 24px;
+            input{
+                height: 70px;
+                background-color: #f5f5f5;
+                border: none;
+                font-size: 1.6em;
+                outline: none;
+                flex-grow: 1;
+                width: 100%;
+            }
+            ::placeholder{
+                font-size: 20px;
                 font-weight: 300;
                 font-stretch: normal;
                 font-style: italic;
-                line-height: 1.21;
+                line-height: 1.2;
                 letter-spacing: normal;
-                text-align: center;
-                color: #6d6d6d;
-            }
-            .email_block{
-                margin: 0 20%;
-                @include blockLabelAndBox;
-            }
-            .send{
-                text-align: center;
-                button{
-                    @include button;
-                }
-                button:hover {
-                    @include buttonhover;
-                }
             }
         }
-    }
-
-    @media (max-width: 991px) {
-        body{
-            .left_content{
-                .wellcome{
-                    padding-left: 6%;
-                    padding-right: 6%;
-                    .wellcome_title{
-                        font-size: 47px;
-                    }
-                    .wellcome_content{
-                        font-size: 21px;
-                    }
-                }
-            }
-            .right_content{
-                
-                .login_minerva{
-                    font-size: 45px;
-                }
-                .email_block{
-                    margin: 0 15%;
-                }
-                .send{
-                    button{
-                        font-size: 22px;
-                        height: 65px;
-                        margin-top: 30px;
-                    }
-                }
-            }
         
+    }
+    .send{
+        text-align: center;
+        button{
+            @include button;
+        }
+        button:hover {
+            @include buttonhover;
         }
     }
+}
+    
+
+@media (max-width: 991px) {
+
+    .left_content{
+        .wellcome{
+            padding-left: 6%;
+            padding-right: 6%;
+            .wellcome_title{
+                font-size: 47px;
+            }
+            .wellcome_content{
+                font-size: 21px;
+            }
+        }
+    }
+    .right_content{
+        
+        .login_minerva{
+            font-size: 45px;
+        }
+        .email_block{
+            margin: 0 15%;
+        }
+        .send{
+            button{
+                font-size: 22px;
+                height: 65px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
-    body{
-        .left_content{
-            height:auto;
-            .logo{
-                text-align: center;
-                padding-left: 0;
-                padding-top: 2em;
+    .left_content{
+    height:auto;
+    .logo{
+        text-align: center;
+        padding-left: 0;
+        padding-top: 2em;
+    }
+    .wellcome{
+        padding: 2em 2em 2.7em 2em;
+        .wellcome_title{
+            font-size: 2.3em;
+            font-weight: 550;
+        }
+        .wellcome_content{
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+    }
+}
+    .right_content{
+        height: auto;
+        padding: 2.7em 0;
+        .recover{
+            font-size: 28px;
+        }
+        .let_input_title{
+            font-size: 16px;
             }
-            .wellcome{
-                padding: 2em;
-                .wellcome_title{
-                    font-size: 2.3em;
-                    font-weight: 550;
+        .email_block{
+            margin: 0 10%;
+            .title_email{
+                margin-top: 0.7em;
+                font-size: 1.4em;
+            }
+            .input_email{
+                height: 50px;
+                margin-top:15px;
+                .iconLeft{
+                    margin-left: 10px;
+                    margin-right: 5px;
+                    font-size: 23px;
                 }
-                .wellcome_content{
-                    margin-top: 0;
-                    font-size: 1.3rem;
+                input{
+                    height: 50px;
+                    font-size: 16px;
+                }
+                ::placeholder{
+                    font-size: 16px;
                 }
             }
         }
-            .right_content{
-                height: auto;
-                padding: 2em;
-                .recover{
-                    font-size: 28px;
-                }
-                .let_input_title{
-                    font-size: 16px;
-                    }
-                .email_block{
-                    margin: 0 10%;
-                    .title_email{
-                        margin-top: 0.7em;
-                        font-size: 1.4em;
-                    }
-                    .input_email{
-                        height: 50px;
-                        margin-top:15px;
-                        .iconLeft{
-                            margin-left: 10px;
-                            margin-right: 5px;
-                            font-size: 23px;
-                        }
-                        input{
-                            height: 50px;
-                            font-size: 16px;
-                        }
-                        ::placeholder{
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .send{
-                    margin: 0 30%;
-                    button{
-                        font-size: 13px;
-                        height: 40px;
-                    }
-                }
+        .send{
+            margin: 0 30%;
+            button{
+                font-size: 13px;
+                height: 40px;
             }
         }
     }
+}
+    
 

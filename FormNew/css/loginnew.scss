@@ -1,161 +1,199 @@
-@import '../css/mixin.scss';
-body{
+// @import '../css/mixin.scss';
+@mixin placeholder {
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+.formminerva{
     display: flex;
     font-family: 'Roboto', sans-serif;
     .wellcome{
-        @include wellcome;
+        width: 36%;
+        height: auto;
+        background-image: url(../images/bg_login.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__imgLogo{
+            max-width: 183px;
+            width: 100%;
+        }
+        &__logo{
+            margin-top: 43px;
+            margin-left: 48px;
+        }
+        &__title{
+            margin: 27vh 92px 0 92px;
+            font-size: 60px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            color: white;
+            text-align: center;
+        }
+        &__content{
+            margin: 31px 92px 0 92px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+        }
     }
     .login{
         width: 64%;
         height: 100vh;
+        display: flex;
         text-align: center;
-        .loginBlock{
-            padding-top: 20vh;
-            &__content{
-                margin: 30px 240px;
-                text-align: left;
-                
-            }
-            &__title{
-                @include bigTitleRight;
-            }
-            //chữ Tên đăng nhập
-            &__labelLogin{
-                @include label;
-            }
-            //chữ nhập mật khẩu
-            &__labelPass{
-                @include label;
-            }
-            //block username
-            &__inputUserName{
-                @include inputBlock;
-            }
-            //block pass
-            &__inputPass{
-                @include inputBlock;
-            }
-            //ô nhập username
-            &__inputUserNameBox{
-                @include inputBox;
-            }
-            //ô nhập pass
-            &__inputPWBox{
-                @include inputBox;
-            }
-            ::placeholder{
-                @include placeholder;
-            }
-            &__iconUser{
-                @include icon;
-            }
-            &__iconLock{
-                @include icon;
-            }
-            &__iconEye{
-                @include icon;
-                color: #6d30ab;
-                margin-right: 28px;
-            }
-            &__forgotPass{
-                a{
-                    font-size: 24px;
-                    color: grey;
-                    text-decoration: underline;
-                }
-            }
-            &__btnLogin{
-                @include button;
-            }
-            &__btnLogin:hover{
-                border: 1px solid #6d30ab;
-                background-color: white;
-                color: #6d30ab;
+        justify-content: center;
+        align-items: center;
+        
+        &__content{
+            text-align: left;
+        }
+        &__title{
+            text-align: center;
+            font-size: 48px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+            color: #6d30ab;
+        }
+        &__message{
+            font-size: 24px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: 1.21;
+            letter-spacing: normal;
+            text-align: center;
+            color: #6d6d6d;
+        }
+        &__label{
+            font-size: 2em;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.21;
+            letter-spacing: normal;
+            margin-top: 30px;
+        }
+        &__inputarea{
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            height: 70px;
+            max-width: 100%;
+            margin-top: 15px;
+        }
+        &__input{
+            outline: none;
+            border: none;
+            flex-grow: 1;
+            width: 100%;
+            height: 70px;
+            background-color: #f5f5f5;
+            font-size: 24px;
+            padding-right: 10px;
+        }
+        ::placeholder{
+            @include placeholder;
+        }
+        &__icon{
+            font-size: 29px;
+            margin-left: 28px;
+            margin-right: 10px;
+        }
+        &__iconEye{
+            font-size: 29px;
+            margin-left: 10px;
+            margin-right: 28px;
+            color: #6d30ab;
+        }
+        &__forgotPass{
+            margin-top: 15px;
+            a{
+                font-size: 24px;
+                color: grey;
+                text-decoration: underline;
             }
         }
+        &__btn{
+            margin-top: 60px;
+            max-width: 100%;
+            width: 306px;
+            font-size: 24px;
+            height: 70px;
+            color: white;
+            border: none;
+            outline: none;
+            background-color: #6d30ab;
+            transition: 0.3s ease-in-out;
+        }
+        &__btn:hover{
+            border: 1px solid #6d30ab;
+            background-color: white;
+            color: #6d30ab;
+        }
+    }
+    .loginblock{
+        max-width: 40vw;
+        width: 100%;
     }
 }
-@media (max-width: 1439px) {
-    body{
+@media (max-width: 1199px) {
+    .formminerva{
         .wellcome{
             &__title{
                 font-size: 49px;
-                margin-top: 5em;
-                margin-left: 60px;
-                margin-right: 60px;
+                margin: 23vh 60px 0 60px;
             }
             &__content{
-                margin: 0 20%;
-                margin-top: 15px;
                 font-size: 21px;
-                margin-left: 60px;
-                margin-right: 60px;
+                margin: 15px 60px 0 60px;
             }
         }
         .login{
-            .loginBlock{
-                &__title{
-                    font-size: 3em;
-                }
-                &__content{
-                    margin: 0 20%;
-                }
-                &__labelLogin{
-                    font-size: 1.9em;
-                    margin-top: 60px;
-                    
-                }
-                &__labelPass{
-                    font-size: 1.9em;
-                    margin-top: 50px;
-                }
-                &__inputUserName{
-                    height: 55px;
-                    
-                }
-                ::placeholder{
-                    font-size: 20px;
-                }
-                &__inputPass{
-                    height: 55px;
-                    
-                }
-                ::placeholder{
-                    font-size: 20px;
-                }
-                &__inputUserNameBox{
-                    font-size: 20px;
-                    height: 55px;
-                }
-                &__inputPWBox{
-                    font-size: 20px;
-                    height: 55px;
-                }
-                &__iconUser{
-                    font-size: 24px;
-                }
-                &__iconLock{
-                    font-size: 24px;
-                }
-                &__iconEye{
-                    font-size: 24px;
-                }
-                &__forgotPass{
-                    padding-top: 15px;
-                    a{
-                        margin-top: 30px;
-                }
-                }
-                &__btnLogin{
-                    max-width: 40%;
-                }
+            &__title{
+                font-size: 3em;
             }
-    
+            &__label{
+                font-size: 1.9em;
+                margin-top: 60px;
+            }
+            &__message{
+                font-size: 18px;
+            }
+            &__inputarea{
+                height: 55px;
+            }
+            ::placeholder{
+                font-size: 20px;
+            }
+            &__input{
+                font-size: 20px;
+                height: 55px;
+            }
+            &__icon{
+                font-size: 24px;
+            }
+            &__iconEye{
+                font-size: 24px;
+            }
+            
+            &__btn{
+                max-width: 40%;
+            }
         }
+        
     }
 }
-@media (max-width: 1023px) {
-    body{
+@media (max-width: 991px) {
+    .formminerva{
         .wellcome{
             &__title{
                 font-size: 40px;
@@ -164,101 +202,70 @@ body{
             }
             &__content{
                 font-size: 18px;
-
             }
         }
         .login{
-            .loginBlock{
-                &__title{
-                    font-size: 2.5em;
-                    margin: 0px 10px;
-                }
-                &__content{
-                    // margin: 0 20%;
-                }
-                &__labelLogin{
-                    font-size: 1.6em;
-                    margin-top: 30px;
-                    
-                }
-                &__labelPass{
-                    font-size: 1.6em;
-                    margin-top: 30px;
-                }
-                &__inputUserName{
-                    height: 45px;
-                }
-                &__inputPass{
-                    height: 45px;
-                }
-                &__inputUserNameBox{
-                    font-size: 16px;
-                    height: 45px;
-                    
-                }
-                ::placeholder{
-                    font-size: 16px;
-                }
-                &__inputPWBox{
-                    font-size: 16px;
-                    height: 45px;
-                    
-                }
-                ::placeholder{
-                    font-size: 16px;
-                }
-                &__iconUser{
-                    font-size: 22px;
-                    margin-left: 20px;
-                    margin-right: 8px;
-                }
-                &__iconLock{
-                    font-size: 22px;
-                    margin-left: 20px;
-                    margin-right: 8px;
-                }
-                &__iconEye{
-                    font-size: 22px;
-                    margin-left: 20px;
-                }
-                &__forgotPass{
-                    a{
-                        font-size: 18px;
-                    }
-                }
-                &__btnLogin{
-                    font-size: 16px;
-                    max-width: 35%;
-                    height: 45px;
+            &__title{
+                font-size: 2.5em;
+            }
+            &__label{
+                font-size: 1.6em;
+                margin-top: 30px;
+            }
+            &__message{
+                font-size: 16px;
+            }
+            &__inputarea{
+                height: 45px;
+            }
+            &__input{
+                font-size: 16px;
+                height: 45px;
+            }
+            ::placeholder{
+                font-size: 16px;
+            }
+            &__icon{
+                font-size: 22px;
+                margin-left: 20px;
+                margin-right: 8px;
+            }
+            &__iconEye{
+                font-size: 22px;
+                margin-left: 20px;
+            }
+            &__forgotPass{
+                a{
+                    font-size: 18px;
                 }
             }
-    
+            &__btn{
+                margin-top: 30px;
+                font-size: 16px;
+                max-width: 35%;
+                height: 45px;
+            }
         }
     }
 }
 @media (max-width: 767px) {
-    body{
+    .formminerva{
         display: inline-block;
         .wellcome{
             width: 100%;
             height:auto;
-            &__imgLogo{
-                max-width: 183px;
-                width: 100%;
-                height: auto;
-            }
-            &__imgLogo{
-                max-width: 150px;
-                margin-top: 43px;
-            }
             &__logo{
                 margin-top: 0;
                 margin-left: 0;
                 text-align: center;
             }
+            &__imgLogo{
+                max-width: 150px;
+                margin-top: 2em;
+            }
             &__title{
                 font-size: 35px;
-                margin-top: 10px;
+                margin-top: 0.6em;
             }
             &__content{
                 margin-top: 5px;
@@ -270,79 +277,59 @@ body{
             width: 100%;
             text-align: center;
             height: auto;
-            .loginBlock{
-                padding: 2em;
-                &__title{
-                    font-size: 2.1em;
-                    margin: 0px 10px;
-                }
-                &__content{
-                    margin: 30px 70px;
-                }
-                &__labelLogin{
-                    font-size: 1.3em;
-                    
-                }
-                &__labelPass{
-                    font-size: 1.3em;
-                    margin-top: 30px;
-                }
-                &__inputUserName{
-                    height: 35px;
-                    
-                }
-                ::placeholder{
-                    font-size: 14px;
-                }
-                &__inputPass{
-                    height: 35px;
-                    
-                }
-                ::placeholder{
-                    font-size: 14px;
-                }
-                &__inputUserNameBox{
-                    font-size: 14px;
-                    height: 35px;
-                }
-                &__inputPWBox{
-                    font-size: 14px;
-                    height: 35px;
-                }
-                &__iconUser{
-                    font-size: 20px;
-                    margin-left: 15px;
-                    margin-right: 5px;
-                }
-                &__iconLock{
-                    font-size: 20px;
-                    margin-left: 15px;
-                    margin-right: 5px;
-                }
-                &__iconEye{
-                    font-size: 20px;
-                    margin-left: 15px;
-                    margin-right: 5px;
-                }
-                &__forgotPass{
-                    padding-top: 0;
-                    a{
-                        font-size: 15px;
-                    }
-                }
-                &__btnLogin{
-                    margin-top: 30px;
-                    font-size: 14px;
-                    max-width: 30%;
-                    height: 40px;
+            padding: 2em 0;
+            &__title{
+                font-size: 2.1em;
+            }
+            &__label{
+                font-size: 1.3em;
+                
+            }
+            &__message{
+                font-size: 14px;
+            }
+            &__inputarea{
+                height: 35px;
+                
+            }
+            ::placeholder{
+                font-size: 14px;
+            }  font-size: 14px;
+            
+            &__input{
+                font-size: 14px;
+                height: 35px;
+            }
+            &__icon{
+                font-size: 20px;
+                margin-left: 15px;
+                margin-right: 5px;
+            }
+            &__iconEye{
+                font-size: 20px;
+                margin-left: 15px;
+                margin-right: 5px;
+            }
+            &__forgotPass{
+                a{
+                    font-size: 15px;
                 }
             }
-    
+            &__btn{
+                margin-top: 30px;
+                font-size: 14px;
+                max-width: 30%;
+                height: 40px;
+            }
+        }
+        .loginblock{
+            max-width: 80vw;
+            width: 100%;
         }
     }
 }
-@media (max-width: 374px) {
-    body{
+@media (max-width: 575px) {
+    .formminerva{
         .wellcome{
             height: auto;
             &__imgLogo{
@@ -362,66 +349,41 @@ body{
             width: 100%;
             text-align: center;
             height: auto;
-            .loginBlock{
-                &__title{
-                    font-size: 1.7em;
-                    margin: 0px 10px;
-                }
-                &__content{
-                    margin: 15px 50px;
-                }
-                &__labelLogin{
-                    font-size: 1em;
-                }
-                &__labelPass{
-                    font-size: 1em;
-                    margin-top: 30px;
-                }
-                &__inputUserName{
-                    height: 30px;
-                    
-                }
-                ::placeholder{
-                    font-size: 10px;
-                }
-                &__inputPass{
-                    height: 30px;
-                    
-                }
-                ::placeholder{
-                    font-size: 10px;
-                }
-                &__inputUserNameBox{
-                    font-size: 10px;
-                    height: 30px;
-                }
-                &__inputPWBox{
-                    font-size: 10px;
-                    height: 30px;
-                }
-                &__iconUser{
-                    font-size: 16px;
-                    margin-left: 10px;
-                }
-                &__iconLock{
-                    font-size: 16px;
-                    margin-left: 10px;
-                }
-                &__iconEye{
-                    font-size: 16px;
-                    margin-left: 0;
-                }
-                &__forgotPass{
-                    
-                    a{
-                        font-size: 13px;
-                    }
-                }
-                &__btnLogin{
-                    font-size: 12px;
+            &__title{
+                font-size: 1.7em;
+            }
+            &__label{
+                font-size: 1em;
+            }
+            &__message{
+                font-size: 12px;
+            }
+            &__inputarea{
+                height: 30px;
+            }
+            ::placeholder{
+                font-size: 10px;
+            }
+            &__input{
+                font-size: 10px;
+                height: 30px;
+            }
+            &__icon{
+                font-size: 16px;
+                margin-left: 10px;
+            }
+            &__iconEye{
+                font-size: 16px;
+                margin-left: 0;
+            }
+            &__forgotPass{
+                a{
+                    font-size: 13px;
                 }
             }
-    
+            &__btn{
+                font-size: 12px;
+            }
         }
     }
 }

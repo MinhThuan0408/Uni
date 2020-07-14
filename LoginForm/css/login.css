@@ -1,242 +1,244 @@
-body {
-  font-family: 'Roboto', sans-serif; }
-  body .left_content {
-    background-image: url(../images/bg_login.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 -15px;
-    height: 100vh; }
-    body .left_content .logo {
-      padding-top: 43px;
-      padding-left: 48px;
-      display: block; }
-      body .left_content .logo img {
-        max-width: 183px;
-        width: 100%;
-        height: auto; }
-    body .left_content .wellcome {
-      text-align: center;
-      color: white;
-      padding-top: 27vh;
-      padding-left: 13%;
-      padding-right: 13%; }
-      body .left_content .wellcome .wellcome_title {
-        font-size: 60px;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.2; }
-      body .left_content .wellcome .wellcome_content {
-        margin-top: 31px;
-        font-size: 24px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal; }
-  body .right_content {
-    padding-top: 20vh; }
-    body .right_content .login_minerva {
-      text-align: center;
-      font-size: 48px;
+.left_content {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../images/bg_login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 -15px;
+  height: 100vh; }
+  .left_content .logo {
+    padding-top: 43px;
+    padding-left: 48px;
+    display: block; }
+    .left_content .logo img {
+      max-width: 183px;
+      width: 100%;
+      height: auto; }
+  .left_content .wellcome {
+    text-align: center;
+    color: white;
+    padding-top: 27vh;
+    padding-left: 13%;
+    padding-right: 13%; }
+    .left_content .wellcome .wellcome_title {
+      font-size: 60px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2; }
+    .left_content .wellcome .wellcome_content {
+      margin-top: 31px;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal; }
+
+.right_content {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20vh; }
+  .right_content .login_minerva {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #6d30ab; }
+  .right_content .login_block {
+    margin: 0 20%; }
+    .right_content .login_block .title_username {
+      font-size: 24px;
       font-weight: 500;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.21;
       letter-spacing: normal;
-      color: #6d30ab; }
-    body .right_content .login_block {
-      margin: 0 20%; }
-      body .right_content .login_block .title1 {
-        font-size: 24px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        margin-top: 30px; }
-      body .right_content .login_block .input1 {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        background-color: #f5f5f5;
-        text-align: left;
-        margin-top: 15px; }
-        body .right_content .login_block .input1 .iconLeft {
-          font-size: 29px;
-          margin-left: 28px;
-          margin-right: 10px; }
-        body .right_content .login_block .input1 input {
-          height: 70px;
-          background-color: #f5f5f5;
-          border: none;
-          font-size: 1.6em;
-          outline: none;
-          flex-grow: 1;
-          width: 100%; }
-        body .right_content .login_block .input1 ::placeholder {
-          font-size: 20px;
-          font-weight: 300;
-          font-stretch: normal;
-          font-style: italic;
-          line-height: 1.2;
-          letter-spacing: normal; }
-      body .right_content .login_block .title2 {
-        font-size: 24px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        margin-top: 30px;
-        margin-bottom: 15px; }
-      body .right_content .login_block .input2 {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        background-color: #f5f5f5;
-        text-align: left; }
-        body .right_content .login_block .input2 .iconLeft {
-          font-size: 29px;
-          margin-left: 28px;
-          margin-right: 10px; }
-        body .right_content .login_block .input2 input {
-          height: 70px;
-          background-color: #f5f5f5;
-          border: none;
-          font-size: 1.6em;
-          outline: none;
-          flex-grow: 1;
-          width: 100%; }
-        body .right_content .login_block .input2 ::placeholder {
-          font-size: 20px;
-          font-weight: 300;
-          font-stretch: normal;
-          font-style: italic;
-          line-height: 1.2;
-          letter-spacing: normal; }
-        body .right_content .login_block .input2 .field_icon {
-          font-size: 29px;
-          margin-left: 28px;
-          margin-right: 10px;
-          color: #6d30ab; }
-      body .right_content .login_block .input_pass .field_icon {
-        margin-right: 28px; }
-    body .right_content .forgotpass {
-      text-align: center;
       margin-top: 30px; }
-      body .right_content .forgotpass a {
-        font-size: 24px;
-        color: #6d6d6d;
-        text-decoration: underline;
-        font-size: 24px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal; }
-    body .right_content .login_button {
-      text-align: center; }
-      body .right_content .login_button button {
-        font-size: 24px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        margin-top: 61px;
-        width: 100%;
-        max-width: 306px;
+    .right_content .login_block .input_username {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 70px;
+      background-color: #f5f5f5;
+      text-align: left;
+      margin-top: 15px; }
+      .right_content .login_block .input_username .iconLeft {
+        font-size: 29px;
+        margin-left: 28px;
+        margin-right: 10px; }
+      .right_content .login_block .input_username input {
         height: 70px;
-        color: white;
+        background-color: #f5f5f5;
         border: none;
+        font-size: 1.6em;
         outline: none;
-        background-color: #6d30ab;
-        transition: 0.3s ease-in-out; }
-      body .right_content .login_button button:hover {
-        border: 1px solid #6d30ab;
-        background-color: white;
+        flex-grow: 1;
+        width: 100%; }
+      .right_content .login_block .input_username ::placeholder {
+        font-size: 20px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.2;
+        letter-spacing: normal; }
+    .right_content .login_block .title_pass {
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      margin-bottom: 15px; }
+    .right_content .login_block .input_pass {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 70px;
+      background-color: #f5f5f5;
+      text-align: left; }
+      .right_content .login_block .input_pass .iconLeft {
+        font-size: 29px;
+        margin-left: 28px;
+        margin-right: 10px; }
+      .right_content .login_block .input_pass input {
+        height: 70px;
+        background-color: #f5f5f5;
+        border: none;
+        font-size: 1.6em;
+        outline: none;
+        flex-grow: 1;
+        width: 100%; }
+      .right_content .login_block .input_pass ::placeholder {
+        font-size: 20px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.2;
+        letter-spacing: normal; }
+      .right_content .login_block .input_pass .field_icon {
+        font-size: 29px;
+        margin-left: 28px;
+        margin-right: 10px;
         color: #6d30ab; }
+    .right_content .login_block .input_pass .field_icon {
+      margin-right: 28px; }
+  .right_content .forgotpass {
+    text-align: center;
+    margin-top: 30px; }
+    .right_content .forgotpass a {
+      font-size: 24px;
+      color: #6d6d6d;
+      text-decoration: underline;
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal; }
+  .right_content .login_button {
+    text-align: center; }
+    .right_content .login_button button {
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      margin-top: 61px;
+      width: 100%;
+      max-width: 306px;
+      height: 70px;
+      color: white;
+      border: none;
+      outline: none;
+      background-color: #6d30ab;
+      transition: 0.3s ease-in-out; }
+    .right_content .login_button button:hover {
+      border: 1px solid #6d30ab;
+      background-color: white;
+      color: #6d30ab; }
 
 @media (max-width: 991px) {
-  body .left_content .wellcome {
+  .left_content .wellcome {
     padding-left: 6%;
     padding-right: 6%; }
-    body .left_content .wellcome .wellcome_title {
+    .left_content .wellcome .wellcome_title {
       font-size: 47px; }
-    body .left_content .wellcome .wellcome_content {
+    .left_content .wellcome .wellcome_content {
       font-size: 21px; }
-  body .right_content .login_minerva {
+
+  .right_content .login_minerva {
     font-size: 45px; }
-  body .right_content .login_block {
+  .right_content .login_block {
     margin: 0 15%; }
-  body .right_content .login_button button {
+  .right_content .login_button button {
     font-size: 22px;
     height: 65px;
     margin-top: 30px; } }
 @media (max-width: 767px) {
-  body .left_content {
+  .left_content {
     height: auto; }
-    body .left_content .logo {
+    .left_content .logo {
       text-align: center;
       padding-left: 0;
-      padding-top: 2em; }
-    body .left_content .wellcome {
-      padding: 2em; }
-      body .left_content .wellcome .wellcome_title {
+      padding-top: 2em 0; }
+    .left_content .wellcome {
+      padding: 2em 2em 2.7em 2em; }
+      .left_content .wellcome .wellcome_title {
         font-size: 2.3em;
         font-weight: 550; }
-      body .left_content .wellcome .wellcome_content {
+      .left_content .wellcome .wellcome_content {
         margin-top: 0;
         font-size: 1.3rem; }
-  body .right_content {
+
+  .right_content {
     height: auto;
-    padding: 2em; }
-    body .right_content .login_minerva {
+    padding: 2.7em 0; }
+    .right_content .login_minerva {
       font-size: 30px; }
-    body .right_content .login_block {
+    .right_content .login_block {
       margin: 0 5%; }
-      body .right_content .login_block .title_username {
+      .right_content .login_block .title_username {
         margin-top: 0.7em;
         font-size: 1.4em; }
-      body .right_content .login_block .title_pass {
+      .right_content .login_block .title_pass {
         margin-top: 0.7em;
         font-size: 1.4em;
         margin-bottom: 15px; }
-      body .right_content .login_block .input_username {
+      .right_content .login_block .input_username {
         height: 50px;
         margin-top: 15px; }
-        body .right_content .login_block .input_username .iconLeft {
+        .right_content .login_block .input_username .iconLeft {
           font-size: 23px;
           margin-left: 10px;
           margin-right: 5px; }
-        body .right_content .login_block .input_username input {
+        .right_content .login_block .input_username input {
           height: 50px;
           font-size: 16px; }
-        body .right_content .login_block .input_username ::placeholder {
+        .right_content .login_block .input_username ::placeholder {
           font-size: 16px; }
-      body .right_content .login_block .input_pass {
+      .right_content .login_block .input_pass {
         height: 50px; }
-        body .right_content .login_block .input_pass .iconLeft {
+        .right_content .login_block .input_pass .iconLeft {
           font-size: 23px;
           margin-left: 10px;
           margin-right: 5px; }
-        body .right_content .login_block .input_pass input {
+        .right_content .login_block .input_pass input {
           height: 50px;
           font-size: 16px; }
-        body .right_content .login_block .input_pass .field_icon {
+        .right_content .login_block .input_pass .field_icon {
           font-size: 23px;
           margin-left: 10px;
           margin-right: 5px; }
-        body .right_content .login_block .input_pass ::placeholder {
+        .right_content .login_block .input_pass ::placeholder {
           font-size: 16px; }
-      body .right_content .login_block .forgotpass a {
+      .right_content .login_block .forgotpass a {
         font-size: 1.3em; }
-      body .right_content .login_block .login_button {
+      .right_content .login_block .login_button {
         margin: 0 25%; }
-        body .right_content .login_block .login_button button {
+        .right_content .login_block .login_button button {
           font-size: 13px;
           height: 40px; } }
 

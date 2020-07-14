@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/line-awesome.min.css">
     <link rel="stylesheet" href="./css/loginnew.css">
 
 </head>
 <body>
-    <div class="wellcome">
-        <div class="wellcome__logo">
-            <img class="wellcome__imgLogo" src="./images/logo.svg" alt="logo">
-        </div>
-        <div class="wellcome__title">Chào mừng bạn</div>
-        <div class="wellcome__content">Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime</div>
-    </div>
-    <div class="login">
-        <div class="loginBlock">
-            <div class="loginBlock__title ">Đăng nhập vào Minerva</div>
-            <div class="loginBlock__content">
-
-                <!-- block username -->
-                <div class="loginBlock__labelLogin">Tên đăng nhập</div>
-                <div class="loginBlock__inputUserName">
-                    <i class="las la-user loginBlock__iconUser"></i>
-                    <input class="loginBlock__inputUserNameBox" placeholder="Nhập tên đang nhập" required>
-                </div>
-
-                <!-- block pass -->
-                <div class="loginBlock__labelPass">Mật khẩu</div>
-                <div class="loginBlock__inputPass">
-                    <i class="las la-lock loginBlock__iconLock"></i>
-                    <input class="loginBlock__inputPWBox" placeholder="Nhập mật khẩu" type="password" required>
-                    <span toggle="#password-field" class="las la-fw la-eye-slash loginBlock__iconEye toggle-password"></span>
-                </div>
+    <div class="formminerva">
+        <div class="wellcome">
+            <div class="wellcome__logo">
+                <img class="wellcome__imgLogo" src="./images/logo.svg" alt="logo">
             </div>
+            <div class="wellcome__title">Chào mừng bạn</div>
+            <div class="wellcome__content">Chào mừng đến với hệ thống quản lý các dự án xây dựng và kinh doanh bất động sản của Uniprime</div>
+            
+        </div>
+        <div class="login">
+            <div class="loginblock">
+                <div class="login__title ">Đăng nhập vào Minerva</div>
+                <div class="login__content">
+                    <!-- block username -->
+                    <div class="login__label">Tên đăng nhập</div>
+                    <div class="login__inputarea">
+                        <i class="las la-user login__icon"></i>
+                        <input class="login__input" placeholder="Nhập tên đang nhập" required>
+                    </div>
 
-            <div class="loginBlock__forgotPass"> <a  href="#">Quên mật khẩu</a></div>
-            <button  type="submit" class="loginBlock__btnLogin">ĐĂNG NHẬP</button>
+                    <!-- block pass -->
+                    <div class="login__label">Mật khẩu</div>
+                    <div class="login__inputarea">
+                        <i class="las la-lock login__icon"></i>
+                        <input class="login__input" placeholder="Nhập mật khẩu" type="password" required>
+                        <span toggle="#password-field" class="las la-fw la-eye-slash login__iconEye toggle-password"></span>
+                    </div>
+                </div>
+
+                <div class="login__forgotPass"> <a  href="#">Quên mật khẩu</a></div>
+                <button  type="submit" class="login__btn">ĐĂNG NHẬP</button>
+            </div>
         </div>
     </div>
 </body>
