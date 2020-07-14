@@ -38,7 +38,7 @@ body {
     width: 64%;
     text-align: center; }
     body .recover .recoverBlock {
-      padding: 13em 2em; }
+      padding-top: 35vh; }
       body .recover .recoverBlock__content {
         margin: 30px 240px;
         text-align: left; }
@@ -109,7 +109,7 @@ body {
 
 @media (max-width: 1439px) {
   body .wellcome__title {
-    font-size: 49px;
+    font-size: 41px;
     margin-top: 5em;
     margin-left: 60px;
     margin-right: 60px; }
@@ -120,8 +120,7 @@ body {
     margin-left: 60px;
     margin-right: 60px; }
   body .recover .recoverBlock__title {
-    font-size: 3em;
-    margin: 0px 150px; }
+    font-size: 3em; }
   body .recover .recoverBlock__message {
     font-size: 18px; }
   body .recover .recoverBlock__content {
@@ -151,8 +150,7 @@ body {
   body .wellcome__content {
     font-size: 18px; }
   body .recover .recoverBlock__title {
-    font-size: 2.5em;
-    margin: 0px 10px; }
+    font-size: 2.5em; }
   body .recover .recoverBlock__message {
     font-size: 16px; }
   body .recover .recoverBlock__content {
@@ -170,9 +168,7 @@ body {
   body .recover .recoverBlock__iconMail {
     font-size: 22px;
     margin-left: 20px;
-    margin-right: 8px; }
-  body .recover .recoverBlock__btnSend {
-    margin-top: 0; } }
+    margin-right: 8px; } }
 @media (max-width: 767px) {
   body {
     display: inline-block; }
@@ -221,7 +217,7 @@ body {
           margin-left: 15px;
           margin-right: 5px; }
         body .recover .recoverBlock__btnSend {
-          height: 40px; } }
+          margin-top: 0; } }
 @media (max-width: 374px) {
   body .wellcome__imgLogo {
     max-width: 130px; }

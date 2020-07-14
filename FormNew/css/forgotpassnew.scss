@@ -11,7 +11,7 @@ body{
         width: 64%;
         text-align: center;
         .recoverBlock{
-            padding: 13em 2em;
+            padding-top: 35vh;
             &__content{
                 margin: 30px 240px;
                 text-align: left;
@@ -56,7 +56,7 @@ body{
     body{
         .wellcome{
             &__title{
-                font-size: 49px;
+                font-size: 41px;
                 margin-top: 5em;
                 margin-left: 60px;
                 margin-right: 60px;
@@ -74,7 +74,7 @@ body{
             .recoverBlock{
                 &__title{
                     font-size: 3em;
-                    margin: 0px 150px;
+                    // margin: 0px 150px;
                 }
                 &__message{
                     font-size: 18px;
@@ -128,7 +128,6 @@ body{
             .recoverBlock{
                 &__title{
                     font-size: 2.5em;
-                    margin: 0px 10px;
                 }
                 &__message{
                     font-size: 16px;
@@ -155,9 +154,7 @@ body{
                     margin-left: 20px;
                     margin-right: 8px;
                 }
-                &__btnSend{
-                    margin-top: 0;
-                }
+                
             }
     
         }
@@ -224,7 +221,7 @@ body{
                     margin-right: 5px;
                 }
                 &__btnSend{
-                    height: 40px;
+                    margin-top: 0;
                 }
             }
     
