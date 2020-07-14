@@ -164,7 +164,7 @@ body {
     body .left_content .wellcome .wellcome_content {
       font-size: 21px; }
   body .right_content {
-    padding-top: 45%; }
+    padding-top: 30%; }
     body .right_content .login_minerva {
       font-size: 45px; }
     body .right_content .email_block {
@@ -189,7 +189,7 @@ body {
         margin-top: 0;
         font-size: 1.3rem; }
   body .right_content {
-    height: 70vh;
+    height: auto;
     padding: 2em; }
     body .right_content .recover {
       font-size: 28px; }
