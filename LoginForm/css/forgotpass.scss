@@ -6,7 +6,7 @@ body{
             @include left;
         }
         .right_content{
-            padding-top: 20%;
+            padding-top: 35vh;
             .recover{
                 @include bigTitleRight;
                 
@@ -43,7 +43,6 @@ body{
                 .wellcome{
                     padding-left: 6%;
                     padding-right: 6%;
-                    padding-top: 50%;
                     .wellcome_title{
                         font-size: 47px;
                     }
@@ -53,7 +52,7 @@ body{
                 }
             }
             .right_content{
-                padding-top: 30%;
+                
                 .login_minerva{
                     font-size: 45px;
                 }

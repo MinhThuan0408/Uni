@@ -17,7 +17,7 @@ body {
     body .left_content .wellcome {
       text-align: center;
       color: white;
-      padding-top: 36%;
+      padding-top: 27vh;
       padding-left: 13%;
       padding-right: 13%; }
       body .left_content .wellcome .wellcome_title {
@@ -35,7 +35,7 @@ body {
         line-height: 1.21;
         letter-spacing: normal; }
   body .right_content {
-    padding-top: 15%; }
+    padding-top: 20vh; }
     body .right_content .login_minerva {
       text-align: center;
       font-size: 48px;
@@ -163,22 +163,19 @@ body {
 @media (max-width: 991px) {
   body .left_content .wellcome {
     padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 65%; }
+    padding-right: 6%; }
     body .left_content .wellcome .wellcome_title {
       font-size: 47px; }
     body .left_content .wellcome .wellcome_content {
       font-size: 21px; }
-  body .right_content {
-    padding-top: 30%; }
-    body .right_content .login_minerva {
-      font-size: 45px; }
-    body .right_content .login_block {
-      margin: 0 15%; }
-    body .right_content .login_button button {
-      font-size: 22px;
-      height: 65px;
-      margin-top: 30px; } }
+  body .right_content .login_minerva {
+    font-size: 45px; }
+  body .right_content .login_block {
+    margin: 0 15%; }
+  body .right_content .login_button button {
+    font-size: 22px;
+    height: 65px;
+    margin-top: 30px; } }
 @media (max-width: 767px) {
   body .left_content {
     height: auto; }

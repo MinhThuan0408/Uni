@@ -10,7 +10,7 @@ body{
         height: 100vh;
         text-align: center;
         .loginBlock{
-            padding-top: 15%;
+            padding-top: 20vh;
             &__content{
                 margin: 30px 240px;
                 text-align: left;
@@ -94,7 +94,6 @@ body{
         }
         .login{
             .loginBlock{
-                padding-top: 20%;
                 &__title{
                     font-size: 3em;
                 }
@@ -170,7 +169,6 @@ body{
         }
         .login{
             .loginBlock{
-                padding-top: 30%;
                 &__title{
                     font-size: 2.5em;
                     margin: 0px 10px;
