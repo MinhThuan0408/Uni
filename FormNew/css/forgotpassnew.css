@@ -13,8 +13,11 @@
     .formminerva .wellcome__logo {
       margin-top: 43px;
       margin-left: 48px; }
+    .formminerva .wellcome .wellcomeblock {
+      position: relative;
+      top: 50%;
+      transform: translateY(-100%); }
     .formminerva .wellcome__title {
-      margin: 27vh 92px 0 92px;
       font-size: 60px;
       font-weight: bold;
       font-stretch: normal;
@@ -62,14 +65,14 @@
       font-style: normal;
       line-height: 1.21;
       letter-spacing: normal;
-      margin-top: 30px; }
+      margin-top: 37px;
+      margin-bottom: 16px; }
     .formminerva .recover__inputarea {
       display: flex;
       align-items: center;
       background-color: #f5f5f5;
       height: 70px;
-      max-width: 100%;
-      margin-top: 15px; }
+      max-width: 100%; }
     .formminerva .recover__input {
       outline: none;
       border: none;
@@ -96,7 +99,7 @@
       margin-right: 28px;
       color: #6d30ab; }
     .formminerva .recover__btn {
-      margin-top: 60px;
+      margin-top: 70px;
       max-width: 100%;
       width: 306px;
       font-size: 24px;
@@ -116,8 +119,7 @@
 
 @media (max-width: 1199px) {
   .formminerva .wellcome__title {
-    font-size: 49px;
-    margin: 23vh 60px 0 60px; }
+    font-size: 49px; }
   .formminerva .wellcome__content {
     font-size: 21px;
     margin: 15px 60px 0 60px; }
@@ -187,9 +189,12 @@
       .formminerva .wellcome__imgLogo {
         max-width: 150px;
         margin-top: 2em; }
+      .formminerva .wellcome .wellcomeblock {
+        top: 0;
+        transform: translateY(0); }
       .formminerva .wellcome__title {
         font-size: 35px;
-        margin-top: 0.6em; }
+        margin-top: 0.7em; }
       .formminerva .wellcome__content {
         margin-top: 5px;
         font-size: 16px;
@@ -224,7 +229,7 @@
       .formminerva .recover__btn {
         margin-top: 30px;
         font-size: 14px;
-        max-width: 30%;
+        max-width: 35%;
         height: 40px; }
     .formminerva .recoverblock {
       max-width: 80vw;
@@ -236,10 +241,10 @@
       max-width: 130px; }
     .formminerva .wellcome__title {
       font-size: 30px;
-      margin-top: 0.5em; }
+      margin-top: 0.6em; }
     .formminerva .wellcome__content {
       margin-top: 0;
-      font-size: 13px;
+      font-size: 12px;
       padding-bottom: 2em; }
   .formminerva .recover {
     width: 100%;

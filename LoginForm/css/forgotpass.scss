@@ -1,12 +1,12 @@
-@import '../base/mixin';
-.left_content{
+
+.wellcome{
     font-family: 'Roboto', sans-serif;
     background-image: url(../images/bg_login.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 -15px;
     height: 100vh;
-    .logo{
+    &__logo{
         padding-top: 43px;
         padding-left: 48px;
         display: block;
@@ -16,34 +16,36 @@
             height: auto;
         }
     }
-    .wellcome{
+    .wellcomeblock{
         text-align: center;
         color: white;
         padding-top: 27vh;
         padding-left: 13%;
         padding-right: 13%;
-        .wellcome_title{
-            font-size: 60px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.2;
-        }
-        .wellcome_content{
-            margin-top: 31px;
-            font-size: 24px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.21;
-            letter-spacing: normal;
-        }
     }
+    &__title{
+        font-size: 60px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+    }
+    &__content{
+        margin-top: 31px;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+    }
+    
 }
-.right_content{
+.recover{
     font-family: 'Roboto', sans-serif;
     padding-top: 35vh;
-    .recover{
+    height: 100vh;
+    &__title{
         text-align: center;
         font-size: 48px;
         font-weight: 500;
@@ -52,8 +54,9 @@
         line-height: 1.21;
         letter-spacing: normal;
         color: #6d30ab;
+        
     }
-    .let_input_title{
+    &__message{
         font-size: 24px;
         font-weight: 300;
         font-stretch: normal;
@@ -62,154 +65,164 @@
         letter-spacing: normal;
         text-align: center;
         color: #6d6d6d;
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
-    .email_block{
+    .recoverblock{
         margin: 0 20%;
-        .title_email{
-            font-size: 24px;
-            font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.21;
-            letter-spacing: normal;
-            margin-top: 30px;
-        }
-        .input_email{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 70px;
-            background-color: #f5f5f5;
-            text-align: left;
-            margin-top:15px;
-            .iconLeft{
-                font-size: 29px;
-                margin-left: 28px;
-                margin-right: 10px;
-            }
-            input{
-                height: 70px;
-                background-color: #f5f5f5;
-                border: none;
-                font-size: 1.6em;
-                outline: none;
-                flex-grow: 1;
-                width: 100%;
-            }
-            ::placeholder{
-                font-size: 20px;
-                font-weight: 300;
-                font-stretch: normal;
-                font-style: italic;
-                line-height: 1.2;
-                letter-spacing: normal;
-            }
-        }
-        
-    }
-    .send{
         text-align: center;
-        button{
-            @include button;
-        }
-        button:hover {
-            @include buttonhover;
-        }
+    }
+    &__label{
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        margin-top: 37px;
+        margin-bottom: 16px;
+        float: left;
+    }
+    &__inputarea{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background-color: #f5f5f5;
+        text-align: left;
+    }
+    &__icon{
+        font-size: 29px;
+        margin-left: 28px;
+        margin-right: 10px;
+    }
+    &__input{
+        height: 70px;
+        background-color: #f5f5f5;
+        border: none;
+        font-size: 1.6em;
+        outline: none;
+        flex-grow: 1;
+        width: 100%;
+    }
+    ::placeholder{
+        font-size: 20px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.2;
+        letter-spacing: normal;
+    }
+    &__button{
+        margin-top: 70px;
+        max-width: 100%;
+        width: 306px;
+        font-size: 24px;
+        height: 70px;
+        color: white;
+        border: none;
+        outline: none;
+        background-color: #6d30ab;
+        transition: 0.3s ease-in-out;
+    }
+    &__button:hover{
+        border: 1px solid #6d30ab;
+        background-color: white;
+        color: #6d30ab;
     }
 }
     
 
 @media (max-width: 991px) {
-
-    .left_content{
-        .wellcome{
+    .wellcome{
+        .wellcomeblock{
             padding-left: 6%;
             padding-right: 6%;
-            .wellcome_title{
-                font-size: 47px;
-            }
-            .wellcome_content{
-                font-size: 21px;
-            }
+        }
+        &__title{
+            font-size: 47px;
+        }
+        &__content{
+            font-size: 21px;
         }
     }
-    .right_content{
-        
-        .login_minerva{
+    .recover{
+        &__title{
             font-size: 45px;
         }
-        .email_block{
+        .recoverblock{
             margin: 0 15%;
         }
-        .send{
-            button{
-                font-size: 22px;
-                height: 65px;
-                margin-top: 30px;
-            }
+        &__button{
+            margin-top: 30px;
+            font-size: 16px;
+            max-width: 40%;
+            height: 45px;
         }
+        
     }
 }
 
 @media (max-width: 767px) {
-    .left_content{
-    height:auto;
-    .logo{
-        text-align: center;
-        padding-left: 0;
-        padding-top: 2em;
-    }
     .wellcome{
-        padding: 2em 2em 2.7em 2em;
-        .wellcome_title{
+        height:auto;
+        &__logo{
+            text-align: center;
+            padding-left: 0;
+            padding-top: 2em 0;
+        }
+        .wellcomeblock{
+            padding: 2em 2em 2.7em 2em;
+        }
+        &__title{
             font-size: 2.3em;
             font-weight: 550;
         }
-        .wellcome_content{
+        &__content{
             margin-top: 0;
             font-size: 1.3rem;
         }
     }
-}
-    .right_content{
+    .recover{
         height: auto;
         padding: 2.7em 0;
-        .recover{
+        &__title{
             font-size: 28px;
         }
-        .let_input_title{
+        &__message{
             font-size: 16px;
-            }
-        .email_block{
-            margin: 0 10%;
-            .title_email{
-                margin-top: 0.7em;
-                font-size: 1.4em;
-            }
-            .input_email{
-                height: 50px;
-                margin-top:15px;
-                .iconLeft{
-                    margin-left: 10px;
-                    margin-right: 5px;
-                    font-size: 23px;
-                }
-                input{
-                    height: 50px;
-                    font-size: 16px;
-                }
-                ::placeholder{
-                    font-size: 16px;
-                }
-            }
         }
-        .send{
-            margin: 0 30%;
-            button{
-                font-size: 13px;
-                height: 40px;
-            }
+        .recoverblock{
+            margin: 0;
         }
+        &__label{
+            margin-top: 0.7em;
+            font-size: 1.4em;
+        }
+        &__inputarea{
+            height: 50px;
+            margin-top:15px;
+            
+        }
+        &__icon{
+            margin-left: 10px;
+            margin-right: 5px;
+            font-size: 23px;
+        }
+        &__input{
+            height: 50px;
+            font-size: 16px;
+        }
+        ::placeholder{
+            font-size: 16px;
+        }
+        &__button{
+            margin-top: 30px;
+            font-size: 12px;
+            max-width: 35%;
+            height: 40px;
+        }
+        
     }
 }
     
