@@ -5,3 +5,4 @@ $(document).on('click', '.toggle-password', function() {
     var input = $(".loginBlock__inputPWBox");
     input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
 });
+

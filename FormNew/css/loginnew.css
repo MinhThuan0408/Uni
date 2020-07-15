@@ -1,272 +1,251 @@
-.formminerva {
+.formMinerva {
   display: flex;
   font-family: 'Roboto', sans-serif; }
-  .formminerva .wellcome {
-    width: 36%;
-    height: auto;
-    background-image: url(../images/bg_login.png);
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .formminerva .wellcome__imgLogo {
-      max-width: 183px;
-      width: 100%; }
-    .formminerva .wellcome__logo {
-      margin-top: 43px;
-      margin-left: 48px; }
-    .formminerva .wellcome .wellcomeblock {
-      position: relative;
-      top: 50%;
-      transform: translateY(-100%); }
-    .formminerva .wellcome__title {
-      font-size: 60px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.2;
-      color: white;
-      text-align: center; }
-    .formminerva .wellcome__content {
-      margin: 31px 92px 0 92px;
-      color: white;
-      text-align: center;
-      font-size: 24px;
-      font-weight: normal; }
-  .formminerva .login {
-    width: 64%;
-    height: 100vh;
-    display: flex;
+
+.wellcome {
+  width: 36%;
+  height: auto;
+  background-image: url(../images/bg_login.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .wellcome__imgLogo {
+    max-width: 183px;
+    width: 100%; }
+  .wellcome__logo {
+    margin-top: 43px;
+    margin-left: 48px; }
+  .wellcome__block {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%); }
+  .wellcome__title {
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    color: white;
+    text-align: center; }
+  .wellcome__content {
+    margin: 31px 92px 0 92px;
+    color: white;
     text-align: center;
-    justify-content: center;
-    align-items: center; }
-    .formminerva .login__content {
-      text-align: left; }
-    .formminerva .login__title {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.21;
-      letter-spacing: normal;
-      color: #6d30ab; }
-    .formminerva .login__label {
-      font-size: 2em;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.21;
-      letter-spacing: normal;
-      margin-top: 37px;
-      margin-bottom: 16px; }
-    .formminerva .login__inputarea {
-      display: flex;
-      align-items: center;
-      background-color: #f5f5f5;
-      height: 70px;
-      max-width: 100%;
-      margin-top: 15px; }
-    .formminerva .login__input {
-      outline: none;
-      border: none;
-      flex-grow: 1;
-      width: 100%;
-      height: 70px;
-      background-color: #f5f5f5;
-      font-size: 24px;
-      padding-right: 10px; }
-    .formminerva .login ::placeholder {
+    font-size: 24px;
+    font-weight: normal; }
+
+.form {
+  width: 64%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .form__content {
+    text-align: left; }
+  .form__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #6d30ab; }
+  .form__label {
+    font-size: 2em;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    margin-top: 37px;
+    margin-bottom: 16px; }
+  .form__inputarea {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 70px;
+    max-width: 100%;
+    margin-top: 15px; }
+  .form__input {
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    font-size: 24px;
+    padding-right: 10px; }
+    .form__input::placeholder {
       font-size: 20px;
       font-weight: 300;
       font-stretch: normal;
       font-style: italic;
       line-height: 1.2;
       letter-spacing: normal; }
-    .formminerva .login__icon {
-      font-size: 29px;
-      margin-left: 28px;
-      margin-right: 10px; }
-    .formminerva .login__iconEye {
-      font-size: 29px;
-      margin-left: 10px;
-      margin-right: 28px;
-      color: #6d30ab; }
-    .formminerva .login__forgotPass {
-      margin-top: 39px; }
-      .formminerva .login__forgotPass a {
-        font-size: 24px;
-        color: grey;
-        text-decoration: underline; }
-    .formminerva .login__btn {
-      margin-top: 70px;
-      max-width: 100%;
-      width: 306px;
+  .form__icon {
+    font-size: 29px;
+    margin-left: 28px;
+    margin-right: 10px; }
+  .form__iconEye {
+    font-size: 29px;
+    margin-left: 10px;
+    margin-right: 28px;
+    color: #6d30ab; }
+  .form__forgotPass {
+    margin-top: 39px; }
+    .form__forgotPass a {
       font-size: 24px;
-      height: 70px;
-      color: white;
-      border: none;
-      outline: none;
-      background-color: #6d30ab;
-      transition: 0.3s ease-in-out; }
-    .formminerva .login__btn:hover {
-      border: 1px solid #6d30ab;
-      background-color: white;
-      color: #6d30ab; }
-  .formminerva .loginblock {
+      color: grey;
+      text-decoration: underline; }
+  .form__btn {
+    margin-top: 70px;
+    max-width: 100%;
+    width: 306px;
+    font-size: 24px;
+    height: 70px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #6d30ab;
+    transition: 0.3s ease-in-out; }
+  .form__btn:hover {
+    border: 1px solid #6d30ab;
+    background-color: white;
+    color: #6d30ab; }
+  .form__block {
     max-width: 40vw;
     width: 100%; }
 
 @media (max-width: 1199px) {
-  .formminerva .wellcome__title {
+  .wellcome__title {
     font-size: 49px; }
-  .formminerva .wellcome__content {
+  .wellcome__content {
     font-size: 21px;
     margin: 15px 60px 0 60px; }
-  .formminerva .login__title {
+
+  .form__title {
     font-size: 3em; }
-  .formminerva .login__label {
+  .form__label {
     font-size: 1.9em;
     margin-top: 60px; }
-  .formminerva .login__inputarea {
+  .form__inputarea {
     height: 55px; }
-  .formminerva .login ::placeholder {
-    font-size: 20px; }
-  .formminerva .login__input {
+    .form__inputarea::placeholder {
+      font-size: 20px; }
+  .form__input {
     font-size: 20px;
     height: 55px; }
-  .formminerva .login__icon {
+  .form__icon {
     font-size: 24px; }
-  .formminerva .login__iconEye {
+  .form__iconEye {
     font-size: 24px; }
-  .formminerva .login__btn {
+  .form__btn {
     max-width: 40%; } }
 @media (max-width: 991px) {
-  .formminerva .wellcome__title {
+  .wellcome__title {
     font-size: 40px; }
-  .formminerva .wellcome__content {
+  .wellcome__content {
     font-size: 18px;
     margin: 15px 25px 0 25px; }
-  .formminerva .login__title {
+
+  .form__title {
     font-size: 2.5em; }
-  .formminerva .login__label {
+  .form__label {
     font-size: 1.6em;
     margin-top: 30px; }
-  .formminerva .login__inputarea {
-    height: 45px; }
-  .formminerva .login__input {
+  .form__inputarea {
+    height: 50px; }
+  .form__input {
     font-size: 16px;
-    height: 45px; }
-  .formminerva .login ::placeholder {
-    font-size: 16px; }
-  .formminerva .login__icon {
+    height: 50px; }
+    .form__input::placeholder {
+      font-size: 16px; }
+  .form__icon {
     font-size: 22px;
     margin-left: 20px;
     margin-right: 8px; }
-  .formminerva .login__iconEye {
+  .form__iconEye {
     font-size: 22px;
     margin-left: 20px; }
-  .formminerva .login__forgotPass a {
+  .form__forgotPass a {
     font-size: 18px; }
-  .formminerva .login__btn {
+  .form__btn {
     margin-top: 30px;
     font-size: 16px;
     max-width: 35%;
     height: 45px; } }
 @media (max-width: 767px) {
-  .formminerva {
+  .formMinerva {
     display: inline-block; }
-    .formminerva .wellcome {
-      width: 100%;
-      height: auto; }
-      .formminerva .wellcome__logo {
-        margin-top: 0;
-        margin-left: 0;
-        text-align: center; }
-      .formminerva .wellcome__imgLogo {
-        max-width: 150px;
-        margin-top: 2em; }
-      .formminerva .wellcome .wellcomeblock {
-        top: 0;
-        transform: translateY(0); }
-      .formminerva .wellcome__title {
-        font-size: 35px;
-        margin-top: 0.7em; }
-      .formminerva .wellcome__content {
-        margin-top: 5px;
-        font-size: 16px;
-        padding-bottom: 2em; }
-    .formminerva .login {
-      width: 100%;
-      text-align: center;
-      height: auto;
-      padding: 2em 0;
-      font-size: 14px; }
-      .formminerva .login__title {
-        font-size: 2.1em; }
-      .formminerva .login__label {
-        font-size: 1.3em; }
-      .formminerva .login__inputarea {
-        height: 35px; }
-      .formminerva .login ::placeholder {
-        font-size: 14px; }
-      .formminerva .login__input {
-        font-size: 14px;
-        height: 35px; }
-      .formminerva .login__icon {
-        font-size: 20px;
-        margin-left: 15px;
-        margin-right: 5px; }
-      .formminerva .login__iconEye {
-        font-size: 20px;
-        margin-left: 15px;
-        margin-right: 5px; }
-      .formminerva .login__forgotPass {
-        margin-top: 20px; }
-        .formminerva .login__forgotPass a {
-          font-size: 15px; }
-      .formminerva .login__btn {
-        margin-top: 30px;
-        font-size: 14px;
-        max-width: 35%;
-        height: 40px; }
-    .formminerva .loginblock {
+
+  .wellcome {
+    width: 100%;
+    height: auto; }
+    .wellcome__logo {
+      margin-top: 0;
+      margin-left: 0;
+      text-align: center; }
+    .wellcome__imgLogo {
+      max-width: 150px;
+      margin-top: 2em; }
+    .wellcome__block {
+      top: 0;
+      transform: translateY(0); }
+    .wellcome__title {
+      font-size: 35px;
+      margin-top: 0.7em; }
+    .wellcome__content {
+      margin-top: 5px;
+      font-size: 16px;
+      padding-bottom: 2em; }
+
+  .form {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 2em 0; }
+    .form__title {
+      font-size: 2.1em; }
+    .form__label {
+      font-size: 1.3em; }
+    .form__iconEye {
+      margin: 0 10px; }
+    .form__forgotPass {
+      margin-top: 20px; }
+      .form__forgotPass a {
+        font-size: 15px; }
+    .form__btn {
+      margin-top: 30px;
+      font-size: 14px;
+      max-width: 35%;
+      height: 40px; }
+    .form__block {
       max-width: 80vw;
       width: 100%; } }
 @media (max-width: 575px) {
-  .formminerva .wellcome {
+  .wellcome {
     height: auto; }
-    .formminerva .wellcome__imgLogo {
+    .wellcome__imgLogo {
       max-width: 130px; }
-    .formminerva .wellcome__title {
+    .wellcome__title {
       font-size: 30px;
       margin-top: 0.6em; }
-    .formminerva .wellcome__content {
-      margin-top: 0;
+    .wellcome__content {
       font-size: 12px;
       padding-bottom: 2em; }
-  .formminerva .login {
+
+  .form {
     width: 100%;
     text-align: center;
     height: auto; }
-    .formminerva .login__title {
+    .form__title {
       font-size: 1.7em; }
-    .formminerva .login__label {
+    .form__label {
       font-size: 1em; }
-    .formminerva .login__inputarea {
-      height: 30px; }
-    .formminerva .login ::placeholder {
-      font-size: 10px; }
-    .formminerva .login__input {
-      font-size: 10px;
-      height: 30px; }
-    .formminerva .login__icon {
-      font-size: 16px;
-      margin-left: 10px; }
-    .formminerva .login__iconEye {
-      font-size: 16px;
-      margin-left: 0; }
-    .formminerva .login__forgotPass a {
+    .form__forgotPass a {
       font-size: 13px; }
-    .formminerva .login__btn {
+    .form__btn {
       font-size: 12px; } }
 
 /*# sourceMappingURL=loginnew.css.map */
