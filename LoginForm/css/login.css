@@ -123,10 +123,9 @@
     border: 1px solid #6d30ab;
     background-color: white;
     color: #6d30ab; }
-
-.loginzone {
-  max-width: 40vw;
-  width: 100%; }
+  .login__zone {
+    max-width: 40vw;
+    width: 100%; }
 
 @media (max-width: 991px) {
   .wellcome__title {
@@ -194,9 +193,8 @@
       font-size: 12px;
       max-width: 35%;
       height: 40px; }
-
-  .loginzone {
-    max-width: 80vw;
-    width: 100%; } }
+    .login__zone {
+      max-width: 80vw;
+      width: 100%; } }
 
 /*# sourceMappingURL=login.css.map */

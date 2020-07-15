@@ -141,11 +141,12 @@
         background-color: white;
         color: #6d30ab;
     }
+    &__zone{
+        max-width: 40vw;
+        width: 100%;
+    }
 }
-.loginzone{
-    max-width: 40vw;
-    width: 100%;
-}
+
 @media (max-width: 991px) {
     .wellcome{
         &__title{
@@ -234,11 +235,12 @@
             max-width: 35%;
             height: 40px;
         }
+        &__zone{
+            max-width: 80vw;
+            width: 100%;
+        }
     }
-    .loginzone{
-        max-width: 80vw;
-        width: 100%;
-    }
+    
 }
 
 
