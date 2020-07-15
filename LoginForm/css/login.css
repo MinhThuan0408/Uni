@@ -19,7 +19,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-100%);
-    margin: 0 45px; }
+    margin: 0 20px; }
   .wellcome__title {
     font-size: 60px;
     font-weight: bold;
@@ -37,8 +37,11 @@
 
 .login {
   font-family: 'Roboto', sans-serif;
-  padding-top: 20vh;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
   .login__title {
     text-align: center;
     font-size: 48px;
@@ -50,7 +53,6 @@
     color: #6d30ab;
     margin-bottom: 25px; }
   .login .loginblock {
-    margin: 0 20%;
     text-align: center; }
   .login__label {
     font-size: 24px;
@@ -122,6 +124,10 @@
     background-color: white;
     color: #6d30ab; }
 
+.loginzone {
+  max-width: 40vw;
+  width: 100%; }
+
 @media (max-width: 991px) {
   .wellcome__title {
     font-size: 47px; }
@@ -130,8 +136,6 @@
 
   .login__title {
     font-size: 45px; }
-  .login .loginblock {
-    margin: 0 15%; }
   .login__button {
     margin-top: 30px;
     font-size: 16px;
@@ -161,8 +165,6 @@
     padding: 2.7em 0; }
     .login__title {
       font-size: 30px; }
-    .login .loginblock {
-      margin: 0; }
     .login__label {
       margin-top: 0.7em;
       font-size: 1.4em;
@@ -191,6 +193,10 @@
       margin-top: 30px;
       font-size: 12px;
       max-width: 35%;
-      height: 40px; } }
+      height: 40px; }
+
+  .loginzone {
+    max-width: 80vw;
+    width: 100%; } }
 
 /*# sourceMappingURL=login.css.map */

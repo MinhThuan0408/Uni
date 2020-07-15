@@ -16,9 +16,10 @@
   .wellcome .wellcomeblock {
     text-align: center;
     color: white;
-    padding-top: 27vh;
-    padding-left: 13%;
-    padding-right: 13%; }
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    margin: 0 20px; }
   .wellcome__title {
     font-size: 60px;
     font-weight: bold;
@@ -36,8 +37,11 @@
 
 .recover {
   font-family: 'Roboto', sans-serif;
-  padding-top: 35vh;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
   .recover__title {
     text-align: center;
     font-size: 48px;
@@ -59,7 +63,6 @@
     margin-bottom: 25px;
     margin-top: 10px; }
   .recover .recoverblock {
-    margin: 0 20%;
     text-align: center; }
   .recover__label {
     font-size: 24px;
@@ -112,11 +115,11 @@
     border: 1px solid #6d30ab;
     background-color: white;
     color: #6d30ab; }
+  .recover .recoverzone {
+    max-width: 40vw;
+    width: 100%; }
 
 @media (max-width: 991px) {
-  .wellcome .wellcomeblock {
-    padding-left: 6%;
-    padding-right: 6%; }
   .wellcome__title {
     font-size: 47px; }
   .wellcome__content {
@@ -124,8 +127,6 @@
 
   .recover__title {
     font-size: 45px; }
-  .recover .recoverblock {
-    margin: 0 15%; }
   .recover__button {
     margin-top: 30px;
     font-size: 16px;
@@ -139,6 +140,9 @@
       padding-left: 0;
       padding-top: 2em 0; }
     .wellcome .wellcomeblock {
+      top: 0;
+      transform: translateY(0);
+      margin: 0;
       padding: 2em 2em 2.7em 2em; }
     .wellcome__title {
       font-size: 2.3em;
@@ -175,6 +179,9 @@
       margin-top: 30px;
       font-size: 12px;
       max-width: 35%;
-      height: 40px; } }
+      height: 40px; }
+    .recover .recoverzone {
+      max-width: 80vw;
+      width: 100%; } }
 
 /*# sourceMappingURL=forgotpass.css.map */

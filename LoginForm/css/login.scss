@@ -21,7 +21,7 @@
         position: relative;
         top: 50%;
         transform: translateY(-100%);
-        margin: 0 45px;
+        margin: 0 20px;
     }
     &__title{
         font-size: 60px;
@@ -43,8 +43,11 @@
 }
 .login{
     font-family: 'Roboto', sans-serif;
-    padding-top: 20vh;
     height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     &__title{
         text-align: center;
         font-size: 48px;
@@ -57,7 +60,6 @@
         margin-bottom: 25px;
     }
     .loginblock{
-        margin: 0 20%;
         text-align: center;
     }
     &__label{
@@ -140,12 +142,12 @@
         color: #6d30ab;
     }
 }
+.loginzone{
+    max-width: 40vw;
+    width: 100%;
+}
 @media (max-width: 991px) {
     .wellcome{
-        // .wellcomeblock{
-        //     top: 0;
-        //     transform: translateY(0);
-        // }
         &__title{
             font-size: 47px;
         }
@@ -156,10 +158,6 @@
     .login{
         &__title{
             font-size: 45px;
-        }
-        
-        .loginblock{
-            margin: 0 15%;
         }
         &__button{
             margin-top: 30px;
@@ -197,9 +195,6 @@
         padding: 2.7em 0;
         &__title{
             font-size: 30px;
-        }
-        .loginblock{
-            margin: 0;
         }
         &__label{
             margin-top: 0.7em;
@@ -239,6 +234,10 @@
             max-width: 35%;
             height: 40px;
         }
+    }
+    .loginzone{
+        max-width: 80vw;
+        width: 100%;
     }
 }
 
