@@ -1,0 +1,157 @@
+@mixin title_span($fontsize) {
+    font-size: $fontsize;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    margin-top: 30px;
+}
+@mixin input_box_background($height) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: $height;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+@mixin input_content($height,$fontsize) {
+    height: $height;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: $fontsize;
+    outline: none;
+    flex-grow: 1;
+    width: 100%;
+}
+@mixin plaholderBox($fontsize) {
+    font-size: $fontsize;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+@mixin icon {
+    font-size: 29px;
+    margin-left: 28px;
+    margin-right: 10px;
+}
+@mixin button {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    margin-top: 61px;
+    width: 100%;
+    max-width: 306px;
+    height: 70px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: #6d30ab;
+    transition: 0.3s ease-in-out;
+}
+@mixin bigTitleRight {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    color: #6d30ab;
+}
+@mixin buttonhover {
+    border: 1px solid #6d30ab;
+    background-color: white;
+    color: #6d30ab;
+}
+// @mixin left {
+//     background-image: url(../images/bg_login.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     margin: 0 -15px;
+//     height: 100vh;
+//     .logo{
+//         padding-top: 43px;
+//         padding-left: 48px;
+//         display: block;
+//         img{
+//             max-width: 183px;
+//             width: 100%;
+//             height: auto;
+//         }
+//     }
+//     .wellcome{
+//         text-align: center;
+//         color: white;
+//         padding-top: 27vh;
+//         padding-left: 13%;
+//         padding-right: 13%;
+//         .wellcome_title{
+//             font-size: 60px;
+//             font-weight: bold;
+//             font-stretch: normal;
+//             font-style: normal;
+//             line-height: 1.2;
+//         }
+//         .wellcome_content{
+//             margin-top: 31px;
+//             font-size: 24px;
+//             font-weight: normal;
+//             font-stretch: normal;
+//             font-style: normal;
+//             line-height: 1.21;
+//             letter-spacing: normal;
+//         }
+//     }
+// }
+@mixin  blockLabelAndBox {
+    .title1{
+        font-size: 24px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        margin-top: 30px;
+    }
+    .input1{
+        @include input_box_background(70px);
+        margin-top:15px;
+        .iconLeft{
+            @include icon;
+        }
+        input{
+            @include input_content(70px,1.6em);
+        }
+        ::placeholder{
+            @include plaholderBox(20px);
+        }
+    }
+    .title2{
+        @include title_span(24px);
+        margin-bottom: 15px;
+    }
+    .input2{
+        @include input_box_background(70px);
+        .iconLeft{
+            @include icon;
+        }
+        input{
+            @include input_content(70px,1.6em);
+        }
+        ::placeholder{
+            @include plaholderBox(20px);
+        }
+        .field_icon{
+            @include icon;
+            color: #6d30ab;
+        }
+    }
+}
+
+
