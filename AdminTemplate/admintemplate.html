@@ -16,10 +16,12 @@
 </head>
 
 <body class="admin">
-    <header class="navbarGod">
+    <header class="navbarGod" id="myTopnav">
         <div class="navbarGod--logo">
-            <img src="./images/logo-icon.png" class="img-responsive" alt="logo">
-            <img src="./images/logo-light-text.png" class="img-responsive" alt="text">
+            <a href="#">
+                <img src="./images/logo-icon.png" class="img-responsive" alt="logo">
+                <img src="./images/logo-light-text.png" class="img-responsive" alt="text">
+            </a>
             <div class="navbarGod--item ">
                 <i class="las la-bars menushow" id="expanded" data-toggle="collapse"></i>
                 <!-- <div class="iconbar menushow " id="expanded" data-toggle="collapse">
@@ -38,7 +40,7 @@
             <span>Celendar</span>
             <i class="las la-calendar navbarGod--iconres"></i>
         </div>
-        
+
         <div class="btn-group">
             <div class="navbarGod--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>Apps</span>
@@ -114,6 +116,9 @@
                 <button type="submit"><i class="las la-search"></i></button>
             </form>
         </div>
+        <div class="navbarGod--iconthreedot" onclick="showmobile">
+            <i class="las la-ellipsis-h"></i>
+        </div>
     </header>
     <div class="admintemplate">
         <div class="leftnav">
@@ -126,10 +131,14 @@
                         <div class="dropdown-menu dropdowncontent">
                             <div class="dropdowncontent--drop">
                                 <div class="dropdowncontent--box boxavt">
-                                    <div class="dropdowncontent--boxitem avt"><i class="las la-square-full statuscolor1"></i></i>Active</div>
-                                    <div class="dropdowncontent--boxitem avt"><i class="las la-square-full statuscolor2"></i>Alway</div>
-                                    <div class="dropdowncontent--boxitem avt"><i class="las la-square-full statuscolor3"></i>Do not disturb</div>
-                                    <div class="dropdowncontent--boxitem avt"><i class="las la-square-full statuscolor4"></i>Invisible</div>
+                                    <div class="dropdowncontent--boxitem avt"><i
+                                            class="las la-square-full statuscolor1"></i></i>Active</div>
+                                    <div class="dropdowncontent--boxitem avt"><i
+                                            class="las la-square-full statuscolor2"></i>Alway</div>
+                                    <div class="dropdowncontent--boxitem avt"><i
+                                            class="las la-square-full statuscolor3"></i>Do not disturb</div>
+                                    <div class="dropdowncontent--boxitem avt"><i
+                                            class="las la-square-full statuscolor4"></i>Invisible</div>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +228,7 @@
                         <td class="leftnav--boxchat"><i class="las la-comment-alt " data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false"></i>
                             <div>
-    
+
                             </div>
                             <div class="dropdown-menu dropdowncontent">
                                 <div class="dropdowncontent--drop">
@@ -233,7 +242,7 @@
                                         <div class="contentnoti">
                                             <div class="dropdowncontent--boxitem">
                                                 <div class="notifiavatar avticon1">
-    
+
                                                 </div>
                                                 <div class="notificontent">
                                                     <h6>Luanch Admin</h6>
@@ -243,7 +252,7 @@
                                             </div>
                                             <div class="dropdowncontent--boxitem">
                                                 <div class="notifiavatar avticon2">
-    
+
                                                 </div>
                                                 <div class="notificontent">
                                                     <h6>Event Today</h6>
@@ -253,7 +262,7 @@
                                             </div>
                                             <div class="dropdowncontent--boxitem">
                                                 <div class="notifiavatar avticon3">
-    
+
                                                 </div>
                                                 <div class="notificontent">
                                                     <h6>Setting</h6>
@@ -263,7 +272,7 @@
                                             </div>
                                             <div class="dropdowncontent--boxitem">
                                                 <div class="notifiavatar avticon4">
-    
+
                                                 </div>
                                                 <div class="notificontent">
                                                     <h6>Pavan Kumar</h6>
@@ -298,7 +307,7 @@
                         </ul>
                     </li>
                     <li class="leftnav--divider"></li>
-                    <li class="leftnav--smallcap"><span>Applications</span> 
+                    <li class="leftnav--smallcap"><span>Applications</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-comment-alt"></i><span>Chat Apps</span>
@@ -337,7 +346,7 @@
                     <li class="leftnav--divider"></li>
                     <li class="leftnav--smallcap"><span>UI</span>
                     </li>
-    
+
                     <li class="leftnav--bigcap" data-parent="accordion" data-toggle="collapse" data-target="#ui">
                         <i class="las la-cube"></i> <span>UI Elements</span><i class="las la-angle-down"></i>
                         <ul class="leftnav--biglist collapse" data-parent="#accordion" id="ui">
@@ -387,7 +396,7 @@
                         </ul>
                     </li>
                     <li class="leftnav--divider"></li>
-                    <li class="leftnav--smallcap"><span>Forms</span> 
+                    <li class="leftnav--smallcap"><span>Forms</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-sticky-note"></i><span>Form Layouts</span>
@@ -424,7 +433,7 @@
                     <li class="leftnav--bigcap">
                         <i class="las la-tablet"></i><span>Table Responsive</span>
                     </li>
-    
+
                     <li class="leftnav--bigcap">
                         <i class="lab la-airbnb"></i><span>Table Footable</span>
                     </li>
@@ -434,7 +443,7 @@
                     <li class="leftnav--bigcap">
                         <i class="lab la-dropbox"></i><span>Table Boostrap</span>
                     </li>
-                    <li class="leftnav--smallcap"> <span>Charts</span> 
+                    <li class="leftnav--smallcap"> <span>Charts</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-spinner"></i><span>Morris Chart</span>
@@ -469,13 +478,13 @@
                         <i class="las la-lock"></i><span>Authentication</span>
                     </li>
                     <li class="leftnav--bigcap">
-                        <i class="las la-user"></i> <span>Users</span> 
+                        <i class="las la-user"></i> <span>Users</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-feather"></i> <span>Icons</span>
                     </li>
                     <li class="leftnav--bigcap">
-                        <i class="las la-paperclip"></i><span>Invoice</span> 
+                        <i class="las la-paperclip"></i><span>Invoice</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-map-marker"></i><span>Maps</span>
@@ -490,9 +499,9 @@
                         <i class="las la-user-times"></i><span>Error Pages</span>
                     </li>
                     <li class="leftnav--bigcap">
-                        <i class="las la-bars"></i><span>Multi level dd</span> 
+                        <i class="las la-bars"></i><span>Multi level dd</span>
                     </li>
-                    <li class="leftnav--smallcap"><span>Extra</span> 
+                    <li class="leftnav--smallcap"><span>Extra</span>
                     </li>
                     <li class="leftnav--bigcap">
                         <i class="las la-pen-nib"></i><span>Documentation</span>
@@ -505,12 +514,20 @@
         </div>
         <div class="content">
             <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis hic. Culpa, ex.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis hic. Culpa, ex.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis hic. Culpa, ex.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis hic. Culpa, ex.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
+                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
+                    hic. Culpa, ex.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
+                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
+                    hic. Culpa, ex.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
+                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
+                    hic. Culpa, ex.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
+                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
+                    hic. Culpa, ex.</p>
             </div>
-           
+
         </div>
     </div>
 </body>
@@ -521,10 +538,24 @@
 <script>
     $(document).ready(function () {
         $(".menushow").click(function () {
-            
+
             document.body.classList.toggle('sidebar-expand')
-            
+
         });
     });
-    
+
+
+
+
+
+
+    function showmobile() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbarGod") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 </script>
