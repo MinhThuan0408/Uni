@@ -16,39 +16,40 @@
 </head>
 
 <body class="admin">
-    <header class="topnav" id="myTopnav">
-        <div class="topnav--logo">
-            <div class="topnav--logoboth">
+    <header class="top_nav" id="mytop_nav">
+        <div class="top_nav--logo">
+            <div class="top_nav--logoboth">
                 <img src="./images/logo-icon.png" class="img-responsive" alt="logo">
                 <img src="./images/logo-light-text.png" class="img-responsive" alt="text">
             </div>
-            <div class="topnav--item menushow">
-                
-                <!-- showmobileicon --><i class="las la-bars " id="expanded" data-toggle="collapse"></i>
-                <!-- <div class="iconbar menushow " id="expanded" data-toggle="collapse">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                    <span class="line1"></span>
-                </div> -->
+            <div class="top_nav--item ">
+
+                <i class="las la-bars showMobileIcon" id="expanded" data-toggle="collapse"></i>
+
+                <div class="iconbar menu_show " id="expanded" data-toggle="collapse">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line1 line"></div>
+                </div>
             </div>
-            <div class="topnav--iconthreedot" data-toggle="collapse" data-target="#mobilemenu">
+            <div class="top_nav--iconthreedot" data-toggle="collapse" data-target="#mobilemenu">
                 <i class="las la-ellipsis-h"></i>
             </div>
         </div>
-        <div class="topnav--mobile" id="mobilemenu">
-            <div class="topnav--item">
+        <div class="top_nav--mobile" id="mobilemenu">
+            <div class="top_nav--item">
                 <span>Live Feed</span>
-                <i class="las la-book-open topnav--iconres"></i>
+                <i class="las la-book-open top_nav--iconres"></i>
             </div>
-            <div class="topnav--item">
+            <div class="top_nav--item">
                 <span>Celendar</span>
-                <i class="las la-calendar topnav--iconres"></i>
+                <i class="las la-calendar top_nav--iconres"></i>
             </div>
             <div class="btn-group">
-                <div class="topnav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="top_nav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>Apps</span>
-                    <i class="las la-angle-down dropbtnapps"></i>
-                    <i class="lab la-think-peaks topnav--iconres"></i>
+                    <i class="las la-angle-down icon-dropdown dropbtnapps"></i>
+                    <i class="lab la-think-peaks top_nav--iconres"></i>
                 </div>
                 <div class="dropdown-menu dropdowncontent">
                     <div class="dropdowncontent--drop">
@@ -66,11 +67,11 @@
                 </div>
 
             </div>
-            <div class="btn-group topnav--element">
-                <div class="topnav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group top_nav--element">
+                <div class="top_nav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>Elements</span>
-                    <i class="las la-chart-bar topnav--iconres"></i>
-                    <i class="las la-angle-down dropbtnapps"></i>
+                    <i class="las la-chart-bar top_nav--iconres"></i>
+                    <i class="las la-angle-down icon-dropdown dropbtnapps"></i>
                 </div>
                 <div class="dropdown-menu dropdowncontent">
                     <div class="dropdowncontent--drop">
@@ -96,11 +97,11 @@
                 </div>
 
             </div>
-            <div class="btn-group topnav--english">
-                <div class="topnav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="btn-group top_nav--english">
+                <div class="top_nav--item " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span>English</span>
-                    <i class="las la-angle-down dropbtnapps"></i>
-                    <i class="las la-language topnav--iconres"></i>
+                    <i class="las la-angle-down icon-dropdown dropbtnapps"></i>
+                    <i class="las la-language top_nav--iconres"></i>
                 </div>
                 <div class="dropdown-menu dropdowncontent">
                     <div class="dropdowncontent--drop">
@@ -112,22 +113,22 @@
                     </div>
                 </div>
             </div>
-            <div class="topnav--search">
-                <form class="topnav--searchform">
+            <div class="top_nav--search">
+                <form class="top_nav--searchform">
                     <input type="text" placeholder="Search.." name="search">
-                    <i class="las la-times topnav--iconx"></i>
+                    <i class="las la-times top_nav--iconx"></i>
                     <button type="submit"><i class="las la-search"></i></button>
                 </form>
             </div>
         </div>
     </header>
     <div class="admintemplate">
-        <div class="leftnav">
-            <div class="leftnav--profile">
-                <div class="leftnav--pic">
-                    <div class="leftnav--avatar">
-                        <div class="leftnav--status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="las la-angle-down"></i>
+        <div class="left_nav">
+            <div class="left_nav--profile">
+                <div class="left_nav--pic">
+                    <div class="left_nav--avatar">
+                        <div class="left_nav--status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="las la-angle-down icon-dropdown"></i>
                         </div>
                         <div class="dropdown-menu dropdowncontent">
                             <div class="dropdowncontent--drop">
@@ -145,372 +146,391 @@
                         </div>
                     </div>
                 </div>
-                <div class="leftnav--name">
-                    <p>Sandra Phillip</p>
-                    <p class="leftnav--posit">Marketing Head</p>
+                <div class="left_nav--sectionProfile">
+                    <div class="left_nav--name">
+                        <p>Sandra Phillip</p>
+                        <p class="left_nav--posit">Marketing Head</p>
+                    </div>
+                    <table class="left_nav--extend">
+                        <tr>
+                            <td class="left_nav--box"><i class="las la-bell "></i>
+                                <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="quantity-noti">5</span>
+                                </div>
+                                <div class="dropdown-menu dropdowncontent">
+                                    <div class="dropdowncontent--drop">
+                                        <div class="dropdowncontent--box ">
+                                            <div class=" notifinew">
+                                                <div class="notifinew--title">
+                                                    <h4>4 New</h4>
+                                                    <div>Notifications</div>
+                                                </div>
+                                            </div>
+                                            <div class="contentnoti">
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon1">
+                                                        <i class="las la-caret-square-down"></i>
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Luanch Admin</h6>
+                                                        <span>Just see the my admin</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon2">
+                                                        <i class="las la-clipboard"></i>
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Event Today</h6>
+                                                        <span>Just a reminder you ha</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon3">
+                                                        <i class="las la-cog"></i>
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Setting</h6>
+                                                        <span>You can customize this tem</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon4">
+                                                        <i class="las la-cube"></i>
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Pavan Kumar</h6>
+                                                        <span>Just see the my admin</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checknotifi">
+                                                <div>Check all notifications <i class="las la-angle-right"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="left_nav--setting">
+                                <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="las la-cog"></i>
+                                </div>
+                                <div class="dropdown-menu dropdowncontent">
+                                    <div class="dropdowncontent--drop">
+                                        <div class="dropdowncontent--box ">
+                                            <div class="dropdowncontent--boxitem">Action</div>
+                                            <div class="dropdowncontent--boxitem">Action Here</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="left_nav--boxchat"><i class="las la-comment-alt " data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"></i>
+                                <div>
+
+                                </div>
+                                <div class="dropdown-menu dropdowncontent">
+                                    <div class="dropdowncontent--drop">
+                                        <div class="dropdowncontent--box ">
+                                            <div class=" notifinew">
+                                                <div class="notifinew--title">
+                                                    <h4>4 New</h4>
+                                                    <div>Chats</div>
+                                                </div>
+                                            </div>
+                                            <div class="contentnoti">
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon1">
+
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Luanch Admin</h6>
+                                                        <span>Just see the my admin</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon2">
+
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Event Today</h6>
+                                                        <span>Just a reminder you ha</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon3">
+
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Setting</h6>
+                                                        <span>You can customize this tem</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdowncontent--boxitem">
+                                                    <div class="notifiavatar avticon4">
+
+                                                    </div>
+                                                    <div class="notificontent">
+                                                        <h6>Pavan Kumar</h6>
+                                                        <span>Just see the my admin</span>
+                                                        <span>9:30 AM</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checknotifi">
+                                                <div>Check all notifications <i class="las la-angle-right"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <table class="leftnav--extend">
-                    <tr>
-                        <td class="leftnav--box"><i class="las la-bell "></i>
-                            <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="quantity-noti">5</span>
-                            </div>
-                            <div class="dropdown-menu dropdowncontent">
-                                <div class="dropdowncontent--drop">
-                                    <div class="dropdowncontent--box ">
-                                        <div class=" notifinew">
-                                            <div class="notifinew--title">
-                                                <h4>4 New</h4>
-                                                <div>Notifications</div>
-                                            </div>
-                                        </div>
-                                        <div class="contentnoti">
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon1">
-                                                    <i class="las la-caret-square-down"></i>
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Luanch Admin</h6>
-                                                    <span>Just see the my admin</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon2">
-                                                    <i class="las la-clipboard"></i>
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Event Today</h6>
-                                                    <span>Just a reminder you ha</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon3">
-                                                    <i class="las la-cog"></i>
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Setting</h6>
-                                                    <span>You can customize this tem</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon4">
-                                                    <i class="las la-cube"></i>
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Pavan Kumar</h6>
-                                                    <span>Just see the my admin</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="checknotifi">
-                                            <div>Check all notifications <i class="las la-angle-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="leftnav--setting">
-                            <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="las la-cog"></i>
-                            </div>
-                            <div class="dropdown-menu dropdowncontent">
-                                <div class="dropdowncontent--drop">
-                                    <div class="dropdowncontent--box ">
-                                        <div class="dropdowncontent--boxitem">Action</div>
-                                        <div class="dropdowncontent--boxitem">Action Here</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="leftnav--boxchat"><i class="las la-comment-alt " data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"></i>
-                            <div>
-
-                            </div>
-                            <div class="dropdown-menu dropdowncontent">
-                                <div class="dropdowncontent--drop">
-                                    <div class="dropdowncontent--box ">
-                                        <div class=" notifinew">
-                                            <div class="notifinew--title">
-                                                <h4>4 New</h4>
-                                                <div>Chats</div>
-                                            </div>
-                                        </div>
-                                        <div class="contentnoti">
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon1">
-
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Luanch Admin</h6>
-                                                    <span>Just see the my admin</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon2">
-
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Event Today</h6>
-                                                    <span>Just a reminder you ha</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon3">
-
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Setting</h6>
-                                                    <span>You can customize this tem</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                            <div class="dropdowncontent--boxitem">
-                                                <div class="notifiavatar avticon4">
-
-                                                </div>
-                                                <div class="notificontent">
-                                                    <h6>Pavan Kumar</h6>
-                                                    <span>Just see the my admin</span>
-                                                    <span>9:30 AM</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="checknotifi">
-                                            <div>Check all notifications <i class="las la-angle-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <ul class="leftnav--listtool test" id="accordion">
-                    <li class="leftnav--smallcap "><span>Dashboard</span>
-                    </li>
-                    <li class="leftnav--bigcap" data-parent="accordion" data-toggle="collapse" data-target="#dashboard">
-                        <div class="leftnav--dashmain">
-                            <i class="las la-home"></i>
-                            <span>Dashboard</span>
-                            <i class="las la-angle-down dashdown"></i>
-                        </div>
-                        <ul class="leftnav--biglist collapse " data-parent="#accordion" id="dashboard">
-                            <li>Multipurpose</li>
-                            <li>Analytical</li>
-                            <li>eCommerce</li>
-                            <li>Modern</li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--divider"></li>
-                    <li class="leftnav--smallcap"><span>Applications</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-comment-alt"></i><span>Chat Apps</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-clipboard"></i><span>Notes</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-check-circle"></i><span>Todo</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-receipt"></i><span>Invoice</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-calendar"></i><span>Calendar</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-clipboard-list"></i><span>Taskboard</span>
-                    </li>
-                    <li class="leftnav--bigcap" data-parent="accordion" data-toggle="collapse" data-target="#inbox">
-                        <i class="las la-envelope"></i><span>Inbox</span>
-                        <i class="las la-angle-down"></i>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="inbox">
-                            <li>Email</li>
-                            <li>Email Detail</li>
-                            <li>Email Compose</li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--bigcap" data-parent="accordion" data-toggle="collapse" data-target="#tickets">
-                        <i class="las la-ticket-alt"></i><span>Tickets</span><i class="las la-angle-down"></i>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="tickets">
-                            <li>Ticket List</li>
-                            <li>Ticket Details</li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--divider"></li>
-                    <li class="leftnav--smallcap"><span>UI</span>
-                    </li>
-
-                    <li class="leftnav--bigcap" data-parent="accordion" data-toggle="collapse" data-target="#ui">
-                        <i class="las la-cube"></i> <span>UI Elements</span><i class="las la-angle-down"></i>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="ui">
-                            <li>Buttons</li>
-                            <li>Modals</li>
-                            <li>Tabs </li>
-                            <li>Tooltip & Popover</li>
-                            <li>Notification </li>
-                            <li>Progressbar </li>
-                            <li>Typography</li>
-                            <li>Boostrap UI </li>
-                            <li>Breadcrumb </li>
-                            <li>List Media</li>
-                            <li>Grid </li>
-                            <li>Carousel </li>
-                            <li>Scrollspy</li>
-                            <li>Toast </li>
-                            <li>Spiner </li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--divider"></li>
-                    <li class="leftnav--bigcap" data-toggle="collapse" data-target="#cards">
-                        <i class="las la-credit-card"></i><span>Cards</span>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="cards">
-                            <li>Basic Cards</li>
-                            <li>Custom Cards</li>
-                            <li>Weather Cards</li>
-                            <li>Draggable Cards</li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--bigcap" data-toggle="collapse" data-target="#components">
-                        <i class="las la-kaaba"></i><span>Components</span><i class="las la-angle-down"></i>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="components">
-                            <li>Sweetalet</li>
-                            <li>Nestble</li>
-                            <li>Noui Silder </li>
-                            <li>Rating</li>
-                            <li>Toastr </li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--bigcap" data-toggle="collapse" data-target="#widgets">
-                        <i class="las la-sliders-h"></i> <span>Widgets</span><i class="las la-angle-down"></i>
-                        <ul class="leftnav--biglist collapse" data-parent="#accordion" id="widgets">
-                            <li>App Widget</li>
-                            <li>Charts Widget</li>
-                            <li>Data Widget </li>
-                        </ul>
-                    </li>
-                    <li class="leftnav--divider"></li>
-                    <li class="leftnav--smallcap"><span>Forms</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-sticky-note"></i><span>Form Layouts</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-boxes"></i><span>Form Addons</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-check-square"></i><span>Form Validation</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-tint"></i><span>Form Pickers</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-edit"></i><span>Form Editor</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-magic"></i><span>Form Wizard</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-redo-alt"></i><span>Form Repeater</span>
-                    </li>
-                    <li class="leftnav--smallcap"><span>Tables</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-table"></i><span>Boostrap tables</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-digital-tachograph"></i><span>Datatables</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-dot-circle"></i><span>Table Jsgrid</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-tablet"></i><span>Table Responsive</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="lab la-airbnb"></i><span>Table Footable</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-pen"></i><span>Table Editable</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="lab la-dropbox"></i><span>Table Boostrap</span>
-                    </li>
-                    <li class="leftnav--smallcap"> <span>Charts</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-spinner"></i><span>Morris Chart</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-clock"></i><span>ChartJs</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-satellite-dish"></i><span>Sparkline Chart</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-chart-area"></i><span>Chartist Chart</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-chart-pie"></i><span>Knob Chart</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-chart-bar"></i><span>C3 Charts</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-chart-bar"></i><span>Echarts</span>
-                    </li>
-                    <li class="leftnav--smallcap"><span>Sample Pages</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-shopping-cart"></i><span>Ecommerce Pages</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-check-square"></i><span>Sample Pages</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-lock"></i><span>Authentication</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-user"></i> <span>Users</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-feather"></i> <span>Icons</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-paperclip"></i><span>Invoice</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-map-marker"></i><span>Maps</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-hourglass-end"></i><span>Timelines</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-envelope"></i><span>Email Templates</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-user-times"></i><span>Error Pages</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-bars"></i><span>Multi level dd</span>
-                    </li>
-                    <li class="leftnav--smallcap"><span>Extra</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-pen-nib"></i><span>Documentation</span>
-                    </li>
-                    <li class="leftnav--bigcap">
-                        <i class="las la-sign-in-alt"></i><span>Logout</span>
-                    </li>
-                </ul>
             </div>
+            <ul class="left_nav--listtool">
+                <li class="left_nav--smallcap "><span>Dashboard</span>
+                </li>
+                <li class="left_nav--bigcap dashboard-opa">
+                    <div class="left_nav--dashmain clickDrop">
+                        <i class="las la-home iconHome"></i>
+                        <span>Dashboard</span>
+                        <i class="las la-angle-down icon-dropdown dashdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse " id="dashboard">
+                        <li>Multipurpose</li>
+                        <li>Analytical</li>
+                        <li>eCommerce</li>
+                        <li>Modern</li>
+                    </ul>
+                </li>
+                <li class="left_nav--divider"></li>
+                <li class="left_nav--smallcap"><span>Applications</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-comment-alt"></i><span>Chat Apps</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-clipboard"></i><span>Notes</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-check-circle"></i><span>Todo</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-receipt"></i><span>Invoice</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-calendar"></i><span>Calendar</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-clipboard-list"></i><span>Taskboard</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-envelope "></i><span>Inbox</span>
+                        <i class="las la-angle-down icon-dropdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="inbox">
+                        <li>Email</li>
+                        <li>Email Detail</li>
+                        <li>Email Compose</li>
+                    </ul>
+                </li>
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-ticket-alt"></i><span>Tickets</span><i
+                            class="las la-angle-down icon-dropdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="tickets">
+                        <li>Ticket List</li>
+                        <li>Ticket Details</li>
+                    </ul>
+                </li>
+                <li class="left_nav--divider"></li>
+                <li class="left_nav--smallcap"><span>UI</span>
+                </li>
+
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-cube"></i> <span>UI Elements</span><i
+                            class="las la-angle-down icon-dropdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="ui">
+                        <li>Buttons</li>
+                        <li>Modals</li>
+                        <li>Tabs </li>
+                        <li>Tooltip & Popover</li>
+                        <li>Notification </li>
+                        <li>Progressbar </li>
+                        <li>Typography</li>
+                        <li>Boostrap UI </li>
+                        <li>Breadcrumb </li>
+                        <li>List Media</li>
+                        <li>Grid </li>
+                        <li>Carousel </li>
+                        <li>Scrollspy</li>
+                        <li>Toast </li>
+                        <li>Spiner </li>
+                    </ul>
+                </li>
+                <li class="left_nav--divider"></li>
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-credit-card"></i><span>Cards</span>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="cards">
+                        <li>Basic Cards</li>
+                        <li>Custom Cards</li>
+                        <li>Weather Cards</li>
+                        <li>Draggable Cards</li>
+                    </ul>
+                </li>
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-kaaba"></i><span>Components</span>
+                        <i class="las la-angle-down icon-dropdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="components">
+                        <li>Sweetalet</li>
+                        <li>Nestble</li>
+                        <li>Noui Silder </li>
+                        <li>Rating</li>
+                        <li>Toastr </li>
+                    </ul>
+                </li>
+                <li class="left_nav--bigcap">
+                    <div class="clickDrop">
+                        <i class="las la-sliders-h"></i> <span class="clickDrop">Widgets</span>
+                        <i class="las la-angle-down icon-dropdown"></i>
+                    </div>
+                    <ul class="left_nav--biglist collapse" id="widgets">
+                        <li>App Widget</li>
+                        <li>Charts Widget</li>
+                        <li>Data Widget </li>
+                    </ul>
+                </li>
+                <li class="left_nav--divider"></li>
+                <li class="left_nav--smallcap"><span>Forms</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-sticky-note"></i><span>Form Layouts</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-boxes"></i><span>Form Addons</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-check-square"></i><span>Form Validation</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-tint"></i><span>Form Pickers</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-edit"></i><span>Form Editor</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-magic"></i><span>Form Wizard</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-redo-alt"></i><span>Form Repeater</span>
+                </li>
+                <li class="left_nav--smallcap"><span>Tables</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-table"></i><span>Boostrap tables</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-digital-tachograph"></i><span>Datatables</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-dot-circle"></i><span>Table Jsgrid</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-tablet"></i><span>Table Responsive</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="lab la-airbnb"></i><span>Table Footable</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-pen"></i><span>Table Editable</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="lab la-dropbox"></i><span>Table Boostrap</span>
+                </li>
+                <li class="left_nav--smallcap"> <span>Charts</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-spinner"></i><span>Morris Chart</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-clock"></i><span>ChartJs</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-satellite-dish"></i><span>Sparkline Chart</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-chart-area"></i><span>Chartist Chart</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-chart-pie"></i><span>Knob Chart</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-chart-bar"></i><span>C3 Charts</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-chart-bar"></i><span>Echarts</span>
+                </li>
+                <li class="left_nav--smallcap"><span>Sample Pages</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-shopping-cart"></i><span>Ecommerce Pages</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-check-square"></i><span>Sample Pages</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-lock"></i><span>Authentication</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-user"></i> <span>Users</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-feather"></i> <span>Icons</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-paperclip"></i><span>Invoice</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-map-marker"></i><span>Maps</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-hourglass-end"></i><span>Timelines</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-envelope"></i><span>Email Templates</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-user-times"></i><span>Error Pages</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-bars"></i><span>Multi level dd</span>
+                </li>
+                <li class="left_nav--smallcap"><span>Extra</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-pen-nib"></i><span>Documentation</span>
+                </li>
+                <li class="left_nav--bigcap">
+                    <i class="las la-sign-in-alt"></i><span>Logout</span>
+                </li>
+            </ul>
+
         </div>
         <div class="content">
             <div>
@@ -533,29 +553,6 @@
 </body>
 <script src="./js/jquery-2.1.4.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+
 </html>
-<script>
-    $(document).ready(function () {
-        $(".menushow").click(function () {
-            document.body.classList.toggle('sidebar-expand')
-        });
-        $(".showmobileicon").click(function () {
-
-            $(".leftnav").toggle(
-                function () { 
-                    $(".leftnav").css({ "display": "block" });
-                    // $(".leftnav").removeClass('sidebar-expand');
-                }
-                // function () { $(".leftnav").css({ "display": "flex" });}
-            );
-        });
-
-        // $(".topnav--iconthreedot").click(function () {
-
-        //     $(".topnav--mobile").toggle(
-        //         // function () { $(".topnav--mobile").css({ "display": "none" });},
-        //         // function () { $(".topnav--mobile").css({ "display": "flex" });}
-        //     );
-        // });
-    });
-</script>
