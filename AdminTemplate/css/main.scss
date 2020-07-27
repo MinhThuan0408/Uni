@@ -4,26 +4,49 @@
 .admintemplate{
     display: flex;
 }
-.navbarGod {
+.topnav {
     background-color: rgb(78, 78, 249);
     height: 90px;
     display: flex;
     align-items: center;
     transition: 0.5s;
+    @media (max-width: 767px) {
+        display: block;
+    }
     &--logo {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0;
-        padding: 0 30px 0 20px;
-        a{
-            display: contents;
+        padding: 0 30px 0 30px;
+        @media (max-width: 767px) {
+            padding: 15px 30px 15px 30px;
         }
+        
+        .menushow{
+            @media (max-width: 767px) {
+                order: 1;
+            }
+        }
+    }
+    &--logoboth{
+        display: contents;
         img{
             padding-left: 10px;
         }
+        @media (max-width: 767px) {
+            img{
+                order: 2;
+            }
+        }
     }
-
+    &--mobile{
+        display: contents;
+        @media (max-width: 767px) {
+            display: none;
+        }
+        
+    }
     &--item {
         color: white;
         opacity: 0.7;
@@ -111,6 +134,7 @@
         display: none;
         @media (max-width: 767px) {
             display: block;
+            order: 3;
         }
     }
 }
@@ -118,6 +142,11 @@
     width: 14%;
     background-color: rgb(78, 78, 249);
     transition: 0.5s;
+    @media (max-width: 767px) {
+        display: none;
+        max-width: 260px;
+        width: 100%;
+    }
     &--logo {
         display: flex;
         align-items: center;
@@ -125,6 +154,7 @@
         margin: 0;
         padding: 0 30px 0 30px;
         height: 90px;
+
     }
     table {
         border: 1;
@@ -353,7 +383,7 @@
         height: 100vh;
         overflow: auto;
     }
-
+    //custom scrollbar
     &--listtool::-webkit-scrollbar-track {
         border-radius: 10px;
         background-color: none;
@@ -374,7 +404,7 @@
     &--dashmain {
         border-radius: 0 60px 60px 0;
         background: linear-gradient(to right, #4051f6, #475cf3, #4f65ef, #586eea, #6177e5);
-        opacity: 1;
+        // opacity: 1;
         padding: 12px 0;
         margin-right: 15px;
 
@@ -382,6 +412,7 @@
             padding-right: 15px !important;
         }
     }
+    //line
     &--divider {
         height: 1px;
         background: #fff;
@@ -481,7 +512,7 @@
     }
 }
 .sidebar-expand {
-    .navbarGod {
+    .topnav {
         img {
             display: none;
         }
@@ -516,40 +547,28 @@
 .content{
     width: 86%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.line1{
-    background: white;
-    height: 2px;
-    margin-bottom: 4px;
-    display: block;
-    transition: .3s ease-in;
-    width: 10px;
-    margin-right: -5px;
-}
-.line2{
-    width: 20px;
-    background: white;
-    height: 2px;
-    margin-bottom: 4px;
-    display: block;
-    transition: .3s ease-in;
+// .line1{
+//     background: white;
+//     height: 2px;
+//     margin-bottom: 4px;
+//     display: block;
+//     transition: .3s ease-in;
+//     width: 10px;
+//     margin-right: -5px;
+// }
+// .line2{
+//     width: 20px;
+//     background: white;
+//     height: 2px;
+//     margin-bottom: 4px;
+//     display: block;
+//     transition: .3s ease-in;
     
-}
+// }
 
-.iconbar:hover{
-    .line1{
-        width: 20px;
-    }
+// .iconbar:hover{
+//     .line1{
+//         width: 20px;
+//     }
 
-}
+// }
