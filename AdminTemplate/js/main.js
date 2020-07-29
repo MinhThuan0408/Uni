@@ -2,21 +2,16 @@
 $(document).ready(function () {
     $(".menuSidebar").click(function () {
         $('body').toggleClass('sidebar-expand')
-        //$('.left_nav').toggleClass('show-sidebar');
-
     });
 });
 
-
-
-//list item in left_nav
-$(document).ready(function () {
-    $(".clickDrop").click(function () {
-        $(this).parent().addClass('active').find('.left_nav--big_list').slideToggle();
-        $(".clickDrop").not(this).parent().removeClass('active').find('.left_nav--big_list').slideUp();
+//css class activee (background,color...) + active big-list
+$(document).ready(function(){
+    $('.clickDrop').click(function() {
+        $(".clickDrop").removeClass('activee').not(this).parent().removeClass('active').find('.left_nav--big_list').slideUp();
+        $(this).addClass('activee').parent().addClass('active').find('.left_nav--big_list').slideToggle();
     });
 });
-
 
 //show left_nav khi click icon 3 gạch và đổi thành dấu X tr
 $(document).ready(function () {
@@ -46,7 +41,7 @@ $(window).resize(function () {
 });
 
 
-///hover expand
+// ///hover expand
 // $(document).ready(function () {
 //     $(".left_nav").hover(function () {
 //         if ($("body").hasClass('sidebar-expand')) {
@@ -56,6 +51,8 @@ $(window).resize(function () {
 //     })
 // });
 
+
+//clear text form search
 $(document).ready(function () {
     $(".top_nav--iconClear").click(function () {
         $('.inputSearch').val('').focus();
