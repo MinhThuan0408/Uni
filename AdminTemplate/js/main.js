@@ -65,7 +65,7 @@ $(document).ready(function () {
         $('.setting_color').toggleClass('showSettingColor');
     });
 });
-//đổi màu header bg
+//đổi màu header bg -> chuyển gom class như expand
 function changeHeadrBg(color){
     $(".top_nav").css("background",color);
     $(".left_nav").css("background",color);
