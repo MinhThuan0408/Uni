@@ -492,7 +492,7 @@ body {
         height: calc(100vh - 337px);
         overflow-y: auto;
         @media (max-width: 767px) {
-            height: calc(100vh - 347px);
+            height: calc(100vh - 317px);
         }
     }
     //custom scrollbar
@@ -674,7 +674,11 @@ body {
             display: none;
         }
         &--list_tool {
-            height: calc(100vh - 151px);
+            height: calc(100vh - 176px);
+            @media (max-width: 991px) {
+                height: calc(100vh - 165px);
+            }
+            
         }
         &--big_cap {
             text-align: center;
@@ -783,22 +787,22 @@ body {
             border-radius: 100%;
             margin-right: 15px;
         }
-        .color1 {
+        .color_bg1 {
             background-color: #3f50f6;
         }
-        .color2 {
+        .color_bg2 {
             background-color: #fe5419;
         }
-        .color3 {
+        .color_bg3 {
             background-color: #00b0ff;
         }
-        .color4 {
+        .color_bg4 {
             background-color: #6659f7;
         }
-        .color5 {
+        .color_bg5 {
             background-color: #1d2e42;
         }
-        .color6 {
+        .color_bg6 {
             background-color: #a1aab2;
         }
     }

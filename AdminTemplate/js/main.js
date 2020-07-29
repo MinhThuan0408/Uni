@@ -45,7 +45,7 @@ $(window).resize(function () {
 // $(document).ready(function () {
 //     $(".left_nav").hover(function () {
 //         if ($("body").hasClass('sidebar-expand')) {
-//             $("body").toggle('sidebar-expand')
+//             $("body").toggleClass('sidebar-expand')
 //             $('.left_nav').css('position', 'absolute');
 //         }
 //     })
