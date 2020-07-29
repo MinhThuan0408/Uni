@@ -20,7 +20,9 @@
         <div class="top_nav--logo">
             <div class="top_nav--logo_both">
                 <img src="./images/logo-icon.png" class="img-responsive" alt="logo">
-                <img src="./images/logo-light-text.png" class="img-responsive" alt="text">
+
+                <img src="./images/logo-light-text.png" class="img-responsive logoLight" alt="text">
+                <img src="./images/logo-text.png" class="img-responsive logoDark" alt="text2">
             </div>
             <div class="top_nav--click_show_expand ">
 
@@ -102,7 +104,8 @@
 
             </div>
             <div class="btn-group top_nav--english">
-                <div class="top_nav--item icon_english " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="top_nav--item icon_english " data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
                     <span>English</span>
                     <i class="las la-angle-down icon-dropdown dropbtn_apps"></i>
                     <i class="las la-language top_nav--icon_res"></i>
@@ -122,6 +125,7 @@
                     <input class="inputSearch" type="search" placeholder="Search" name="search">
                     <i class="las la-times top_nav--iconClear"></i>
                     <button type="submit"><i class="las la-search"></i></button>
+
                 </form>
             </div>
         </div>
@@ -553,6 +557,71 @@
                     hic. Culpa, ex.</p>
             </div>
 
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="setting_color">
+        <div class="setting_color--icon_setting">
+            <i class="las la-cog icon_spin"></i>
+        </div>
+        <div class="setting_color--table_background">
+            <div class="setting_color--layouts_show">
+                <h5>Layout Settings</h5>
+                <div class="style_layout">
+                    <div class="form-check">
+                        <input class="style_check_input" type="checkbox" value="" id="style1" >
+                        <label class="form_check_layout" for="style1">
+                            Collapse Sidebar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="style_check_input" type="checkbox" value="" id="style2">
+                        <label class="form_check_layout" for="style2">
+                            Fixed Sidebar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="style_check_input" type="checkbox" value="" id="style3">
+                        <label class="form_check_layout" for="style3">
+                            Fixed Header
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="style_check_input" type="checkbox" value="" id="style4">
+                        <label class="form_check_layout" for="style4">
+                            Boxed Layout
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setting_color--header_background">
+                <h5>Header Background</h5>
+                <div class="color_choices">
+                    <div class="color color1" onclick="changeHeadrBg('#3f50f6')"></div>
+                    <div class="color color2" onclick="changeHeadrBg('#fe5419')"></div>
+                    <div class="color color3" onclick="changeHeadrBg('#00b0ff')"></div>
+                    <div class="color color4" onclick="changeHeadrBg('#6659f7')"></div>
+                    <div class="color color5" onclick="changeHeadrBg('#1d2e42')"></div>
+                    <div class="color color6" onclick="changeHeadrBg('#f2f6fb')"></div>
+                </div>
+            </div>
+
+            <div class="setting_color--left_nav_background">
+                <h5>Sidebar Background</h5>
+                <div class="color_choices">
+                    <div class="color color1" onclick="changeLeftNavBg('#3f50f6')"></div>
+                    <div class="color color2" onclick="changeLeftNavBg('#fe5419')"></div>
+                    <div class="color color3" onclick="changeLeftNavBg('#00b0ff')"></div>
+                    <div class="color color4" onclick="changeLeftNavBg('#6659f7')"></div>
+                    <div class="color color5" onclick="changeLeftNavBg('#1d2e42')"></div>
+                    <div class="color color6" onclick="changeLeftNavBg('#f2f6fb')"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

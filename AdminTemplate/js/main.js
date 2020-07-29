@@ -58,3 +58,49 @@ $(document).ready(function () {
         $('.inputSearch').val('').focus();
     });
 });
+
+//show bảng màu
+$(document).ready(function () {
+    $(".setting_color").click(function () {
+        $('.setting_color').toggleClass('showSettingColor');
+    });
+});
+//đổi màu header bg
+function changeHeadrBg(color){
+    $(".top_nav").css("background",color);
+    $(".left_nav").css("background",color);
+    $(".top_nav--search").css("background",color);
+    if(color == '#f2f6fb'){
+
+        $(".top_nav--item").css("color","black");
+        $(".left_nav--name").css("color","black");
+        $(".left_nav--extend td").css("color","black");
+        $(".line").css("background","black");
+
+        $(".logoDark").css("display","block");
+        $(".logoLight").css("display","none");
+    }
+    else{
+        $(".top_nav--item").css("color","white");
+        $(".left_nav--name").css("color","white");
+        $(".left_nav--extend td").css("color","white");
+        $(".line").css("background","white");
+
+        $(".logoDark").css("display","none");
+        $(".logoLight").css("display","block");
+    }
+}
+
+//đổi màu leftnav bg
+function changeLeftNavBg(color){
+    $(".left_nav--list_tool").css("background",color);
+    $(".left_nav--list_tool").css("color","white");
+    
+    if(color == '#f2f6fb'){
+        $(".left_nav--list_tool").css("color","black");
+
+    }
+    else{
+        $(".left_nav--list_tool").css("color","white");
+    }
+}
