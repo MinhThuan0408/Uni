@@ -90,6 +90,9 @@ body {
       @media (max-width: 991px) {
         .top_nav--item .dropbtn_apps {
           display: none; } }
+  @media (max-width: 767px) {
+    .top_nav .icon_live_feed {
+      padding-left: 0; } }
   .top_nav--icon_res {
     font-size: 25px;
     display: none; }
@@ -104,6 +107,9 @@ body {
       .top_nav--english .dropdown-menu {
         right: 0;
         left: unset; } }
+    @media (max-width: 767px) {
+      .top_nav--english .icon_english {
+        padding-right: 0; } }
   @media (max-width: 767px) {
     .top_nav--element .dropdown_content--drop {
       display: block;
@@ -147,7 +153,7 @@ body {
       border: none;
       color: white;
       outline: none; }
-  .top_nav--iconx {
+  .top_nav--iconClear {
     color: white; }
   .top_nav--icon_three_dot {
     font-size: 16px;
@@ -156,8 +162,7 @@ body {
     @media (max-width: 767px) {
       .top_nav--icon_three_dot {
         display: block;
-        order: 3;
-        padding-right: 10px; } }
+        order: 3; } }
 
 .show-sidebar-on-mobile {
   left: 0 !important; }

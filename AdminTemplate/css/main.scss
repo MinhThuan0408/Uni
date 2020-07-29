@@ -108,6 +108,11 @@ body {
             }
         }
     }
+    .icon_live_feed{
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+    }
     &--icon_res {
         font-size: 25px;
         display: none;
@@ -125,6 +130,11 @@ body {
             @media (max-width: 991px) {
                 right: 0;
                 left: unset;
+            }
+        }
+        .icon_english{
+            @media (max-width: 767px) {
+                padding-right: 0;
             }
         }
     }
@@ -191,7 +201,7 @@ body {
             outline: none;
         }
     }
-    &--iconx {
+    &--iconClear {
         color: white;
     }
     &--icon_three_dot {
@@ -202,7 +212,6 @@ body {
         @media (max-width: 767px) {
             display: block;
             order: 3;
-            padding-right: 10px;
         }
     }
 }

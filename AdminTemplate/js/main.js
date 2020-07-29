@@ -29,7 +29,6 @@ $(document).ready(function () {
 
 //show expand màn hình 991
 var windowsize = $(window).width();
-
 $(window).resize(function () {
     windowsize = $(window).width();
     if (windowsize >= 992) {
@@ -56,3 +55,9 @@ $(window).resize(function () {
 //         }
 //     })
 // });
+
+$(document).ready(function () {
+    $(".top_nav--iconClear").click(function () {
+        $('.inputSearch').val('').focus();
+    });
+});
