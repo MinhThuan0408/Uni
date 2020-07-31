@@ -79,7 +79,7 @@ $(document).ready(function () {
 });
 
 
-//đổi màu header bg -> chuyển gom class như expand
+//đổi màu header bg 
 function changeHeadrBg(color) {
     //CÁCH 1 - không xử lí đc logo dark khi đổi màu color_bg6
     // $(".top_nav").css("background", color);
@@ -108,52 +108,89 @@ function changeHeadrBg(color) {
     //CÁCH 2
 
     if (color == '#3f50f6') {
-        $('body').addClass('headerColorBg1');
+        $('body').addClass('headerColorBg1 changeBgActivee1');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg5');
         $('body').removeClass('headerColorBg6');
+
+        $('body').removeClass('changeBgActivee2');
+        $('body').removeClass('changeBgActivee3');
+        $('body').removeClass('changeBgActivee4');
+        $('body').removeClass('changeBgActivee5');
+        $('body').removeClass('changeBgActivee6');
+
     }
     if (color == '#fe5419') {
-        $('body').addClass('headerColorBg2');
+        $('body').addClass('headerColorBg2 changeBgActivee2');
         $('body').removeClass('headerColorBg1');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg5');
         $('body').removeClass('headerColorBg6');
+
+        $('body').removeClass('changeBgActivee1');
+        $('body').removeClass('changeBgActivee3');
+        $('body').removeClass('changeBgActivee4');
+        $('body').removeClass('changeBgActivee5');
+        $('body').removeClass('changeBgActivee6');
     }
     if (color == '#00b0ff') {
-        $('body').addClass('headerColorBg3');
+        $('body').addClass('headerColorBg3 changeBgActivee3');
         $('body').removeClass('headerColorBg1');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg5');
         $('body').removeClass('headerColorBg6');
+
+        $('body').removeClass('changeBgActivee1');
+        $('body').removeClass('changeBgActivee2');
+        $('body').removeClass('changeBgActivee4');
+        $('body').removeClass('changeBgActivee5');
+        $('body').removeClass('changeBgActivee6');
     }
     if (color == '#6659f7') {
-        $('body').addClass('headerColorBg4');
+        $('body').addClass('headerColorBg4 changeBgActivee4');
         $('body').removeClass('headerColorBg1');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg5');
         $('body').removeClass('headerColorBg6');
+
+        $('body').removeClass('changeBgActivee1');
+        $('body').removeClass('changeBgActivee2');
+        $('body').removeClass('changeBgActivee3');
+        $('body').removeClass('changeBgActivee5');
+        $('body').removeClass('changeBgActivee6');
     }
     if (color == '#1d2e42') {
-        $('body').addClass('headerColorBg5');
+        $('body').addClass('headerColorBg5 changeBgActivee5');
         $('body').removeClass('headerColorBg1');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg6');
+
+        $('body').removeClass('changeBgActivee1');
+        $('body').removeClass('changeBgActivee2');
+        $('body').removeClass('changeBgActivee3');
+        $('body').removeClass('changeBgActivee4');
+        $('body').removeClass('changeBgActivee6');
     }
     if (color == '#f2f6fb') {
-        $('body').addClass('headerColorBg6');
+        $('body').addClass('headerColorBg6 changeBgActivee6');
         $('body').removeClass('headerColorBg1');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg5');
+
+        $('body').removeClass('changeBgActivee1');
+        $('body').removeClass('changeBgActivee2');
+        $('body').removeClass('changeBgActivee3');
+        $('body').removeClass('changeBgActivee4');
+        $('body').removeClass('changeBgActivee5');
     }
 }
 
@@ -163,7 +200,7 @@ function changeLeftNavBg(color) {
     $(".left_nav--list_tool").css("background", color);
     $(".left_nav--list_tool").css("color", "white");
 
-    $("activee").css({ "background": "linear-gradient(to right," + color + ',' + '#ff3333' + ')' });
+    // $("activee").css({ "background": "linear-gradient(to right," + color + ',' + '#ff3333' + ')' });
 
     if (color == '#f2f6fb') {
         $(".left_nav--list_tool").css("color", "black");
