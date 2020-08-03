@@ -767,4 +767,23 @@ body {
   background: linear-gradient(90deg, #f2f6fb, #b9b7b7);
   color: black; }
 
+.listToolColorBg1 .left_nav--list_tool {
+  background-color: #3f50f6; }
+
+.listToolColorBg2 .left_nav--list_tool {
+  background-color: #fe5419; }
+
+.listToolColorBg3 .left_nav--list_tool {
+  background-color: #00b0ff; }
+
+.listToolColorBg4 .left_nav--list_tool {
+  background-color: #6659f7; }
+
+.listToolColorBg5 .left_nav--list_tool {
+  background-color: #1d2e42; }
+
+.listToolColorBg6 .left_nav--list_tool {
+  background-color: #f2f6fb;
+  color: black; }
+
 /*# sourceMappingURL=main.css.map */

@@ -108,12 +108,115 @@ function changeHeadrBg(color) {
     //CÁCH 2
 
     if (color == '#3f50f6') {
-        $('body').addClass('headerColorBg1 changeBgActivee1');
+        $('body').addClass('headerColorBg1 ');
         $('body').removeClass('headerColorBg2');
         $('body').removeClass('headerColorBg3');
         $('body').removeClass('headerColorBg4');
         $('body').removeClass('headerColorBg5');
         $('body').removeClass('headerColorBg6');
+
+        // $('body').removeClass('changeBgActivee2');
+        // $('body').removeClass('changeBgActivee3');
+        // $('body').removeClass('changeBgActivee4');
+        // $('body').removeClass('changeBgActivee5');
+        // $('body').removeClass('changeBgActivee6');
+
+    }
+    if (color == '#fe5419') {
+        $('body').addClass('headerColorBg2 ');
+        $('body').removeClass('headerColorBg1');
+        $('body').removeClass('headerColorBg3');
+        $('body').removeClass('headerColorBg4');
+        $('body').removeClass('headerColorBg5');
+        $('body').removeClass('headerColorBg6');
+
+        // $('body').removeClass('changeBgActivee1');
+        // $('body').removeClass('changeBgActivee3');
+        // $('body').removeClass('changeBgActivee4');
+        // $('body').removeClass('changeBgActivee5');
+        // $('body').removeClass('changeBgActivee6');
+    }
+    if (color == '#00b0ff') {
+        $('body').addClass('headerColorBg3 ');
+        $('body').removeClass('headerColorBg1');
+        $('body').removeClass('headerColorBg2');
+        $('body').removeClass('headerColorBg4');
+        $('body').removeClass('headerColorBg5');
+        $('body').removeClass('headerColorBg6');
+
+        // $('body').removeClass('changeBgActivee1');
+        // $('body').removeClass('changeBgActivee2');
+        // $('body').removeClass('changeBgActivee4');
+        // $('body').removeClass('changeBgActivee5');
+        // $('body').removeClass('changeBgActivee6');
+    }
+    if (color == '#6659f7') {
+        $('body').addClass('headerColorBg4 ');
+        $('body').removeClass('headerColorBg1');
+        $('body').removeClass('headerColorBg2');
+        $('body').removeClass('headerColorBg3');
+        $('body').removeClass('headerColorBg5');
+        $('body').removeClass('headerColorBg6');
+
+        // $('body').removeClass('changeBgActivee1');
+        // $('body').removeClass('changeBgActivee2');
+        // $('body').removeClass('changeBgActivee3');
+        // $('body').removeClass('changeBgActivee5');
+        // $('body').removeClass('changeBgActivee6');
+    }
+    if (color == '#1d2e42') {
+        $('body').addClass('headerColorBg5 ');
+        $('body').removeClass('headerColorBg1');
+        $('body').removeClass('headerColorBg2');
+        $('body').removeClass('headerColorBg3');
+        $('body').removeClass('headerColorBg4');
+        $('body').removeClass('headerColorBg6');
+
+        // $('body').removeClass('changeBgActivee1');
+        // $('body').removeClass('changeBgActivee2');
+        // $('body').removeClass('changeBgActivee3');
+        // $('body').removeClass('changeBgActivee4');
+        // $('body').removeClass('changeBgActivee6');
+    }
+    if (color == '#f2f6fb') {
+        $('body').addClass('headerColorBg6 ');
+        $('body').removeClass('headerColorBg1');
+        $('body').removeClass('headerColorBg2');
+        $('body').removeClass('headerColorBg3');
+        $('body').removeClass('headerColorBg4');
+        $('body').removeClass('headerColorBg5');
+
+        // $('body').removeClass('changeBgActivee1');
+        // $('body').removeClass('changeBgActivee2');
+        // $('body').removeClass('changeBgActivee3');
+        // $('body').removeClass('changeBgActivee4');
+        // $('body').removeClass('changeBgActivee5');
+    }
+}
+
+
+//đổi màu leftnav bg
+//CÁCH 1
+// function changeLeftNavBg(color) {
+//     $(".left_nav--list_tool").css("background", color);
+//     $(".left_nav--list_tool").css("color", "white");
+//     if (color == '#f2f6fb') {
+//         $(".left_nav--list_tool").css("color", "black");
+
+//     }
+//     else {
+//         $(".left_nav--list_tool").css("color", "white");
+//     }
+// }
+//cách 2
+function changeLeftNavBg(color) {
+    if (color == '#3f50f6') {
+        $('body').addClass('listToolColorBg1 changeBgActivee1');
+        $('body').removeClass('listToolColorBg2');
+        $('body').removeClass('listToolColorBg3');
+        $('body').removeClass('listToolColorBg4');
+        $('body').removeClass('listToolColorBg5');
+        $('body').removeClass('listToolColorBg6');
 
         $('body').removeClass('changeBgActivee2');
         $('body').removeClass('changeBgActivee3');
@@ -123,12 +226,12 @@ function changeHeadrBg(color) {
 
     }
     if (color == '#fe5419') {
-        $('body').addClass('headerColorBg2 changeBgActivee2');
-        $('body').removeClass('headerColorBg1');
-        $('body').removeClass('headerColorBg3');
-        $('body').removeClass('headerColorBg4');
-        $('body').removeClass('headerColorBg5');
-        $('body').removeClass('headerColorBg6');
+        $('body').addClass('listToolColorBg2 changeBgActivee2');
+        $('body').removeClass('listToolColorBg1');
+        $('body').removeClass('listToolColorBg3');
+        $('body').removeClass('listToolColorBg4');
+        $('body').removeClass('listToolColorBg5');
+        $('body').removeClass('listToolColorBg6');
 
         $('body').removeClass('changeBgActivee1');
         $('body').removeClass('changeBgActivee3');
@@ -137,12 +240,12 @@ function changeHeadrBg(color) {
         $('body').removeClass('changeBgActivee6');
     }
     if (color == '#00b0ff') {
-        $('body').addClass('headerColorBg3 changeBgActivee3');
-        $('body').removeClass('headerColorBg1');
-        $('body').removeClass('headerColorBg2');
-        $('body').removeClass('headerColorBg4');
-        $('body').removeClass('headerColorBg5');
-        $('body').removeClass('headerColorBg6');
+        $('body').addClass('listToolColorBg3 changeBgActivee3');
+        $('body').removeClass('listToolColorBg1');
+        $('body').removeClass('listToolColorBg2');
+        $('body').removeClass('listToolColorBg4');
+        $('body').removeClass('listToolColorBg5');
+        $('body').removeClass('listToolColorBg6');
 
         $('body').removeClass('changeBgActivee1');
         $('body').removeClass('changeBgActivee2');
@@ -151,12 +254,12 @@ function changeHeadrBg(color) {
         $('body').removeClass('changeBgActivee6');
     }
     if (color == '#6659f7') {
-        $('body').addClass('headerColorBg4 changeBgActivee4');
-        $('body').removeClass('headerColorBg1');
-        $('body').removeClass('headerColorBg2');
-        $('body').removeClass('headerColorBg3');
-        $('body').removeClass('headerColorBg5');
-        $('body').removeClass('headerColorBg6');
+        $('body').addClass('listToolColorBg4 changeBgActivee4');
+        $('body').removeClass('listToolColorBg1');
+        $('body').removeClass('listToolColorBg2');
+        $('body').removeClass('listToolColorBg3');
+        $('body').removeClass('listToolColorBg5');
+        $('body').removeClass('listToolColorBg6');
 
         $('body').removeClass('changeBgActivee1');
         $('body').removeClass('changeBgActivee2');
@@ -165,12 +268,12 @@ function changeHeadrBg(color) {
         $('body').removeClass('changeBgActivee6');
     }
     if (color == '#1d2e42') {
-        $('body').addClass('headerColorBg5 changeBgActivee5');
-        $('body').removeClass('headerColorBg1');
-        $('body').removeClass('headerColorBg2');
-        $('body').removeClass('headerColorBg3');
-        $('body').removeClass('headerColorBg4');
-        $('body').removeClass('headerColorBg6');
+        $('body').addClass('listToolColorBg5 changeBgActivee5');
+        $('body').removeClass('listToolColorBg1');
+        $('body').removeClass('listToolColorBg2');
+        $('body').removeClass('listToolColorBg3');
+        $('body').removeClass('listToolColorBg4');
+        $('body').removeClass('listToolColorBg6');
 
         $('body').removeClass('changeBgActivee1');
         $('body').removeClass('changeBgActivee2');
@@ -179,34 +282,17 @@ function changeHeadrBg(color) {
         $('body').removeClass('changeBgActivee6');
     }
     if (color == '#f2f6fb') {
-        $('body').addClass('headerColorBg6 changeBgActivee6');
-        $('body').removeClass('headerColorBg1');
-        $('body').removeClass('headerColorBg2');
-        $('body').removeClass('headerColorBg3');
-        $('body').removeClass('headerColorBg4');
-        $('body').removeClass('headerColorBg5');
+        $('body').addClass('listToolColorBg6 changeBgActivee6');
+        $('body').removeClass('listToolColorBg1');
+        $('body').removeClass('listToolColorBg2');
+        $('body').removeClass('listToolColorBg3');
+        $('body').removeClass('listToolColorBg4');
+        $('body').removeClass('listToolColorBg5');
 
         $('body').removeClass('changeBgActivee1');
         $('body').removeClass('changeBgActivee2');
         $('body').removeClass('changeBgActivee3');
         $('body').removeClass('changeBgActivee4');
         $('body').removeClass('changeBgActivee5');
-    }
-}
-
-
-//đổi màu leftnav bg
-function changeLeftNavBg(color) {
-    $(".left_nav--list_tool").css("background", color);
-    $(".left_nav--list_tool").css("color", "white");
-
-    // $("activee").css({ "background": "linear-gradient(to right," + color + ',' + '#ff3333' + ')' });
-
-    if (color == '#f2f6fb') {
-        $(".left_nav--list_tool").css("color", "black");
-
-    }
-    else {
-        $(".left_nav--list_tool").css("color", "white");
     }
 }
