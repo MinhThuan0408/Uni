@@ -160,13 +160,21 @@ body {
             }
         }
     }
+    .btn-group{
+        .dropdown_content {
+            top: 57px;
+            @media (max-width: 767px) {
+                top: 41px;
+            }
+        }
+
+    }
     &--element {
         .dropdown_content {
             max-width: 480px;
             overflow: hidden;
-            top: 56px;
             @media (max-width: 991px) {
-                top: 57px;
+                left: -144px;
             }
             &--box {
                 width: 33%;
@@ -618,10 +626,7 @@ body {
     z-index: 1;
     top: 53px;
     border-radius: 0;
-    @media (max-width: 991px) {
-        top: 57px;
-        left: -144px;
-    }
+    
     @media (max-width: 767px) {
         top: 38px;
         left: -33px;
