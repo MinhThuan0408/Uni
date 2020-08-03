@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/line-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Chart.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/Chart.css">
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -20,9 +23,8 @@
         <div class="top_nav--logo">
             <div class="top_nav--logo_both">
                 <img src="./images/logo-icon.png" class="img-responsive" alt="logo">
-
-                <img src="./images/logo-light-text.png" class="img-responsive logoLight" alt="text">
-                <img src="./images/logo-text.png" class="img-responsive logoDark" alt="text2">
+                <img src="./images/logo-light-text.png" class="img-responsive logoLight" alt="logotext1">
+                <img src="./images/logo-text.png" class="img-responsive logoDark" alt="logotext2">
             </div>
             <div class="top_nav--click_show_expand ">
 
@@ -53,18 +55,22 @@
                     <i class="las la-angle-down icon-dropdown dropbtn_apps"></i>
                     <i class="lab la-think-peaks top_nav--icon_res"></i>
                 </div>
-                <div class="dropdown-menu dropdown_content">
-                    <div class="dropdown_content--drop">
-                        <div class="dropdown_content--box ">
-                            <div class="dropdown_content--box_item"><i class="las la-envelope"></i>Email</div>
-                            <div class="dropdown_content--box_item"><i class="las la-envelope-open"></i>Email Detail
+                <div class="dropdown-menu dropdown_show_content">
+                    <div class="dropdown_show_content--drop">
+                        <div class="dropdown_show_content--box ">
+                            <div class="dropdown_show_content--box_item"><i class="las la-envelope"></i>Email</div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-envelope-open"></i>Email
+                                Detail
                             </div>
-                            <div class="dropdown_content--box_item"><i class="las la-edit"></i>Tabs</div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-edit"></i>Tabs</div>
                         </div>
-                        <div class="dropdown_content--box ">
-                            <div class="dropdown_content--box_item"><i class="las la-ticket-alt"></i>Progressbars</div>
-                            <div class="dropdown_content--box_item"><i class="las la-notes-medical"></i>Typography</div>
-                            <div class="dropdown_content--box_item"><i class="las la-clipboard-list"></i>Boostrap UI
+                        <div class="dropdown_show_content--box ">
+                            <div class="dropdown_show_content--box_item"><i class="las la-ticket-alt"></i>Progressbars
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-notes-medical"></i>Typography
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-clipboard-list"></i>Boostrap
+                                UI
                             </div>
                         </div>
                     </div>
@@ -77,27 +83,35 @@
                     <i class="las la-chart-bar top_nav--icon_res"></i>
                     <i class="las la-angle-down icon-dropdown dropbtn_apps"></i>
                 </div>
-                <div class="dropdown-menu dropdown_content">
-                    <div class="dropdown_content--drop">
-                        <div class="dropdown_content--box ">
-                            <div class="dropdown_content--box_item"><i class="las la-envelope"></i>Button</div>
-                            <div class="dropdown_content--box_item"><i class="las la-envelope-open"></i>Modals</div>
-                            <div class="dropdown_content--box_item"><i class="las la-edit"></i>Tabs</div>
-                            <div class="dropdown_content--box_item"><i class="las la-edit"></i>Tooltips & Popover</div>
-                        </div>
-                        <div class="dropdown_content--box ">
-                            <div class="dropdown_content--box_item"><i class="las la-ticket-alt"></i>Progressbars</div>
-                            <div class="dropdown_content--box_item"><i class="las la-notes-medical"></i>Typography</div>
-                            <div class="dropdown_content--box_item"><i class="las la-clipboard-list"></i>Boostrap UI
+                <div class="dropdown-menu dropdown_show_content">
+                    <div class="dropdown_show_content--drop">
+                        <div class="dropdown_show_content--box ">
+                            <div class="dropdown_show_content--box_item"><i class="las la-envelope"></i>Button</div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-envelope-open"></i>Modals
                             </div>
-                            <div class="dropdown_content--box_item"><i class="las la-clipboard-list"></i>Breakcrumb
+                            <div class="dropdown_show_content--box_item"><i class="las la-edit"></i>Tabs</div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-edit"></i>Tooltips & Popover
                             </div>
                         </div>
-                        <div class="dropdown_content--box">
-                            <div class="dropdown_content--box_item"><i class="las la-ticket-alt"></i>Grid</div>
-                            <div class="dropdown_content--box_item"><i class="las la-notes-medical"></i>Carousel</div>
-                            <div class="dropdown_content--box_item"><i class="las la-clipboard-list"></i>Scrollspy</div>
-                            <div class="dropdown_content--box_item"><i class="las la-clipboard-list"></i>Toasts</div>
+                        <div class="dropdown_show_content--box ">
+                            <div class="dropdown_show_content--box_item"><i class="las la-ticket-alt"></i>Progressbars
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-notes-medical"></i>Typography
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-clipboard-list"></i>Boostrap
+                                UI
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-clipboard-list"></i>Breakcrumb
+                            </div>
+                        </div>
+                        <div class="dropdown_show_content--box">
+                            <div class="dropdown_show_content--box_item"><i class="las la-ticket-alt"></i>Grid</div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-notes-medical"></i>Carousel
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-clipboard-list"></i>Scrollspy
+                            </div>
+                            <div class="dropdown_show_content--box_item"><i class="las la-clipboard-list"></i>Toasts
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,12 +124,12 @@
                     <i class="las la-angle-down icon-dropdown dropbtn_apps"></i>
                     <i class="las la-language top_nav--icon_res"></i>
                 </div>
-                <div class="dropdown-menu dropdown_content">
-                    <div class="dropdown_content--drop">
-                        <div class="dropdown_content--box ">
-                            <div class="dropdown_content--box_item">French</div>
-                            <div class="dropdown_content--box_item">Spanish</div>
-                            <div class="dropdown_content--box_item">German</div>
+                <div class="dropdown-menu dropdown_show_content">
+                    <div class="dropdown_show_content--drop">
+                        <div class="dropdown_show_content--box ">
+                            <div class="dropdown_show_content--box_item">French</div>
+                            <div class="dropdown_show_content--box_item">Spanish</div>
+                            <div class="dropdown_show_content--box_item">German</div>
                         </div>
                     </div>
                 </div>
@@ -139,16 +153,16 @@
                         <div class="left_nav--status" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="las la-angle-down icon-dropdown"></i>
                         </div>
-                        <div class="dropdown-menu dropdown_content">
-                            <div class="dropdown_content--drop">
-                                <div class="dropdown_content--box box_avt">
-                                    <div class="dropdown_content--box_item avt"><i
+                        <div class="dropdown-menu dropdown_show_content">
+                            <div class="dropdown_show_content--drop">
+                                <div class="dropdown_show_content--box box_avt">
+                                    <div class="dropdown_show_content--box_item avt"><i
                                             class="las la-square-full statuscolor1"></i></i>Active</div>
-                                    <div class="dropdown_content--box_item avt"><i
+                                    <div class="dropdown_show_content--box_item avt"><i
                                             class="las la-square-full statuscolor2"></i>Alway</div>
-                                    <div class="dropdown_content--box_item avt"><i
+                                    <div class="dropdown_show_content--box_item avt"><i
                                             class="las la-square-full statuscolor3"></i>Do not disturb</div>
-                                    <div class="dropdown_content--box_item avt"><i
+                                    <div class="dropdown_show_content--box_item avt"><i
                                             class="las la-square-full statuscolor4"></i>Invisible</div>
                                 </div>
                             </div>
@@ -166,9 +180,9 @@
                                 <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="quantity-notification">5</span>
                                 </div>
-                                <div class="dropdown-menu dropdown_content">
-                                    <div class="dropdown_content--drop">
-                                        <div class="dropdown_content--box ">
+                                <div class="dropdown-menu dropdown_show_content">
+                                    <div class="dropdown_show_content--drop">
+                                        <div class="dropdown_show_content--box ">
                                             <div class=" notification_new">
                                                 <div class="notification_new--title">
                                                     <h4>5 New</h4>
@@ -176,7 +190,7 @@
                                                 </div>
                                             </div>
                                             <div class="content_notification">
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar avt_icon1">
 
                                                         <i class="las la-caret-square-down"></i>
@@ -187,7 +201,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar avt_icon2">
                                                         <i class="las la-clipboard"></i>
                                                     </div>
@@ -197,7 +211,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar avt_icon3">
                                                         <i class="las la-cog"></i>
                                                     </div>
@@ -207,7 +221,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar avt_icon4">
                                                         <i class="las la-cube"></i>
                                                     </div>
@@ -229,11 +243,11 @@
                                 <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="las la-cog"></i>
                                 </div>
-                                <div class="dropdown-menu dropdown_content">
-                                    <div class="dropdown_content--drop">
-                                        <div class="dropdown_content--box ">
-                                            <div class="dropdown_content--box_item">Action</div>
-                                            <div class="dropdown_content--box_item">Action Here</div>
+                                <div class="dropdown-menu dropdown_show_content">
+                                    <div class="dropdown_show_content--drop">
+                                        <div class="dropdown_show_content--box ">
+                                            <div class="dropdown_show_content--box_item">Action</div>
+                                            <div class="dropdown_show_content--box_item">Action Here</div>
                                         </div>
                                     </div>
                                 </div>
@@ -243,9 +257,9 @@
                                 <div>
 
                                 </div>
-                                <div class="dropdown-menu dropdown_content">
-                                    <div class="dropdown_content--drop">
-                                        <div class="dropdown_content--box ">
+                                <div class="dropdown-menu dropdown_show_content">
+                                    <div class="dropdown_show_content--drop">
+                                        <div class="dropdown_show_content--box ">
                                             <div class="notification_new">
                                                 <div class="notification_new--title">
                                                     <h4>4 New</h4>
@@ -253,7 +267,7 @@
                                                 </div>
                                             </div>
                                             <div class="content_notification">
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar ">
                                                         <img src="./images/2.jpg" class="img-responsive " alt="">
                                                     </div>
@@ -263,7 +277,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar ">
                                                         <img src="./images/3.jpg" class="img-responsive " alt="">
                                                     </div>
@@ -273,7 +287,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar ">
                                                         <img src="./images/4.jpg" class="img-responsive " alt="">
                                                     </div>
@@ -283,7 +297,7 @@
                                                         <span>9:30 AM</span>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown_content--box_item">
+                                                <div class="dropdown_show_content--box_item">
                                                     <div class="notification_avatar ">
                                                         <img src="./images/5.jpg" class="img-responsive " alt="">
                                                     </div>
@@ -309,7 +323,7 @@
                 <li class="left_nav--small_cap left_nav--cap"><label class="label_dashboard">Dashboards</label>
                 </li>
                 <li class="left_nav--big_cap left_nav--cap active">
-                    <div class="clickDrop activee">
+                    <div class="clickDrop custome_active">
                         <i class="las la-home"></i><span>Dashboards</span>
                         <i class="las la-angle-down icon-dropdown"></i>
                     </div>
@@ -541,20 +555,137 @@
             </ul>
 
         </div>
-        <div class="content">
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
-                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
-                    hic. Culpa, ex.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
-                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
-                    hic. Culpa, ex.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
-                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
-                    hic. Culpa, ex.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum dolore consequuntur natus
-                    quos dolores minus nisi quasi aliquid aliquam esse, deserunt sapiente voluptatem eos vitae nobis
-                    hic. Culpa, ex.</p>
+        <div class="main_content">
+            <div class="main_content--greeting_and_month">
+                <div class="main_content--greeting">
+                    <h3>Good Morning Boss</h3>
+                    <a href="#">Dashboard</a>
+                </div>
+
+                <div class="main_content--month_choices">
+                    <div class="three_month">
+                        <select class="select_month">
+                            <option value="">June 19</option>
+                            <option value="">July 19</option>
+                            <option value="">August 19</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- chart -->
+            <div class="main_content--chart">
+                <div class="main_content--general_table">
+
+
+                    <div class="main_content--table_figure main_content--new_client">
+                        <div class="main_content--top_table">
+                            <div class="main_content--circle_plus main_content--circle_client">
+                                <i class="las la-user-plus icon_on_circle"></i>
+                            </div>
+                            <div class="main_content--percent">
+                                <i class="las la-arrow-up icon_arrow_client"></i>
+                                <span>18%</span>
+                            </div>
+                        </div>
+                        <div class="main_content--quantity">
+                            <span>223</span>
+                        </div>
+                        <div class="main_content--title">
+                            <span>New Clients</span>
+                        </div>
+                    </div>
+
+
+                    <div class="main_content--table_figure main_content--earning_of_month">
+                        <div class="main_content--top_table">
+                            <div class="main_content--circle_plus main_content--circle_earning">
+                                <i class="las la-dollar-sign icon_on_circle"></i>
+                            </div>
+                            <div class="main_content--percent">
+                                <i class="las la-arrow-up icon_arrow_earning"></i>
+                                <span>18%</span>
+                            </div>
+                        </div>
+                        <div class="main_content--quantity">
+                            <span>223</span>
+                        </div>
+                        <div class="main_content--title">
+                            <span>New Clients</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="main_content--table_figure main_content--new_project">
+                        <div class="main_content--top_table">
+                            <div class="main_content--circle_plus main_content--circle_new_project">
+                                <i class="las la-file-medical icon_on_circle"></i>
+                            </div>
+                            <div class="main_content--percent">
+                                <i class="las la-arrow-up icon_arrow_new_project"></i>
+                                <span>18%</span>
+                            </div>
+                        </div>
+                        <div class="main_content--quantity">
+                            <span>223</span>
+                        </div>
+                        <div class="main_content--title">
+                            <span>New Clients</span>
+                        </div>
+                    </div>
+
+
+                    <div class="main_content--table_figure main_content--total_project">
+                        <div class="main_content--top_table">
+                            <div class="main_content--circle_plus main_content--circle_total_project">
+                                <i class="las la-globe icon_on_circle"></i>
+                            </div>
+                            <div class="main_content--percent">
+                                <i class="las la-arrow-up icon_arrow_total_project"></i>
+                                <span>18%</span>
+                            </div>
+                        </div>
+                        <div class="main_content--quantity">
+                            <span>223</span>
+                        </div>
+                        <div class="main_content--title_news">
+                            <span>New Clients</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <div class="main_content--earning_statastics_chart_slide_status_project">
+
+                    <div class="main_content--chart_earning">
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+                    <div class="main_content--slide_status">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/2.jpg" class="img-responsive" alt="as">
+                                    hukbyu
+                                </div>
+                                <div class="swiper-slide">
+                                    kj
+                                    <img src="./images/2.jpg" class="img-responsive" alt="sa">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
@@ -562,88 +693,87 @@
 
 
 
-    </div>
-    <div class="setting_color">
-        <div class="setting_color--icon_setting">
-            <i class="las la-cog icon_spin"></i>
-        </div>
-        <div class="setting_color--table_background">
-            <div class="setting_color--layouts_show">
-                <h5>Layout Settings</h5>
-                <div class="style_layout">
-                    <div class="form-check">
-                        <input class="style_check_input" type="checkbox" value="" id="style1" >
-                        <label class="form_check_layout" for="style1">
-                            Collapse Sidebar
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="style_check_input" type="checkbox" value="" id="style2">
-                        <label class="form_check_layout" for="style2">
-                            Fixed Sidebar
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="style_check_input" type="checkbox" value="" id="style3">
-                        <label class="form_check_layout" for="style3">
-                            Fixed Header
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="style_check_input" type="checkbox" value="" id="style4">
-                        <label class="form_check_layout" for="style4">
-                            Boxed Layout
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="setting_color--header_background">
-                <h5>Header Background</h5>
-                <div class="color_choices">
-                    <div class="color color_bg1" onclick="changeHeadrBg('#3f50f6')"></div>
-                    <div class="color color_bg2" onclick="changeHeadrBg('#fe5419')"></div>
-                    <div class="color color_bg3" onclick="changeHeadrBg('#00b0ff')"></div>
-                    <div class="color color_bg4" onclick="changeHeadrBg('#6659f7')"></div>
-                    <div class="color color_bg5" onclick="changeHeadrBg('#1d2e42')"></div>
-                    <div class="color color_bg6" onclick="changeHeadrBg('#f2f6fb')"></div>
-                </div>
-            </div>
 
-            <div class="setting_color--left_nav_background">
-                <h5>Sidebar Background</h5>
-                <div class="color_choices">
-                    <div class="color color_bg1" onclick="changeLeftNavBg('#3f50f6')"></div>
-                    <div class="color color_bg2" onclick="changeLeftNavBg('#fe5419')"></div>
-                    <div class="color color_bg3" onclick="changeLeftNavBg('#00b0ff')"></div>
-                    <div class="color color_bg4" onclick="changeLeftNavBg('#6659f7')"></div>
-                    <div class="color color_bg5" onclick="changeLeftNavBg('#1d2e42')"></div>
-                    <div class="color color_bg6" onclick="changeLeftNavBg('#f2f6fb')"></div>
+
+
+
+
+
+
+
+
+
+        <div class="setting_color">
+            <div class="setting_color--icon_setting">
+                <i class="las la-cog icon_spin"></i>
+            </div>
+            <div class="setting_color--table_background">
+                <div class="setting_color--layouts_show">
+                    <h5>Layout Settings</h5>
+                    <div class="style_layout">
+                        <div class="form-check">
+                            <input class="style_check_input" type="checkbox" value="" id="style1">
+                            <label class="form_check_layout" for="style1">
+                                Collapse Sidebar
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="style_check_input" type="checkbox" value="" id="style2">
+                            <label class="form_check_layout" for="style2">
+                                Fixed Sidebar
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="style_check_input" type="checkbox" value="" id="style3">
+                            <label class="form_check_layout" for="style3">
+                                Fixed Header
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="style_check_input" type="checkbox" value="" id="style4">
+                            <label class="form_check_layout" for="style4">
+                                Boxed Layout
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting_color--header_background">
+                    <h5>Header Background</h5>
+                    <div class="color_choices">
+                        <div class="color color_bg1" onclick="changeHeadrBg('#3f50f6')"></div>
+                        <div class="color color_bg2" onclick="changeHeadrBg('#fe5419')"></div>
+                        <div class="color color_bg3" onclick="changeHeadrBg('#00b0ff')"></div>
+                        <div class="color color_bg4" onclick="changeHeadrBg('#6659f7')"></div>
+                        <div class="color color_bg5" onclick="changeHeadrBg('#1d2e42')"></div>
+                        <div class="color color_bg6" onclick="changeHeadrBg('#f2f6fb')"></div>
+                    </div>
+                </div>
+
+                <div class="setting_color--left_nav_background">
+                    <h5>Sidebar Background</h5>
+                    <div class="color_choices">
+                        <div class="color color_bg1" onclick="changeLeftNavBg('#3f50f6')"></div>
+                        <div class="color color_bg2" onclick="changeLeftNavBg('#fe5419')"></div>
+                        <div class="color color_bg3" onclick="changeLeftNavBg('#00b0ff')"></div>
+                        <div class="color color_bg4" onclick="changeLeftNavBg('#6659f7')"></div>
+                        <div class="color color_bg5" onclick="changeLeftNavBg('#1d2e42')"></div>
+                        <div class="color color_bg6" onclick="changeLeftNavBg('#f2f6fb')"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 </body>
 <script src="./js/jquery-2.1.4.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/Chart.js"></script>
+<script src="./js/Chart.min.js"></script>
+<script src="./js/main-chart.js"></script>
+<script src="./js/swiper.min.js"></script>
+
+
+
 <script src="./js/main.js"></script>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

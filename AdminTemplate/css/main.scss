@@ -100,12 +100,11 @@ body {
             display: none;
             .btn-group {
                 position: static;
-                .dropdown_content {
+                .dropdown_show_content {
                     width: 100%;
-                    top: 41px;
                     left: 0;
                 }
-                .dropdown_content--box {
+                .dropdown_show_content--box {
                     width: 50%;
                 }
             }
@@ -161,7 +160,7 @@ body {
         }
     }
     .btn-group {
-        .dropdown_content {
+        .dropdown_show_content {
             top: 57px;
             @media (max-width: 767px) {
                 top: 41px;
@@ -169,7 +168,7 @@ body {
         }
     }
     &--element {
-        .dropdown_content {
+        .dropdown_show_content {
             max-width: 480px;
             overflow: hidden;
             @media (max-width: 991px) {
@@ -179,26 +178,26 @@ body {
                 width: 33%;
             }
         }
-        .dropdown_content--drop {
+        .dropdown_show_content--drop {
             @media (max-width: 767px) {
                 display: block;
                 height: 180px;
                 overflow-y: auto;
             }
         }
-        .dropdown_content--drop::-webkit-scrollbar-track {
+        .dropdown_show_content--drop::-webkit-scrollbar-track {
             border-radius: 10px;
             background-color: none;
         }
 
-        .dropdown_content--drop::-webkit-scrollbar {
+        .dropdown_show_content--drop::-webkit-scrollbar {
             width: 5px;
         }
 
-        .dropdown_content--drop::-webkit-scrollbar-thumb {
+        .dropdown_show_content--drop::-webkit-scrollbar-thumb {
             border-radius: 10px;
         }
-        .dropdown_content--drop:hover {
+        .dropdown_show_content--drop:hover {
             &::-webkit-scrollbar-thumb {
                 background-color: rgba(0, 0, 0, 0.2);
             }
@@ -269,6 +268,7 @@ body {
     width: 100%;
     background-color: rgb(78, 78, 249);
     transition: 0.5s;
+    z-index: 1;
     @media (max-width: 767px) {
         left: -260px;
         position: absolute;
@@ -303,7 +303,7 @@ body {
         img {
             border-radius: 50%;
         }
-        .dropdown_content {
+        .dropdown_show_content {
             left: -4px;
         }
         .box_avt {
@@ -381,7 +381,7 @@ body {
             }
         }
 
-        .dropdown_content {
+        .dropdown_show_content {
             margin-left: 0;
             width: 260px;
             top: 73px;
@@ -478,7 +478,7 @@ body {
         }
     }
     &--setting {
-        .dropdown_content {
+        .dropdown_show_content {
             width: 0;
         }
     }
@@ -532,9 +532,8 @@ body {
     .active {
         opacity: 1;
     }
-    .activee {
+    .custome_active {
         color: white;
-        // opacity: 1 ;
         padding: 12px 0;
         border-radius: 0 60px 60px 0;
         background: #3f50f6;
@@ -614,10 +613,8 @@ body {
     }
 }
 
-.dropdown-menu {
+.dropdown_show_content {
     border: none;
-}
-.dropdown_content {
     display: none;
     position: absolute;
     overflow: auto;
@@ -677,7 +674,7 @@ body {
         }
     }
 }
-.sidebar-expand {
+.sidebar_expand {
     .top_nav {
         img {
             display: none;
@@ -737,7 +734,7 @@ body {
 }
 
 //hover left-nav
-.sidebar-expand {
+.sidebar_expand {
     .left_nav {
         &:hover {
             max-width: 260px;
@@ -787,7 +784,7 @@ body {
         }
     }
 }
-.content {
+.main_content {
     width: 100%;
 }
 
@@ -1107,3 +1104,137 @@ body {
         }
     }
 }
+//////////////////////
+.main_content {
+    width: 100%;
+    margin: 0 30px;
+    &--greeting_and_month {
+        display: flex;
+        align-items: center;
+    }
+    &--greeting {
+        width: 70%;
+        h3 {
+            font-size: 20px;
+            color: #343a40;
+            font-weight: 500;
+        }
+        a {
+            color: #8392a5;
+            text-decoration: none;
+        }
+    }
+    &--month_choices {
+        width: 30%;
+        display: flex;
+        .three_month {
+            margin-left: auto;
+            .select_month {
+                padding: 5px 12px;
+                outline: none;
+                border: 1px solid #e9ecef;
+                appearance: none;
+                background: #fff url(../images/custom-select.png) no-repeat right 0.75rem center/8px 10px;
+                background-size: initial;
+            }
+        }
+    }
+    //////bảng số liệu
+    &--general_table {
+        display: flex;
+        margin-top: 15px;
+        width: 100%;
+    }
+    &--table_figure {
+        width: 25%;
+        padding: 20px 0;
+    }
+    &--new_client {
+        background-color: #eef5ff;
+        margin: 0 10px;
+        margin-left: 0;
+    }
+    &--earning_of_month {
+        background-color: #fef6fb;
+        margin: 0 10px;
+    }
+    &--new_project {
+        background-color: #fff7eb;
+        margin: 0 10px;
+    }
+    &--total_project {
+        background-color: #e4fbf8;
+        margin: 0 10px;
+        margin-right: 0;
+    }
+    &--top_table {
+        display: flex;
+        align-items: center;
+    }
+    &--quantity {
+        padding: 0 20px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    &--title{
+        padding: 0 20px;
+        color: #8392a5;
+    }
+    &--percent {
+        margin-left: auto;
+        padding: 20px;
+        .icon_arrow_client {
+            color: #3f50f6;
+        }
+        .icon_arrow_earning {
+            color: #ff098f;
+        }
+        .icon_arrow_new_project {
+            color: #fa9600;
+        }
+        .icon_arrow_total_project {
+            color: #029a9a;
+        }
+    }
+    &--circle_plus {
+        width: 57px;
+        height: 57px;
+        line-height: 35px;
+        border-radius: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 0;
+        .icon_on_circle {
+            color: white;
+            font-size: 28px;
+            position: absolute;
+        }
+    }
+    &--circle_client {
+        background-color: #3f50f6;
+    }
+    &--circle_earning {
+        background-color: #ff098f;
+    }
+    &--circle_new_project {
+        background-color: #fa9600;
+    }
+    &--circle_total_project {
+        background-color: #029a9a;
+    }
+    &--earning_statastics_chart_slide_status_project{
+        
+        height: 400px;
+        display: flex;
+    }
+    &--chart_earning{
+        width: 75%;
+    }
+    &--slide_status{
+        margin-left: 15px;
+        width: 25%;
+    }
+}
+
