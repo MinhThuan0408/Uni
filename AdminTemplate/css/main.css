@@ -440,6 +440,12 @@ body {
     .left_nav--big_list li {
       padding: 15px 0 !important;
       margin-left: 15px !important; }
+      .left_nav--big_list li label {
+        font-weight: unset;
+        cursor: pointer;
+        opacity: 0.7; }
+      .left_nav--big_list li label:hover {
+        opacity: 1; }
   .left_nav--big_list li:hover {
     opacity: 1; }
 
@@ -531,7 +537,7 @@ body {
     display: none; }
   .sidebar-expand .left_nav--cap label {
     display: none; }
-  .sidebar-expand .left_nav--big_list {
+  .sidebar-expand .left_nav--big_list label {
     display: none !important; }
 
 .sidebar-expand .left_nav:hover {
@@ -561,6 +567,8 @@ body {
       display: block; }
     .sidebar-expand .left_nav:hover .left_nav--cap label {
       display: block; }
+  .sidebar-expand .left_nav:hover .left_nav--big_list label {
+    display: block !important; }
   .sidebar-expand .left_nav:hover .left_nav--cap_no_list {
     display: flex !important; }
 

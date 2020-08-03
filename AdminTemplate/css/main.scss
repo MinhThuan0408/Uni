@@ -522,7 +522,7 @@ body {
             background-color: rgba(0, 0, 0, 0.2);
         }
     }
-    .active{
+    .active {
         opacity: 1;
     }
     .activee {
@@ -590,6 +590,14 @@ body {
         li {
             padding: 15px 0 !important;
             margin-left: 15px !important;
+            label {
+                font-weight: unset;
+                cursor: pointer;
+                opacity: 0.7;
+            }
+            label:hover {
+                opacity: 1;
+            }
         }
     }
     &--big_list {
@@ -717,7 +725,9 @@ body {
             }
         }
         &--big_list {
-            display: none !important;
+            label {
+                display: none !important;
+            }
         }
     }
 }
@@ -759,6 +769,11 @@ body {
                     }
                     label {
                         display: block;
+                    }
+                }
+                &--big_list {
+                    label {
+                        display: block !important;
                     }
                 }
                 &--cap_no_list {
