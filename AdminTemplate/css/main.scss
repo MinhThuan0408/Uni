@@ -501,7 +501,7 @@ body {
         height: calc(100vh - 325px);
         overflow-y: auto;
         @media (max-width: 767px) {
-            height: calc(100vh - 296px);
+            height: calc(100vh - 297px);
         }
     }
     //custom scrollbar
@@ -709,7 +709,7 @@ body {
             display: none;
         }
         &--list_tool {
-            height: calc(100vh - 169px);
+            height: calc(100vh - 170px);
         }
 
         &--cap {

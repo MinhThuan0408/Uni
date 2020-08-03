@@ -377,7 +377,7 @@ body {
     overflow-y: auto; }
     @media (max-width: 767px) {
       .left_nav--list_tool {
-        height: calc(100vh - 296px); } }
+        height: calc(100vh - 297px); } }
   .left_nav--list_tool::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: none; }
@@ -530,7 +530,7 @@ body {
   .sidebar-expand .left_nav--section_profile {
     display: none; }
   .sidebar-expand .left_nav--list_tool {
-    height: calc(100vh - 169px); }
+    height: calc(100vh - 170px); }
   .sidebar-expand .left_nav--cap .icon-dropdown {
     display: none; }
   .sidebar-expand .left_nav--cap span {
