@@ -21,7 +21,7 @@ $(document).ready(function () {
         $(this).toggleClass("la-times");
     });
 });
-
+//
 
 //show expand màn hình 991
 var windowsize = $(window).width();
@@ -42,18 +42,18 @@ $(window).resize(function () {
 });
 //hover dung JQuery
 //hover expand
-$(document).ready(function () {
-    $(".left_nav").mouseover(function () {
-        if( $('body').hasClass(('sidebar-expand'))){
-            $('body').removeClass('sidebar-expand');
-            // $('.left_nav').css('positon','absolute');
-        }
-    })
-    $(".left_nav").mouseleave(function () {
-        $('body').addClass('sidebar-expand');
-        $('.left_nav').css('positon','absolute;');
-    })
-});
+// $(document).ready(function () {
+//     $(".left_nav").mouseover(function () {
+//         if( $('body').hasClass(('sidebar-expand'))){
+//             $('body').removeClass('sidebar-expand');
+//             // $('.left_nav').css('positon','absolute');
+//         }
+//     })
+//     $(".left_nav").mouseleave(function () {
+//         $('body').addClass('sidebar-expand');
+//         $('.left_nav').css('positon','absolute;');
+//     })
+// });
 
 
 ///hover show logo
