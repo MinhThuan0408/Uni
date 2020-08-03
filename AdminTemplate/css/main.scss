@@ -498,10 +498,10 @@ body {
         list-style: none;
         padding-left: 0;
         padding-top: 15px;
-        height: calc(100vh - 324px);
+        height: calc(100vh - 325px);
         overflow-y: auto;
         @media (max-width: 767px) {
-            height: calc(100vh - 302px);
+            height: calc(100vh - 296px);
         }
     }
     //custom scrollbar
@@ -754,7 +754,7 @@ body {
                     display: block;
                 }
                 &--list_tool {
-                    height: calc(100vh - 324px);
+                    height: calc(100vh - 325px);
                     @media (max-width: 991px) {
                         height: calc(100vh - 305px);
                     }
@@ -1007,15 +1007,6 @@ body {
         }
         &--boxchat {
             border-right: none !important;
-        }
-        &--list_tool {
-            height: calc(100vh - 323px);
-            @media (max-width: 767px) {
-                height: calc(100vh - 303px);
-            }
-            @media (max-width: 991px) {
-                height: calc(100vh - 151px);
-            }
         }
     }
 }
