@@ -263,8 +263,10 @@ function changeLeftNavBg(color) {
 //slide 
 var swiper = new Swiper('.swiper-container', {
     navigation: {
+        spaceBetween: 0,
         slidesPerView: 1,
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper_button_prj_stt_next',
+        prevEl: '.swiper_button_prj_stt_pre',
     },
+    
 });

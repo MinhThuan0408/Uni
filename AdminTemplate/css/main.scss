@@ -266,6 +266,7 @@ body {
 .left_nav {
     max-width: 260px;
     width: 100%;
+    height: 100%;
     background-color: rgb(78, 78, 249);
     transition: 0.5s;
     z-index: 1;
@@ -505,7 +506,7 @@ body {
         list-style: none;
         padding-left: 0;
         padding-top: 15px;
-        height: calc(100vh - 325px);
+        height: calc(100% - 325px);
         overflow-y: auto;
         @media (max-width: 767px) {
             height: calc(100vh - 297px);
@@ -784,9 +785,6 @@ body {
         }
     }
 }
-.main_content {
-    width: 100%;
-}
 
 .line {
     background: white;
@@ -829,7 +827,7 @@ body {
 
     &--icon_setting {
         background: #ff3ca6;
-        padding: 12px 20px;
+        padding: 12px 10px;
         color: #fff;
         position: absolute;
         top: 45%;
@@ -1106,11 +1104,18 @@ body {
 }
 //////////////////////
 .main_content {
-    width: 100%;
-    margin: 0 30px;
+    width: auto;
+    margin: 0 20px;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
     &--greeting_and_month {
+        width: 100%;
         display: flex;
-        align-items: center;
+        margin-top: 30px;
+    }
+    &--chart {
+        width: 100%;
     }
     &--greeting {
         width: 70%;
@@ -1125,8 +1130,8 @@ body {
         }
     }
     &--month_choices {
-        width: 30%;
         display: flex;
+
         .three_month {
             margin-left: auto;
             .select_month {
@@ -1146,26 +1151,21 @@ body {
         width: 100%;
     }
     &--table_figure {
-        width: 25%;
-        padding: 20px 0;
+        border-radius: 4px;
+        margin: 15px 0;
+        padding: 15px;
     }
     &--new_client {
         background-color: #eef5ff;
-        margin: 0 10px;
-        margin-left: 0;
     }
     &--earning_of_month {
         background-color: #fef6fb;
-        margin: 0 10px;
     }
     &--new_project {
         background-color: #fff7eb;
-        margin: 0 10px;
     }
     &--total_project {
         background-color: #e4fbf8;
-        margin: 0 10px;
-        margin-right: 0;
     }
     &--top_table {
         display: flex;
@@ -1175,10 +1175,19 @@ body {
         padding: 0 20px;
         font-size: 25px;
         font-weight: 500;
+        display: flex;
+        .dolar_symbol {
+            font-size: 17px;
+            margin-right: 5px;
+        }
     }
-    &--title{
+    &--title {
         padding: 0 20px;
         color: #8392a5;
+        flex-wrap: nowrap;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     &--percent {
         margin-left: auto;
@@ -1197,14 +1206,12 @@ body {
         }
     }
     &--circle_plus {
-        width: 57px;
-        height: 57px;
+        padding: 25px;
         line-height: 35px;
         border-radius: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
-        margin: 20px;
         margin-top: 0;
         .icon_on_circle {
             color: white;
@@ -1224,17 +1231,250 @@ body {
     &--circle_total_project {
         background-color: #029a9a;
     }
-    &--earning_statastics_chart_slide_status_project{
-        
-        height: 400px;
+    &--content_chart_and_slide {
+        width: 100%;
         display: flex;
+        margin-top: 20px;
     }
-    &--chart_earning{
-        width: 75%;
+    &--chart_earning {
+        height: 100%;
+        border: 1px solid #e9ecef;
+        .title_chart {
+            font-size: 14px;
+            color: #3e5569;
+            font-size: 18px;
+            margin: 20px;
+        }
     }
-    &--slide_status{
-        margin-left: 15px;
-        width: 25%;
+    &--top_slide {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        h4 {
+            font-size: 18px;
+            flex-grow: 1;
+        }
+        .swiper_button_prj_stt {
+            padding: 10px 13px;
+            background: #dee2e6;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 900;
+            outline: none;
+        }
+        .swiper_button_prj_stt_pre {
+            margin-right: 10px;
+        }
+    }
+    &--slider_project_status {
+        .swiper-slide {
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: block;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            .title_nike {
+                margin-top: 10px;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            .text_description_product {
+                color: #8392a5;
+                font-size: 15px;
+                display: block;
+                width: auto;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .progresstion {
+                .top_progress {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    color: #3e5569;
+                    .title_progress {
+                        flex-grow: 1;
+                    }
+                }
+                .progress {
+                    width: 100%;
+                    height: 5px;
+                    box-shadow: unset;
+                }
+                .progress-bar {
+                    background-color: #3f50f6;
+                }
+            }
+        }
+    }
+    &--slide_status {
+        padding: 20px;
+        border: 1px solid #e9ecef;
+    }
+    &--title_chart_line_doughnut {
+        color: #3e5569;
+        font-size: 18px;
+        margin: 20px;
+        font-weight: 500;
+    }
+    &--doughnut_chart_line_chart {
+        margin-top: 30px;
+    }
+    &--doughnut_total_sales_chart {
+        border: 1px solid #e9ecef;
+    }
+    &--line_earning_chart {
+        border: 1px solid #e9ecef;
+        height: 100%;
+    }
+    &--title_chart_mini {
+        font-size: 14px;
+        color: #3e5569;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    &--sales_support_oders {
+        margin-top: 15px;
+    }
+    &--sales {
+        background-color: #eef5ff;
+    }
+    &--support {
+        background-color: #fff7eb;
+    }
+    &--oders {
+        background-color: #e4fbf8;
+    }
+    &--big_quantity {
+        font-size: 32px;
+        color: #3e5569;
+    }
+    &--table_top_leader {
+        
+        .line_leader_table {
+            border-top: 1px solid #e9ecef;
+        }
+        .table_leader {
+            width: 100%;
+            border: 1px solid #e9ecef;
+            color: #3e5569;
+        }
+        .team_leader_info {
+            display: flex;
+            align-items: center;
+            img {
+                max-width: 45px;
+                width: 100%;
+                height: 45px;
+                border-radius: 100%;
+                margin: 15px 20px;
+            }
+        }
+        .header_leader_table {
+            font-weight: 500;
+            padding: 15px 26px;
+            color: #8392a5;
+        }
+        .name_email_teamleader {
+            h5 {
+                font-size: 16px;
+            }
+            span {
+                color: #8392a5;
+                font-size: 14px;
+            }
+        }
+        .project_owner {
+            color: #8392a5;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        .weeks_done {
+            color: #8392a5;
+            font-size: 14px;
+            padding-left: 30px;
+            font-weight: 500;
+        }
+        .budget_done {
+            font-size: 14px;
+            padding-left: 30px;
+            font-weight: 500;
+        }
+        .status_process {
+            max-width: 10px;
+            width: 100%;
+            height: 10px;
+            border-radius: 50%;
+            margin-left: 45px;
+        }
+        .status_process1 {
+            background-color: #3f50f6;
+        }
+        .status_process2 {
+            background-color: #02cccd;
+        }
+        .status_process3 {
+            background-color: #ff3ca6;
+        }
+        .status_process4 {
+            background-color: #ffab2e;
+        }
+        .team_build {
+            display: flex;
+            .team {
+                padding: 9px 11px;
+                border-radius: 50%;
+                margin-left: -8px;
+                font-size: 14px;
+            }
+            .team1 {
+                background-color: #eef5ff;
+            }
+            .team1:hover {
+                background-color: #c8dfff;
+                border-color: #bbd7ff;
+                z-index: 2;
+            }
+            .team2 {
+                background-color: #fef6fb;
+            }
+            .team2:hover {
+                background-color: #fad4ec;
+                border-color: #f9c8e7;
+                z-index: 2;
+            }
+            .team3 {
+                background-color: #fff7eb;
+            }
+            .team3:hover {
+                background-color: #ffe8c5;
+                border-color: #ffe3b8;
+                z-index: 2;
+            }
+            .team_plus {
+                padding: 9px 13px;
+                margin-left: 2px;
+                background-color: #e4fbf8;
+            }
+            .team_plus:hover {
+                color: #018181;
+                background-color: #c3f6ef;
+                border-color: #b8f4ec;
+                z-index: 2;
+            }
+        }
     }
 }
-
