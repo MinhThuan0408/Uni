@@ -64,10 +64,10 @@ new Chart(document.getElementById("myChart"), {
 new Chart(document.getElementById("totalSaleDoughnutChart"), {
     type: 'doughnut',
     data: {
-        labels: ['Direct Sales', 'Referral Sales', 'Affiliate Sales','Direct Sales'],
+        labels: ['Direct Sales', 'Referral Sales', 'Affiliate Sales', 'Direct Sales'],
         datasets: [{
             label: '# of Tomatoes',
-            data: [38, 23, 15,23],
+            data: [38, 23, 15, 23],
             backgroundColor: [
                 'rgb(63, 80, 246)',
                 'rgb(2, 204, 205)',
@@ -75,13 +75,13 @@ new Chart(document.getElementById("totalSaleDoughnutChart"), {
             ],
             borderColor: [
                 'rgba(0,0,0,.2)'
-                
+
             ],
             borderWidth: 1
         }]
     },
     options: {
-        responsive: false,
+        responsive: true,
         layout: {
             padding: {
                 left: 20,
@@ -98,82 +98,75 @@ new Chart(document.getElementById("totalSaleDoughnutChart"), {
 // LINE
 // ============================================
 
-var chart    = document.getElementById('earningLineChart').getContext('2d'),
+var chart = document.getElementById('earningLineChart').getContext('2d'),
     gradient = chart.createLinearGradient(0, 0, 0, 450);
 
 gradient.addColorStop(0, 'rgba(0, 0, 255, 0.1)');
 gradient.addColorStop(0.5, 'rgba(0, 0, 255, 0.05)');
-gradient.addColorStop(1, 'rgba(0, 0, 0, 0.1)');
+gradient.addColorStop(1, 'rgba(0, 0, 0, 0.025 )');
 
-
-var data  = {
-    labels: [ 'Mon', 'Tue', 'Web', 'Thu', 'Fri', 'Stu' ],
-    datasets: [{
-			label: 'Custom Label Name',
-			backgroundColor: gradient,
-			pointBackgroundColor: 'white',
-			borderWidth: 1,
-			borderColor: '#3f50f6',
-			data: [14, 13, 18, 20, 10, 17]
-    }]
-};
-
-
-var options = {
-	responsive: true,
-	maintainAspectRatio: true,
-    layout: {
-        padding: {
-            left: 20,
-            right: 20,
-            top: 20,
-            bottom: 20
-        }
-    },
-	scales: {
-		xAxes: [{
-			gridLines: {
-				color: 'rgba(200, 200, 200, 0.05)',
-				lineWidth: 1
-			}
-		}],
-		yAxes: [{
-			gridLines: {
-				color: 'rgba(200, 200, 200, 0.08)',
-				lineWidth: 1
-            },
-            ticks: {
-                beginAtZero: true,
-                callback: function (value, index, values) {
-                    return value + 'k';
-                },
-                stepSize: 10,//Giá trị trục Y
-            }
-		}]
-	},
-	elements: {
-		line: {
-			tension: 0.4
-		}
-	},
-	legend: {
-		display: false
-	},
-	point: {
-		backgroundColor: 'green'
-	},
-	tooltips: {
-		backgroundColor: 'rgba(0,0,0,0.3)',
-		titleFontColor: 'green',
-		caretSize: 5,
-		cornerRadius: 2,
-		xPadding: 10,
-	}
-};
-
-
-var chartInstance = new Chart(chart, {
+var chartLine = new Chart(chart, {
     type: 'line',
-    data: data,
-		options: options
+    data: {
+        labels: ['Mon', 'Tue', 'Web', 'Thu', 'Fri', 'Stu'],
+        datasets: [{
+            label: 'Custom Label Name',
+            backgroundColor: gradient,
+            pointBackgroundColor: 'white',
+            borderWidth: 1,
+            borderColor: '#3f50f6',
+            data: [14, 13, 18, 20, 10, 17]
+        }]
+    },
+    options:{
+        responsive: true,
+        maintainAspectRatio: true,
+        layout: {
+            padding: {
+                left: 20,
+                right: 20,
+                top: 20,
+                bottom: 20
+            }
+        },
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    color: 'rgba(200, 200, 200, 0.05)',
+                    lineWidth: 1
+                }
+            }],
+            yAxes: [{
+                gridLines: {
+                    color: 'rgba(200, 200, 200, 0.08)',
+                    lineWidth: 1
+                },
+                ticks: {
+                    beginAtZero: true,
+                    callback: function (value, index, values) {
+                        return value + 'k';
+                    },
+                    stepSize: 10,//Giá trị trục Y
+                }
+            }]
+        },
+        elements: {
+            line: {
+                tension: 0.4
+            }
+        },
+        legend: {
+            display: false
+        },
+        point: {
+            backgroundColor: 'green'
+        },
+        tooltips: {
+            backgroundColor: 'rgba(0,0,0,0.3)',
+            titleFontColor: 'green',
+            caretSize: 5,
+            cornerRadius: 2,
+            xPadding: 10,
+        }
+    }
 });

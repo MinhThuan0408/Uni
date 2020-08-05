@@ -63,11 +63,16 @@ $(window).resize(function () {
 //     });
 // });
 
-
-//clear text form search
+//show menu treen mobile
 $(document).ready(function () {
     $(".top_nav--icon_three_dot").click(function () {
-        $('body .top_nav--mobile').toggleClass('showww');
+        if (windowsize <= 767) {
+            $('body .top_nav--mobile').toggleClass('showww');
+            $('body .top_nav--mobile').removeClass('show');
+        }
+        else{
+            $('body .top_nav--mobile .collapse').addClass('show');
+        }
     });
 });
 
