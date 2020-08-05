@@ -66,8 +66,8 @@ $(window).resize(function () {
 
 //clear text form search
 $(document).ready(function () {
-    $(".top_nav--iconClear").click(function () {
-        $('.inputSearch').val('').focus();
+    $(".top_nav--icon_three_dot").click(function () {
+        $('body .top_nav--mobile').toggleClass('showww');
     });
 });
 
