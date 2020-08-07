@@ -1,3 +1,6 @@
+
+
+
 //click show left_nav trên pc
 $(document).ready(function () {
     $(".menuSidebar").click(function () {
@@ -70,7 +73,7 @@ $(document).ready(function () {
             $('body .top_nav--mobile').toggleClass('showww');
             $('body .top_nav--mobile').removeClass('show');
         }
-        else{
+        else {
             $('body .top_nav--mobile .collapse').addClass('show');
         }
     });
@@ -273,5 +276,92 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper_button_prj_stt_next',
         prevEl: '.swiper_button_prj_stt_pre',
     },
-    
+
+});
+//----------LIVE FEED----------
+//Chọn người chat
+$(document).ready(function () {
+    $(".chat_sidebar--link_message_center").click(function () {
+        $('.chat_not').css('display', 'none');
+        $('.chat_select').css('display', 'block');
+    });
+});
+////show chat block trên mobile
+$(document).ready(function () {
+    $(".showChatMobile").click(function () {
+
+        $('.chat_sidebar').toggleClass('showChatBlockOnMobile');
+        $('.showChatIcon').toggleClass("la-times");
+    });
+});
+//calendar
+$(document).ready(function () {
+
+    // initialize the external events
+    // -----------------------------------------------------------------
+
+    $('.calendar--draggable_events .fc-event').each(function () {
+
+        // store data so the calendar knows to render an event upon drop
+        $(this).data('event', {
+            title: $.trim($(this).text()), // use the element's text as the event title
+            stick: true // maintain when user navigates (see docs on the renderEvent method)
+        });
+
+        // make the event draggable using jQuery UI
+        $(this).draggable({
+            zIndex: 999,
+            revert: true,      // will cause the event to go back to its
+            revertDuration: 1000  //  original position after the drag
+        });
+
+    });
+
+    // initialize the calendar
+    // -----------------------------------------------------------------
+
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay',
+            
+        },
+        events: [
+            {
+                id: 'evt1',
+                title: 'My event 11',
+                start: '2020-08-11',
+                backgroundColor: '#3f50f6',
+                textColor: 'white'
+            },
+            {
+                id: 'evt2',
+                title: 'My event 1',
+                start: '2020-08-7',
+                backgroundColor: '#02cccd',
+                textColor: 'white'
+            },
+            {
+                id: 'evt3',
+                title: 'My event 2',
+                start: '2020-08-17',
+                backgroundColor: '#ff3ca6',
+                border: 'none',
+                textColor: 'white'
+            },
+            
+        ],
+        editable: true,
+        droppable: true, // this allows things to be dropped onto the calendar
+        drop: function () {
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+                // if so, remove the element from the "Draggable Events" list
+                $(this).remove();
+            }
+        }
+
+    });
+
 });

@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/line-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/Chart.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
-    <link rel="stylesheet" href="./css/Chart.css">
-    <link rel="stylesheet" href="./css/livefeed.css">
+    <link rel="stylesheet" href="./css/fullcalendar.min.css">
 
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/calendar.scss">
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                 <i class="las la-book-open top_nav--icon_res "></i>
             </div>
             <div class="top_nav--item">
-                <a href="calendar.html"><span>Celendar</span></a>
+                <span>Celendar</span>
                 <i class="las la-calendar top_nav--icon_res"></i>
             </div>
             <div class="btn-group">
@@ -565,269 +565,78 @@
                     </ul>
 
                 </div>
+                <div class="calendar main_content">
 
-                <div class="chat_block">
-                    <div class="chat_sidebar">
-                        <div class="chat_sidebar--title_chat_sidebar">
-                            <h5>Chat Sidebar</h5>
-                        </div>
-                        <div class="chat_sidebar--title_search_contact">
-                            <span>Search Contacts</h5><span>
-                        </div>
-                        <div class="chat_sidebar--search_contact">
-                            <input class="chat_sidebar--input_search_contact" type="text" placeholder="Search contact">
-                        </div>
-                        <div class="chat_sidebar--list_contact">
-                            <ul class="chat_sidebar--app_chat">
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
+                    <div class="header_content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="header_content_left">
+                                        <h3>Calendar</h3>
+                                        <a href="#">App / Calendar</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="header_content_right">
+                                        <div class="three_month">
+                                            <select class="select_month">
+                                                <option value="">June 19</option>
+                                                <option value="">July 19</option>
+                                                <option value="">August 19</option>
+                                            </select>
                                         </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-                                <li>
-                                    <a href="#" class="chat_sidebar--link_message_center">
-                                        <div class="chat_sidebar--message_center">
-                                            <span class="chat_sidebar--avatar">
-                                                <img src="./images/1.jpg" alt="user" class="img-fluid">
-                                                <div class="chat_sidebar--profile_status"></div>
-                                            </span>
-                                            <div class="chat_sidebar--mail_connect">
-                                                <h6 class="chat_sidebar--name_user">Pavan kumar</h6>
-                                                <div class="font-12">Just see the my admin!</div>
-                                                <div class="font-12">9:30 AM</div>
-                                            </div>
-
-                                        </div>
-                                    </a>
-
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="showChatMobile">
-                            <i class="las la-bars showChatIcon"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                   
 
-                </div>
-                <div class="chat_content chat_not">
-                    <div class="chat_not--not_select">
-                        <i class="lar la-comment-alt icon_chat_not_select"></i>
-                        <h5>Open chat from the list</h5>
-                    </div>
-                </div>
-                <div class="chat_content chat_select">
-                    <div class="chat_select--chat_with">
-                        <div class="chat_select--header_chat_box">
-                            <img src="./images/2.jpg" alt="chatbox">
-                            <span class="name_user">Pavan kumar</span>
-                        </div>
-                        <div class="chat_select--content_message">
-                            <ul class="chat_select--action_message">
-                                <!-- user chat -->
-                                <li class="chat_select--chat_item">
-                                    <div class="someone_chat">
-                                        <div class="chat_img">
-                                            <img src="./images/3.jpg" alt="user">
+                    <div class="container-fluid">
+                        <div class="calendar_block">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class='calendar--draggable_events'>
+                                        <h4>Drag & Drop Event</h4>
+                                        <div class='fc-event'>
+                                            <div class="color_status_event color_status_event1"></div>
+                                            My Event 1
                                         </div>
-                                        <div class="conversation">
-                                            <h6 class="user_name">
-                                                Angelina Rhodes
-                                            </h6>
-                                            <div class="message_form_someone">
-                                                Lorem Ipsum is simply dummy
-                                                text of the printing type setting industry.
-                                            </div>
+                                        <div class='fc-event'>
+                                            <div class="color_status_event color_status_event2"></div>
+                                            My Event 2
+                                        </div>
+                                        <div class='fc-event'>
+                                            <div class="color_status_event color_status_event3"></div>
+                                            My Event 3
+                                        </div>
+                                        <div class='fc-event'>
+                                            <div class="color_status_event color_status_event4"></div>
+                                            My Event 4
+                                        </div>
+                                        <p class="check_event">
+                                            <input type='checkbox' id='drop-remove' />
+                                            <label for='drop-remove'>Remove after drop</label>
+                                        </p>
+
+                                        <div class="calendar--btn_add_event">
+                                            <i class="las la-plus"></i>
+                                            Add New Events
                                         </div>
                                     </div>
-                                    <div class="chat_time">10:56 am</div>
-                                </li>
-                                <!-- me chat -->
-                                <li class="chat_select--chat_item_me">
-                                    <div class="me_chat">
-                                        <div class="message_from_me">
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing type setting industry.
-                                        </div>
-
-                                        <div class="chat_time_me">
-                                            10:56 am
-                                        </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class='calendar--container'>
+                                        <div id='calendar'></div>
                                     </div>
-                                </li>
-                                <!-- me chat -->
-                                <li class="chat_select--chat_item_me">
-                                    <div class="me_chat">
-                                        <div class="message_from_me">
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing type setting industry.
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing type setting industry.
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing type setting industry.
-                                        </div>
-
-                                        <div class="chat_time_me">
-                                            10:56 am
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- user chat -->
-                                <li class="chat_select--chat_item">
-                                    <div class="someone_chat">
-                                        <div class="chat_img">
-                                            <img src="./images/3.jpg" alt="user">
-                                        </div>
-                                        <div class="conversation">
-                                            <h6 class="user_name">
-                                                Angelina Rhodes
-                                            </h6>
-                                            <div class="message_form_someone">
-                                                Lorem Ipsum is simply dummy
-                                                text of the printing type setting industry.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="chat_time">10:56 am</div>
-                                </li>
-
-                                <!-- me chat -->
-                                <li class="chat_select--chat_item_me">
-                                    <div class="me_chat">
-                                        <div class="message_from_me">
-                                            Lorem Ipsum is simply dummy
-                                            text of the printing type setting industry.
-                                        </div>
-
-                                        <div class="chat_time_me">
-                                            10:56 am
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="chat_select--me_input_text">
-                            <input class="input_text" type="text" placeholder="Type and hit enter">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -896,13 +705,11 @@
 
 </body>
 <script src="./js/jquery.min.js"></script>
-<script src="./js/popper.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/moment.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="./js/Chart.js"></script>
-<script src="./js/Chart.min.js"></script>
-<script src="./js/main-chart.js"></script>
 <script src="./js/swiper.min.js"></script>
-
+<script src="./js/fullcalendar.min.js"></script>
 
 
 <script src="./js/main.js"></script>
