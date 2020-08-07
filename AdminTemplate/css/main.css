@@ -1231,52 +1231,54 @@ body {
       outline: none;
       padding-top: 35px; }
 
-.calendar .calendar_block {
-  border: 1px solid #e9ecef; }
-.calendar--draggable_events {
-  border-right: 1px solid #e9ecef;
-  height: 100%;
-  cursor: pointer; }
-  .calendar--draggable_events h4 {
-    padding: 30px;
-    color: #3e5569;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 1px solid #e9ecef; }
-  .calendar--draggable_events .fc-event {
-    display: flex;
-    align-items: center;
-    background: none;
-    border: none;
-    color: #3e5569;
-    padding: 10px; }
-    .calendar--draggable_events .fc-event .color_status_event {
-      width: 15px;
-      height: 15px;
-      margin: 0 15px;
-      border-radius: 50%; }
-    .calendar--draggable_events .fc-event .color_status_event1 {
-      background-color: #3f50f6; }
-    .calendar--draggable_events .fc-event .color_status_event2 {
-      background-color: #02cccd; }
-    .calendar--draggable_events .fc-event .color_status_event3 {
-      background-color: #ff3ca6; }
-    .calendar--draggable_events .fc-event .color_status_event4 {
-      background-color: #ffab2e; }
-  .calendar--draggable_events .check_event {
-    margin-left: 25px; }
-    .calendar--draggable_events .check_event input {
-      padding: 3px; }
-    .calendar--draggable_events .check_event label {
-      color: #3e5569; }
-.calendar--btn_add_event {
-  background-color: #3f50f6;
-  border-color: #3f50f6;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin: 0 20px; }
-.calendar--container {
-  padding: 25px; }
+.calendar {
+  width: fit-content; }
+  .calendar .calendar_block {
+    border: 1px solid #e9ecef; }
+  .calendar--draggable_events {
+    border-right: 1px solid #e9ecef;
+    height: 100%;
+    cursor: pointer; }
+    .calendar--draggable_events h4 {
+      padding: 30px;
+      color: #3e5569;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 1px solid #e9ecef; }
+    .calendar--draggable_events .fc-event {
+      display: flex;
+      align-items: center;
+      background: none;
+      border: none;
+      color: #3e5569;
+      padding: 10px; }
+      .calendar--draggable_events .fc-event .color_status_event {
+        width: 15px;
+        height: 15px;
+        margin: 0 15px;
+        border-radius: 50%; }
+      .calendar--draggable_events .fc-event .color_status_event1 {
+        background-color: #3f50f6; }
+      .calendar--draggable_events .fc-event .color_status_event2 {
+        background-color: #02cccd; }
+      .calendar--draggable_events .fc-event .color_status_event3 {
+        background-color: #ff3ca6; }
+      .calendar--draggable_events .fc-event .color_status_event4 {
+        background-color: #ffab2e; }
+    .calendar--draggable_events .check_event {
+      margin-left: 25px; }
+      .calendar--draggable_events .check_event input {
+        padding: 3px; }
+      .calendar--draggable_events .check_event label {
+        color: #3e5569; }
+  .calendar--btn_add_event {
+    background-color: #3f50f6;
+    border-color: #3f50f6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0 20px; }
+  .calendar--container {
+    padding: 25px; }
 
 /*# sourceMappingURL=main.css.map */
